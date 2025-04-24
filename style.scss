@@ -1,0 +1,115 @@
+@use './scss/menu';
+@use './scss/values';
+
+@font-face {
+    font-family: 'Andika-Bold';
+    src: url(./medias/font/andika/AndikaNewBasic-Bold.ttf) format(truetype);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Andika-Bold-Italic';
+    src: url(./medias/font/andika/AndikaNewBasic-BoldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Andika-Italic';
+    src: url(./medias/font/andika/AndikaNewBasic-Italic.ttf) format(truetype);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Andika-normal';
+    src: url(./medias/font/andika/AndikaNewBasic-Regular.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+main {
+    font-family: 'Andika-normal';
+    width: 100%;
+    height: 100vh;
+    background-color: values.$darkGreen;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .content {
+        color: values.$pale;
+        background-color: values.$lessdarkGreen;
+        width: 80%;
+        height: 80%;
+        border-radius: values.$radiusNormal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+        .textContent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--1 {
+                h1 {
+                    line-height: 200px;
+                }
+            }
+        }
+        button {
+            transform: translateY(15%) translateX(35%);
+            padding: 25px;
+            border-radius: 100%;
+            width: 75px;
+            height: 75px;
+            background-color: values.$cyan;
+            border: 6px solid rgba(#000 ,0);
+            transition-duration: 0.2s;
+            svg {
+                width: 75px;
+                height: auto;
+                path {
+                    stroke: values.$darkGreen;
+                }
+            }
+            &:hover {
+                border: 6px solid rgba(values.$cyan ,1);
+                background-color: rgba(#000 ,0);
+                svg {
+                    path {
+                        stroke: values.$cyan;
+                    }
+                }
+            }
+            
+        }
+        h1 {
+            font-size: 200px;
+            letter-spacing: 10px;
+        }
+        h3 {
+            font-size: 128px;
+            letter-spacing: 10px;
+            em {
+                color: values.$cyan;
+                letter-spacing: normal;
+                text-decoration: underline;
+                font-style: normal;
+            }
+        }
+    }
+    .sideMenu {
+        position: absolute;
+    }
+}
+
