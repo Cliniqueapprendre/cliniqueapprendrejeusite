@@ -1,1 +1,68 @@
 @use './values';
+
+.sideMenu {
+    #sideMenuCheck {
+        position: absolute;
+        opacity: 1;
+    }
+    position: absolute;
+    width: 160px;
+    height: 450px;
+    top: 0;
+    right: -180px;
+    background-color: values.$lightGreen;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 20px;
+    border-radius: 0 0 0 values.$radiusBig;
+    transition: 0.2s;
+    &:hover {
+        right: 0px;
+    }
+    .contentMenu {
+        overflow-y: scroll;
+    }
+    .btnMenu {
+        display: block;
+        z-index: 10;
+        border: none;
+        position: absolute;
+        height: 100px;
+        width: 50px;
+        border-radius: values.$radiusSmall 0 0 values.$radiusSmall;
+        background-color: values.$lightGreen;
+        left: -50px;
+        transition-duration: 0.2s;
+        &::after {
+            content: 'MENU';
+            font-family: 'Andika-Bold';
+            color: values.$pale;
+            position: absolute;
+            font-size: 24px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            top: 40px;
+            transform: rotate(-90deg);
+        }
+    }
+    h1 {
+        color: values.$pale;
+        font-size: 32px;
+    }
+    div.option {
+        width: auto;
+        
+        padding: 5px 10px;
+        border-radius: values.$radiusSmall;
+        font-size: 24px;
+        color: values.$pale;
+        &:hover {
+            background-color: values.$darkGreen;
+        }
+        &:active {
+            background-color: values.$pale;
+            color: values.$darkGreen;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 @use './scss/values';
 @use './scss/mixins/button';
 
+
 @font-face {
     font-family: 'Andika-Bold';
     src: url(./medias/font/andika/AndikaNewBasic-Bold.ttf) format(truetype);
@@ -32,6 +33,7 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 100%;
     min-height: 100%;
 }
@@ -50,7 +52,7 @@ main {
         overflow: hidden;
         color: values.$pale;
         background-color: values.$lessdarkGreen;
-        width: 80%;
+        width: 90%;
         min-height: 80%;
         border-radius: values.$radiusNormal;
         display: flex;
@@ -89,7 +91,7 @@ main {
         }
         h1 {
             font-family: 'Andika-Bold';
-            font-size: 35vmin;
+            font-size: 30vmin;
             letter-spacing: 10px;
         }
         h3 {

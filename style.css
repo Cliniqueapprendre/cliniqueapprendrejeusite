@@ -1,3 +1,69 @@
+.sideMenu {
+  position: absolute;
+  width: 160px;
+  height: 450px;
+  top: 0;
+  right: -180px;
+  background-color: #487268;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+  border-radius: 0 0 0 25px;
+  transition: 0.2s;
+}
+.sideMenu #sideMenuCheck {
+  position: absolute;
+  opacity: 1;
+}
+.sideMenu:hover {
+  right: 0px;
+}
+.sideMenu .contentMenu {
+  overflow-y: scroll;
+}
+.sideMenu .btnMenu {
+  display: block;
+  z-index: 10;
+  border: none;
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  border-radius: 5px 0 0 5px;
+  background-color: #487268;
+  left: -50px;
+  transition-duration: 0.2s;
+}
+.sideMenu .btnMenu::after {
+  content: "MENU";
+  font-family: "Andika-Bold";
+  color: #f8ecd6;
+  position: absolute;
+  font-size: 24px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 40px;
+  transform: rotate(-90deg);
+}
+.sideMenu h1 {
+  color: #f8ecd6;
+  font-size: 32px;
+}
+.sideMenu div.option {
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #f8ecd6;
+}
+.sideMenu div.option:hover {
+  background-color: #1f3d34;
+}
+.sideMenu div.option:active {
+  background-color: #f8ecd6;
+  color: #1f3d34;
+}
+
 /*
 movetop : 15%
 moveside : 35%
@@ -31,6 +97,7 @@ borderSize: 6px
 }
 
 body {
+  overflow-x: hidden;
   width: 100%;
   min-height: 100%;
 }
@@ -50,7 +117,7 @@ main .content {
   overflow: hidden;
   color: #f8ecd6;
   background-color: #2a4c44;
-  width: 80%;
+  width: 90%;
   min-height: 80%;
   border-radius: 15px;
   display: flex;
@@ -154,7 +221,7 @@ main .content .reward:active {
 }
 main .content h1 {
   font-family: "Andika-Bold";
-  font-size: 35vmin;
+  font-size: 30vmin;
   letter-spacing: 10px;
 }
 main .content h3 {
