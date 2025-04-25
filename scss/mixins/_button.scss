@@ -1,0 +1,68 @@
+/*
+movetop : 15%
+moveside : 35%
+size: 75px
+padding: 25px
+borderSize: 6px
+*/
+@use '../values';
+
+@mixin btnSound($moveTop, $moveSide, $size, $padding, $borderSize) {
+    transform: translateY($moveTop) translateX($moveSide);
+    padding: $padding;
+    border-radius: 100%;
+    width: $size;
+    height: $size;
+    background-color: values.$cyan;
+    border: $borderSize solid rgba(values.$darkGreen, 0);
+    transition-duration: 0.2s;
+    svg {
+        width: $size;
+        height: auto;
+        path {
+            stroke: values.$darkGreen;
+        }
+    }
+    &:hover {
+        border: $borderSize solid rgba(values.$cyan ,1);
+        background-color: rgba(values.$cyan, 0);
+        svg {
+            path {
+                stroke: values.$cyan;
+            }
+        }
+    }
+    &:active {
+        border: $borderSize solid rgba(values.$pale ,1);
+        background-color: rgba(values.$cyan , 0.5);
+        svg {
+            path {
+                stroke: values.$pale;
+            }
+        }
+    }
+}
+
+@mixin btnNext($moveTop, $moveSide, $sizeWidth, $padding, $borderSize) {
+    position: relative;
+    transform: translateY($moveTop) translateX($moveSide);
+    color: rgba(values.$darkGreen ,1);
+    padding: $padding 8%;
+    border-radius: 100px;
+    width: $sizeWidth;
+    height: auto;
+    background-color: values.$cyan;
+    border: $borderSize solid rgba(values.$darkGreen, 0);
+    transition-duration: 0.2s;
+    
+    &:hover {
+        border: $borderSize solid rgba(values.$cyan ,1);
+        background-color: rgba(values.$cyan, 0);
+        color: rgba(values.$cyan ,1);
+    }
+    &:active {
+        border: $borderSize solid rgba(values.$pale ,1);
+        background-color: rgba(values.$cyan , 0.5);
+        color: rgba(values.$pale ,1);
+    }
+}
