@@ -51,7 +51,7 @@ main .content {
   color: #f8ecd6;
   background-color: #2a4c44;
   width: 80%;
-  height: 80%;
+  min-height: 80%;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -69,6 +69,9 @@ main .content .textContent--1 h1 {
 }
 main .content .textContent--2 {
   margin-bottom: 5%;
+}
+main .content .textContent.hidden {
+  display: none;
 }
 main .content button {
   transform: translateY(15%) translateX(35%);
@@ -150,6 +153,7 @@ main .content .reward:active {
   color: #f8ecd6;
 }
 main .content h1 {
+  font-family: "Andika-Bold";
   font-size: 35vmin;
   letter-spacing: 10px;
 }
@@ -163,19 +167,8 @@ main .content h3 em {
   text-decoration: underline;
   font-style: normal;
 }
-main .img {
-  position: absolute;
-  border-radius: 15px;
-  width: 70%;
-  height: 70%;
-  background-image: url(./medias/img/photojeu/test/annee-v2.jpg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-}
-main .img .next {
+main .next {
+  margin-top: 20px;
   margin-bottom: 15px;
   font-family: "Andika-normal";
   position: relative;
@@ -189,16 +182,29 @@ main .img .next {
   border: 6px solid rgba(31, 61, 52, 0);
   transition-duration: 0.2s;
   font-size: 36px;
+  padding: 5px 25px;
 }
-main .img .next:hover {
+main .next:hover {
   border: 6px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
-main .img .next:active {
+main .next:active {
   border: 6px solid #f8ecd6;
   background-color: rgba(89, 181, 158, 0.5);
   color: #f8ecd6;
+}
+main .img {
+  position: absolute;
+  border-radius: 15px;
+  width: 70%;
+  height: 70%;
+  background-image: url(./medias/img/photojeu/test/annee-v2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 main .img.hidden {
   display: none;
