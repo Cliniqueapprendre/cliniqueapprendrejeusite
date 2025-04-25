@@ -1,6 +1,3 @@
-let audioTestOne = new Audio('../medias/audio/lego_test-sound.mp3');
-let audioTestTwo = new Audio('../medias/audio/lego_test-sound.mp3');
-
 let audioBtn = document.querySelectorAll('.audioBtn');
 const answerBtn = document.querySelector('.answer');
 const rewardBtn = document.querySelector('.reward');
@@ -9,6 +6,7 @@ numberOfClick = 0;
 numberOfClickSecond = 0;
 
 audioBtn[0].addEventListener('click', () => {
+    let audioTestOne = new Audio('../medias/audio/lego_test-sound.mp3');
     if (numberOfClick >= 2) {
         answerBtn.classList.remove('hidden');
     }
@@ -17,6 +15,7 @@ audioBtn[0].addEventListener('click', () => {
 });
 
 audioBtn[1].addEventListener('click', () => {
+    let audioTestTwo = new Audio('../medias/audio/lego_test-sound.mp3');
     if (numberOfClickSecond >= 2) {
         rewardBtn.classList.remove('hidden');
     }
