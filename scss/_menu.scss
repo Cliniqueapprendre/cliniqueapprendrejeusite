@@ -18,19 +18,49 @@
     transition: 0.2s;
     &:hover {
         right: 0px;
-        //color: green;
+    }
+    .containerSoundSlider {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40px;
+        transition-duration: 0.2s;
+        opacity: 0.8;
+        .soundicon {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 90%;
+                path {
+                    stroke: values.$darkGreen;
+                }
+            }
+        }
+        &:hover {
+            opacity: 1;
+            .soundicon {
+                svg {
+                    path {
+                        stroke: values.$cyan;
+                    }
+                }
+            }
+        }
+    }
+    .slidecontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .sliderVolume {
         appearance: none;
+        box-shadow: inset 0 0 10px rgba(#000, 0.5);
         width: 90%;
-        height: 20px;
+        height: 15px;
         background-color: values.$darkGreen;
         border-radius: values.$radiusNormal;
-        opacity: 0.8;
-        margin-top: 15px;
-        &:hover {
-            opacity: 1;
-        }
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
@@ -39,6 +69,9 @@
             border-radius: 50%;
             background: values.$cyan;
             cursor: pointer;
+        }
+        &:hover {
+            box-shadow: inset 0 0 10px rgba(values.$lightGreen ,0.8);
         }
     }
     .contentMenu {

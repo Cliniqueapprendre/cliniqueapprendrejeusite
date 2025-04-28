@@ -38,12 +38,61 @@ let numberOfClickSecond = 0;
 let defaultRewardAudioVolume = 0.8;
 let volumeSound;
 const volumeSlider = document.querySelector('#volumeSlider');
+const firstLine = document.querySelector('.firstLine');
+const secondLine = document.querySelector('.secondLine');
+const lastLine = document.querySelector('.lastLine');
+
+checkValueVolume(76, lastLine, volumeSlider.value);
+checkValueVolume(26, secondLine, volumeSlider.value);
+checkValueVolume(5, secondLine, volumeSlider.value);
+
+/* Check old volume */
+if (localStorage.getItem('volumeSound') != null) {
+    let valueVolumeStorage = localStorage.getItem('volumeSound');
+    volumeSlider.value = valueVolumeStorage;
+    volumeSound = (valueVolumeStorage / 100);
+    console.log(volumeSlider.value);
+    console.log(volumeSound);
+}
 
 volumeSlider.addEventListener('change', () => {
     let currentValue = (volumeSlider.value / 100);
     volumeSound = currentValue;
     console.log(currentValue);
+
+    checkValueVolume(76, lastLine, volumeSlider.value);
+    checkValueVolume(26, secondLine, volumeSlider.value);
+    
+    if (volumeSlider.value < 5) {
+        addHidden(firstLine);
+    } else {
+        removeHidden(firstLine);
+    }
+
+    setLocalStorageOFVolume(volumeSlider.value);
 });
+
+function checkValueVolume(number, element, volumeElement) {
+    if (volumeElement < number) {
+        addHidden(element);
+        console.log('less than ' + number);
+    }
+    if (volumeElement >= number) {
+        removeHidden(element);
+        console.log('more than ' + number);
+    }
+}
+
+function addHidden(element) {
+    if (!element.classList.contains('hidden')) {
+        element.classList.add('hidden');
+    }
+}
+function removeHidden(element) {
+    if (element.classList.contains('hidden')) {
+        element.classList.remove('hidden');
+    }
+}
 
 /*rempresente a quelle étape l'utilisateur est rendu + localStorage*/
 if (localStorage.getItem('whereYouAre') != null) {
@@ -60,6 +109,10 @@ if (localStorage.getItem('whereYouAre') != null) {
 
 function setLocalStorageOFLocation(location) {
     localStorage.setItem("whereYouAre", location);
+}
+
+function setLocalStorageOFVolume(volume) {
+    localStorage.setItem("volumeSound", volume);
 }
 
 function clearProgress() {

@@ -18,19 +18,46 @@
 .sideMenu:hover {
   right: 0px;
 }
+.sideMenu .containerSoundSlider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  transition-duration: 0.2s;
+  opacity: 0.8;
+}
+.sideMenu .containerSoundSlider .soundicon {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sideMenu .containerSoundSlider .soundicon svg {
+  width: 90%;
+}
+.sideMenu .containerSoundSlider .soundicon svg path {
+  stroke: #1f3d34;
+}
+.sideMenu .containerSoundSlider:hover {
+  opacity: 1;
+}
+.sideMenu .containerSoundSlider:hover .soundicon svg path {
+  stroke: #59b59e;
+}
+.sideMenu .slidecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .sideMenu .sliderVolume {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   width: 90%;
-  height: 20px;
+  height: 15px;
   background-color: #1f3d34;
   border-radius: 15px;
-  opacity: 0.8;
-  margin-top: 15px;
-}
-.sideMenu .sliderVolume:hover {
-  opacity: 1;
 }
 .sideMenu .sliderVolume::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -40,6 +67,9 @@
   border-radius: 50%;
   background: #59b59e;
   cursor: pointer;
+}
+.sideMenu .sliderVolume:hover {
+  box-shadow: inset 0 0 10px rgba(72, 114, 104, 0.8);
 }
 .sideMenu .contentMenu {
   overflow-y: scroll;
@@ -181,6 +211,9 @@ main .content button svg {
 }
 main .content button svg path {
   stroke: #1f3d34;
+}
+main .content button svg path.hidden {
+  display: none;
 }
 main .content button:hover {
   border: 6px solid #59b59e;

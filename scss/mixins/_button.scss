@@ -22,6 +22,9 @@ borderSize: 6px
         path {
             stroke: values.$darkGreen;
         }
+        path.hidden {
+            display: none;
+        }
     }
     &:hover {
         border: $borderSize solid rgba(values.$cyan ,1);
