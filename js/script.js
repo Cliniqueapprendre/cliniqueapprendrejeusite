@@ -28,12 +28,28 @@ const tabAllOption = [
     },
 ];
 
+let whereYouAre;
 const nextBtn = document.querySelector('.next');
 numberOfClick = 0;
 numberOfClickSecond = 0;
-/*rempresente a quelle étape l'utilisateur est rendu*/
-whereYouAre = 0;
-restartWithNew(0, nextBtn);
+
+/*rempresente a quelle étape l'utilisateur est rendu + localStorage*/
+if (localStorage.getItem('whereYouAre') != null) {
+    let valueWhereYouAre = localStorage.getItem('whereYouAre');
+    whereYouAre = valueWhereYouAre;
+    restartWithNew(whereYouAre, nextBtn);
+} else {
+    whereYouAre = 0;
+    restartWithNew(whereYouAre, nextBtn);
+}
+
+function setLocalStorageOFLocation(location) {
+    localStorage.setItem("whereYouAre", location);
+}
+
+function clearProgress() {
+    localStorage.clear();
+}
 
 /* Menu */
 const menu = document.querySelector('.sideMenu');
@@ -165,6 +181,7 @@ function restartWithNew(number, btnToContinue) {
     });
 
     checkOption('#2a4c44');
+    setLocalStorageOFLocation(number);
 }
 
 /*Evenement enclancher a chaque click sur le bouton "next"*/
