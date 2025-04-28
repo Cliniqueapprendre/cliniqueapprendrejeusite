@@ -19,8 +19,30 @@
     &:hover {
         right: 0px;
     }
+    .sliderVolume {
+        appearance: none;
+        width: 90%;
+        height: 20px;
+        background-color: values.$darkGreen;
+        border-radius: values.$radiusNormal;
+        opacity: 0.8;
+        margin-top: 15px;
+        &:hover {
+            opacity: 1;
+        }
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: values.$cyan;
+            cursor: pointer;
+        }
+    }
     .contentMenu {
         overflow-y: scroll;
+        max-height: 350px;
     }
     .btnMenu {
         display: block;

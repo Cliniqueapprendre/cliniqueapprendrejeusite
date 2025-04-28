@@ -18,8 +18,32 @@
 .sideMenu:hover {
   right: 0px;
 }
+.sideMenu .sliderVolume {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 90%;
+  height: 20px;
+  background-color: #1f3d34;
+  border-radius: 15px;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+.sideMenu .sliderVolume:hover {
+  opacity: 1;
+}
+.sideMenu .sliderVolume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #59b59e;
+  cursor: pointer;
+}
 .sideMenu .contentMenu {
   overflow-y: scroll;
+  max-height: 350px;
 }
 .sideMenu .btnMenu {
   display: block;

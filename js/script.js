@@ -6,6 +6,7 @@ const tabAllOption = [
         partieMotTroix: "s",
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
+        audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
     },
     {
@@ -15,6 +16,7 @@ const tabAllOption = [
         partieMotTroix: "s",
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
+        audioVolume: 0.5,
         imgSource: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
     },
     {
@@ -24,19 +26,32 @@ const tabAllOption = [
         partieMotTroix: "s2",
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
+        audioVolume: 0.5,
         imgSource: "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
     },
 ];
 
 let whereYouAre;
 const nextBtn = document.querySelector('.next');
-numberOfClick = 0;
-numberOfClickSecond = 0;
+let numberOfClick = 0;
+let numberOfClickSecond = 0;
+let defaultRewardAudioVolume = 0.8;
+let volumeSound;
+const volumeSlider = document.querySelector('#volumeSlider');
+
+volumeSlider.addEventListener('change', () => {
+    let currentValue = (volumeSlider.value / 100);
+    volumeSound = currentValue;
+    console.log(currentValue);
+});
 
 /*rempresente a quelle étape l'utilisateur est rendu + localStorage*/
 if (localStorage.getItem('whereYouAre') != null) {
     let valueWhereYouAre = localStorage.getItem('whereYouAre');
     whereYouAre = valueWhereYouAre;
+    if (tabAllOption[whereYouAre] == null) {
+        whereYouAre = 0;
+    }
     restartWithNew(whereYouAre, nextBtn);
 } else {
     whereYouAre = 0;
@@ -137,7 +152,10 @@ function restartWithNew(number, btnToContinue) {
 
     newAudioBtn[0].addEventListener('click', () => {
         let audioTestOne = new Audio(`${tabAllOption[number].audioSourceExpresion}`);
-        audioTestOne.volume = 0.2;
+        audioTestOne.volume = tabAllOption[number].audioVolume;
+        if (volumeSlider.value != 50) {
+            audioTestOne.volume = volumeSound;
+        }
         if (numberOfClick >= 2) {
             answerBtn.classList.remove('hidden');
         }
@@ -147,7 +165,10 @@ function restartWithNew(number, btnToContinue) {
     
     newAudioBtn[1].addEventListener('click', () => {
         let audioTestTwo = new Audio(`${tabAllOption[number].audioSourceMots}`);
-        audioTestTwo.volume = 0.2;
+        audioTestTwo.volume = tabAllOption[number].audioVolume;
+        if (volumeSlider.value != 50) {
+            audioTestTwo.volume = volumeSound;
+        }
         if (numberOfClickSecond >= 2) {
             rewardBtn.classList.remove('hidden');
         }
@@ -168,6 +189,13 @@ function restartWithNew(number, btnToContinue) {
     
     /* Boutton récompense */
     rewardBtn.addEventListener('click', () => {
+        let audioReward = new Audio('./medias/audio/click-124467.mp3');
+        audioReward.volume = defaultRewardAudioVolume;
+        if (volumeSlider.value != 50) {
+            audioReward.volume = volumeSound;
+        }
+        audioReward.play();
+
         let img = document.querySelector('.img');
         rewardBtn.classList.add('hidden');
         let textContent = document.querySelectorAll('.textContent');
