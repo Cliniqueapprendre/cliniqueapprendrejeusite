@@ -26,9 +26,10 @@ borderSize: 6px
   right: 0px;
 }
 .sideMenu button.stopVoices {
-  font-family: "Andika-normal";
+  font-family: "Andika-bold";
+  font-size: 16px;
   position: relative;
-  transform: translateY(25px) translateX(0);
+  transform: translateY(20px) translateX(0);
   color: #1f3d34;
   padding: 5px 8%;
   border-radius: 100px;

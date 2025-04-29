@@ -625,7 +625,7 @@ function checkOption(color) {
 tabAllOption.forEach((el) => {
     console.log('test ' + el.expresion);
     contentMenu.innerHTML += `
-    <div class="option">
+    <div id="${el.expresion}" class="option">
     ${el.expresion}
     </div>
     `;

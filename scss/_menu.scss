@@ -21,8 +21,9 @@
         right: 0px;
     }
     button.stopVoices {
-        font-family: 'Andika-normal';
-        @include button.btnNext(25px,0,80%, 5px, 3px);
+        font-family: 'Andika-bold';
+        font-size: 16px;
+        @include button.btnNext(20px,0,80%, 5px, 3px);
     }
     .containerSoundSlider {
         display: flex;
