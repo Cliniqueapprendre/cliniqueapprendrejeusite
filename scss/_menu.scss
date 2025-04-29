@@ -1,4 +1,5 @@
 @use './values';
+@use './mixins/button';
 
 .sideMenu {
     #sideMenuCheck {
@@ -7,7 +8,7 @@
     }
     position: absolute;
     width: 160px;
-    height: 450px;
+    height: 500px;
     top: 0;
     right: -180px;
     background-color: values.$lightGreen;
@@ -18,6 +19,10 @@
     transition: 0.2s;
     &:hover {
         right: 0px;
+    }
+    button.stopVoices {
+        font-family: 'Andika-normal';
+        @include button.btnNext(25px,0,80%, 5px, 3px);
     }
     .containerSoundSlider {
         display: flex;

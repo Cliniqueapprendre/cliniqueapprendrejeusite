@@ -1,7 +1,14 @@
+/*
+movetop : 15%
+moveside : 35%
+size: 75px
+padding: 25px
+borderSize: 6px
+*/
 .sideMenu {
   position: absolute;
   width: 160px;
-  height: 450px;
+  height: 500px;
   top: 0;
   right: -180px;
   background-color: #487268;
@@ -17,6 +24,29 @@
 }
 .sideMenu:hover {
   right: 0px;
+}
+.sideMenu button.stopVoices {
+  font-family: "Andika-normal";
+  position: relative;
+  transform: translateY(25px) translateX(0);
+  color: #1f3d34;
+  padding: 5px 8%;
+  border-radius: 100px;
+  width: 80%;
+  height: auto;
+  background-color: #59b59e;
+  border: 3px solid rgba(31, 61, 52, 0);
+  transition-duration: 0.2s;
+}
+.sideMenu button.stopVoices:hover {
+  border: 3px solid #59b59e;
+  background-color: rgba(89, 181, 158, 0);
+  color: #59b59e;
+}
+.sideMenu button.stopVoices:active {
+  border: 3px solid #f8ecd6;
+  background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
 }
 .sideMenu .containerSoundSlider {
   display: flex;
@@ -118,13 +148,6 @@
   color: #1f3d34;
 }
 
-/*
-movetop : 15%
-moveside : 35%
-size: 75px
-padding: 25px
-borderSize: 6px
-*/
 @font-face {
   font-family: "Andika-Bold";
   src: url(./medias/font/andika/AndikaNewBasic-Bold.ttf) format(truetype);
@@ -228,6 +251,31 @@ main .content button:active {
 }
 main .content button:active svg path {
   stroke: #f8ecd6;
+}
+main .content .readText {
+  position: relative;
+  transform: translateY(20px) translateX(60px);
+  color: #1f3d34;
+  padding: auto 8%;
+  border-radius: 100px;
+  width: auto;
+  height: auto;
+  background-color: #59b59e;
+  border: 6px solid rgba(31, 61, 52, 0);
+  transition-duration: 0.2s;
+  font-size: 24px;
+  font-family: "Andika-bold";
+  letter-spacing: 0.2px;
+}
+main .content .readText:hover {
+  border: 6px solid #59b59e;
+  background-color: rgba(89, 181, 158, 0);
+  color: #59b59e;
+}
+main .content .readText:active {
+  border: 6px solid #f8ecd6;
+  background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
 }
 main .content .answer {
   font-family: "Andika-normal";

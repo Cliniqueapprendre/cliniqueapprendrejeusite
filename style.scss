@@ -80,6 +80,12 @@ main {
         button {
             @include button.btnSound(15%, 35%, 75px, 25px, 6px);
         }
+        .readText {
+            @include button.btnNext(20px, 60px, auto, auto, 6px);
+            font-size: 24px;
+            font-family: 'Andika-bold';
+            letter-spacing: 0.2px;
+        }
         .answer {
             font-family: 'Andika-normal';
             @include button.btnNext(0, 0, auto, auto, 6px);
