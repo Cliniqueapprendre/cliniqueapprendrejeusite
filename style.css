@@ -1,3 +1,7 @@
+:root {
+  --darker: #1f3d34;
+}
+
 /*
 movetop : 15%
 moveside : 35%
@@ -178,6 +182,32 @@ body {
   overflow-x: hidden;
   width: 100%;
   min-height: 100%;
+}
+
+.btnMusic {
+  font-size: 24px;
+  font-family: "Andika-normal";
+  position: relative;
+  transform: translateY(-10px) translateX(0);
+  color: #1f3d34;
+  padding: auto 8%;
+  border-radius: 100px;
+  width: auto;
+  height: auto;
+  background-color: #59b59e;
+  border: 3px solid rgba(31, 61, 52, 0);
+  transition-duration: 0.2s;
+  padding: 5px 25px;
+}
+.btnMusic:hover {
+  border: 3px solid #59b59e;
+  background-color: rgba(89, 181, 158, 0);
+  color: #59b59e;
+}
+.btnMusic:active {
+  border: 3px solid #f8ecd6;
+  background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
 }
 
 main {

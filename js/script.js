@@ -502,6 +502,9 @@ const firstLine = document.querySelector('.firstLine');
 const secondLine = document.querySelector('.secondLine');
 const lastLine = document.querySelector('.lastLine');
 const noSoundIcon = document.querySelectorAll('.noSoundIcon');
+const btnMusic = document.querySelector('.btnMusic');
+const music = new Audio('./medias/audio/bittersweet-comedy-loop-248824.mp3');
+isMusicStarted = false;
 
 /* Check old volume */
 if (localStorage.getItem('volumeSound') != null) {
@@ -513,22 +516,59 @@ if (localStorage.getItem('volumeSound') != null) {
 }
 
 checkValueVolume(76, lastLine, volumeSlider.value);
-checkValueVolume(26, secondLine, volumeSlider.value);
+checkValueVolume(46, secondLine, volumeSlider.value);
 checkValueVolume(5, firstLine, volumeSlider.value);
 checkIfNoSound(5);
+
+btnMusic.addEventListener('click', () => {
+    if (volumeSound == null) {
+        volumeSound = 0.5;
+    }
+    else if (volumeSound > 0.2) {
+        music.volume = (volumeSound - 0.2);
+    } else {
+        music.volume = volumeSound;
+    }
+    music.loop = true;
+    if (volumeSound == null) {
+        music.volume = 0.4;
+    }
+    if (isMusicStarted != true) {
+        btnMusic.textContent = 'Arrêter Musique';
+        music.play();
+        isMusicStarted = true;
+    } else {
+        btnMusic.textContent = 'Continuer Musique';
+        music.pause();
+        isMusicStarted = false;
+    }
+});
 
 /* Change volume with slider */
 volumeSlider.addEventListener('change', () => {
     let currentValue = (volumeSlider.value / 100);
+    if (currentValue < 0.06) {
+        currentValue = 0;
+    }
     volumeSound = currentValue;
     console.log(currentValue);
 
     checkValueVolume(76, lastLine, volumeSlider.value);
-    checkValueVolume(26, secondLine, volumeSlider.value);
+    checkValueVolume(46, secondLine, volumeSlider.value);
     
     checkIfNoSound(5);
 
     setLocalStorageOFVolume(volumeSlider.value);
+
+    let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+    sound.play();
+
+    if (volumeSound > 0.2) {
+        music.volume = (volumeSound - 0.2);
+    } else {
+        music.volume = volumeSound;
+    }
+    
 });
 
 function checkIfNoSound(number) {
@@ -576,6 +616,17 @@ if (localStorage.getItem('whereYouAre') != null) {
 }
 
 /* Functions : */
+function createSound(volumeOfSound, srcSound) {
+    //'./medias/audio/click-button-app-147358.mp3'
+    let newSound = new Audio(`${srcSound}`);
+    if (volumeSound == null) {
+        newSound.volume = 0.5;
+    }
+    newSound.volume = volumeOfSound;
+    return newSound;
+}
+
+
 function setLocalStorageOFLocation(location) {
     localStorage.setItem("whereYouAre", location);
 }
@@ -601,6 +652,8 @@ function removeHidden(element) {
 
 function stopSpeech() {
     speechSynthesis.cancel();
+    let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+    sound.play();
 }
 
 /* Menu */
@@ -640,6 +693,8 @@ tabAllOption.forEach((el) => {
             whereYouAre = index;
             restartWithNew(index, nextBtn);
             checkOption('#2a4c44');
+            let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+            sound.play();
         });
     });
 });
@@ -726,6 +781,13 @@ function restartWithNew(number, btnToContinue) {
         }
         numberOfClick++;
         console.log('numberOfClick : ' + numberOfClick);
+
+        let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+        if (volumeSound > 0.5) {
+            sound.volume = (volumeSound - 0.2);
+        }
+        sound.playbackRate = 1.8;
+        sound.play();
     });
 
     readText[1].addEventListener('click', () => {
@@ -750,6 +812,10 @@ function restartWithNew(number, btnToContinue) {
         }
         numberOfClickSecond++;
         console.log('numberOfClickSecond : ' + numberOfClickSecond);
+
+        let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+        sound.playbackRate = 1.8;
+        sound.play();
     });
 
     /* Bouttons d'audio */
@@ -779,7 +845,7 @@ function restartWithNew(number, btnToContinue) {
         console.log('numberOfClickSecond : ' + numberOfClickSecond);
     });
 
-    /* Boutton réponse */
+    /* Boutton réponse (mot) */
     answerBtn.addEventListener('click', () => {
         let textAnswer = document.querySelector('.textAnswer');
 
@@ -787,6 +853,9 @@ function restartWithNew(number, btnToContinue) {
         newAudioBtn[1].classList.remove('hidden');
         readText[1].classList.remove('hidden');
         answerBtn.classList.add('hidden');
+
+        let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+        sound.play();
     });
     
     /* Boutton récompense */
@@ -828,4 +897,6 @@ nextBtn.addEventListener('click', () => {
         whereYouAre = 0;
         restartWithNew(0, nextBtn);
     }
+    let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+    sound.play();
 });

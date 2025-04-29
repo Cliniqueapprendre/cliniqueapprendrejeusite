@@ -38,6 +38,13 @@ body {
     min-height: 100%;
 }
 
+.btnMusic {
+    font-size: 24px;
+    font-family: 'Andika-normal';
+    @include button.btnNext(-10px,0,auto,auto,3px);
+    padding: 5px 25px;
+}
+
 main {
     overflow-x: hidden;
     font-family: 'Andika-normal';
