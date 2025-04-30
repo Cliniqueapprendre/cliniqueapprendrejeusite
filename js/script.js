@@ -4,20 +4,36 @@ const tabAllOption = [
         partieMotUn: "li",
         partieMotDeux: "on",
         partieMotTroix: "",
-        audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
-        audioSourceMots: "./medias/audio/lego_test-sound.mp3",
+        audioSourceExpresion: `./medias/audio/son/on/On.m4a`,
+        audioSourceMots: `./medias/audio/son/on/Lion.m4a`,
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/on/Lion.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ou",
         partieMotUn: "s",
         partieMotDeux: "ou",
         partieMotTroix: "",
-        audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
-        audioSourceMots: "./medias/audio/lego_test-sound.mp3",
+        audioSourceExpresion: "./medias/audio/son/ou/Ou.m4a",
+        audioSourceMots: "./medias/audio/son/ou/Sou.m4a",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/sou/sou.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "oi",
@@ -28,6 +44,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "eu",
@@ -38,6 +62,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "an",
@@ -48,6 +80,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "en",
@@ -58,6 +98,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "in",
@@ -68,6 +116,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ui",
@@ -78,6 +134,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "eau",
@@ -88,6 +152,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ai",
@@ -98,6 +170,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ei",
@@ -108,6 +188,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "un",
@@ -118,6 +206,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "au",
@@ -128,6 +224,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ein",
@@ -138,6 +242,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ain",
@@ -148,6 +260,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "om",
@@ -158,6 +278,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "im",
@@ -168,6 +296,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "am",
@@ -178,6 +314,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "em",
@@ -188,6 +332,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "tion",
@@ -198,6 +350,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ph",
@@ -208,6 +368,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "et",
@@ -218,6 +386,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ette",
@@ -228,6 +404,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "oin",
@@ -238,6 +422,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ez",
@@ -248,6 +440,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "er",
@@ -258,6 +458,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ien",
@@ -268,6 +476,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ian",
@@ -278,6 +494,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "gn",
@@ -288,6 +512,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "gue",
@@ -298,6 +530,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "gui",
@@ -308,6 +548,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ch",
@@ -318,6 +566,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ca",
@@ -328,6 +584,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "co",
@@ -338,6 +602,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "cu",
@@ -348,6 +620,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ce",
@@ -358,6 +638,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ci",
@@ -368,6 +656,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ga",
@@ -378,6 +674,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "go",
@@ -388,6 +692,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "gu",
@@ -398,6 +710,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ge",
@@ -408,6 +728,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "gi",
@@ -418,6 +746,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "elle",
@@ -428,6 +764,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ille",
@@ -438,6 +782,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "aille",
@@ -448,6 +800,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "ouille",
@@ -458,6 +818,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "eille",
@@ -468,6 +836,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "euille",
@@ -478,6 +854,14 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
     {
         expresion: "qu",
@@ -488,8 +872,23 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        audioSrcAll: './medias/audio/son/',
+        useAutoSound: true,
+        capitalizeFirstLetterSrc(val) {
+            let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            console.log('audio expresion : ', link);
+            return link;
+        },
     },
 ];
+
+/* Source of code : https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript*/
+/* Start */
+function capitalizeFirstLetter(val) {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
+/* End */
 
 let whereYouAre;
 const nextBtn = document.querySelector('.next');
@@ -822,7 +1221,16 @@ function restartWithNew(number, btnToContinue) {
     let newAudioBtn = document.querySelectorAll('.audioBtn');
 
     newAudioBtn[0].addEventListener('click', () => {
-        let audioTestOne = new Audio(`${tabAllOption[number].audioSourceExpresion}`);
+        let audioTestOne;
+        if (tabAllOption[number].audioSrcAll != null && tabAllOption[number].useAutoSound == true) {
+            let text = tabAllOption[number].expresion;
+            audioTestOne = new Audio(`${tabAllOption[number].capitalizeFirstLetterSrc(text)}`);
+            console.log('it is working');
+
+        } else {
+            audioTestOne = new Audio(`${tabAllOption[number].audioSourceExpresion}`);
+        }
+        
         audioTestOne.volume = volumeSound;
         if (numberOfClick >= 2 && isAnswerActive == false) {
             answerBtn.classList.remove('hidden');
@@ -834,7 +1242,15 @@ function restartWithNew(number, btnToContinue) {
     });
     
     newAudioBtn[1].addEventListener('click', () => {
-        let audioTestTwo = new Audio(`${tabAllOption[number].audioSourceMots}`);
+        let audioTestTwo;
+        if (tabAllOption[number].audioSrcAll != null && tabAllOption[number].useAutoSound == true) {
+            let text = tabAllOption[number].partieMotUn + tabAllOption[number].partieMotDeux + tabAllOption[number].partieMotTroix; 
+            audioTestTwo = new Audio(`${tabAllOption[number].capitalizeFirstLetterSrc(text)}`);
+            console.log('it is working');
+        } else {
+            audioTestTwo = new Audio(`${tabAllOption[number].audioSourceMots}`);
+        }
+        
         audioTestTwo.volume = volumeSound;
         if (numberOfClickSecond >= 2 && isImageBtnActive == false) {
             rewardBtn.classList.remove('hidden');
