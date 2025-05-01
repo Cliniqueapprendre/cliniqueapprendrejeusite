@@ -170,7 +170,7 @@ main {
         .content {
             width: 95%;
             button {
-                @include button.btnSound(15%, 0, 75px, 25px, 6px);
+                @include button.btnSound(15%, 10px, 75px, 25px, 6px);
             }
         }
     }

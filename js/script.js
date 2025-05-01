@@ -910,16 +910,23 @@ isMusicStarted = false;
 const btnFullScreen = document.querySelector('.btnFull');
 isFullScreenOn = false;
 
+/* Aller en "fullScreen" */
 btnFullScreen.addEventListener('click', () => {
     activateAndDeactivateFullScreen(btnFullScreen);
     console.log('state bool : ' + isFullScreenOn);
+    let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+    sound.play();
 });
 
+/* function pour aller en "fullScreen" */
 function activateAndDeactivateFullScreen(element) {
     if (isFullScreenOn == false) {
         element.textContent = 'Sortire du plein écran';
         isFullScreenOn = true;
-        document.documentElement.requestFullscreen();
+        document.documentElement.requestFullscreen().catch((err) => {
+            alert(`Écheque d'aller en plein écran: ${err.message} (${err.name})`);
+            console.log(`Écheque d'aller en plein écran: ${err.message} (${err.name})`);
+        });
         console.log('Full Screen : ' + isFullScreenOn);
         
     } else if (isFullScreenOn == true) {
@@ -941,6 +948,9 @@ if (localStorage.getItem('volumeSound') != null) {
     if (volumeSound < 0.06) {
         volumeSound = 0;
     }
+} else {
+    volumeSound = 0.5;
+    volumeSlider.value = 50;
 }
 
 checkValueVolume(76, lastLine, volumeSlider.value);
