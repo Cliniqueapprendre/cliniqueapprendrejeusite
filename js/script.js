@@ -378,7 +378,7 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "_et",
+        expresion: "et",
         partieMotUn: "jou",
         partieMotDeux: "et",
         partieMotTroix: "",
@@ -396,7 +396,7 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "_ette",
+        expresion: "ette",
         partieMotUn: "mouf",
         partieMotDeux: "ette",
         partieMotTroix: "",
@@ -432,7 +432,7 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "_ez",
+        expresion: "ez",
         partieMotUn: "n",
         partieMotDeux: "ez",
         partieMotTroix: "",
@@ -450,7 +450,7 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "_er",
+        expresion: "er",
         partieMotUn: "jou",
         partieMotDeux: "er",
         partieMotTroix: "",
