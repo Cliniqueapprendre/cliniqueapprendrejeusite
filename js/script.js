@@ -7,7 +7,7 @@ const tabAllOption = [
         audioSourceExpresion: `./medias/audio/son/on/On.m4a`,
         audioSourceMots: `./medias/audio/son/on/Lion.m4a`,
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/on/Lion.jpg",
+        imgSource: "./medias/img/photojeu/on/lion.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -25,7 +25,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/son/ou/Ou.m4a",
         audioSourceMots: "./medias/audio/son/ou/Sou.m4a",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/sou/sou.jpg",
+        imgSource: "./medias/img/photojeu/ou/sou.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -43,7 +43,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/oi/roi.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -61,7 +61,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/eu/jeu.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -79,7 +79,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/an/plan.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -97,7 +97,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/en/dent.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -115,7 +115,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/in/lapin.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -133,7 +133,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ui/nuit.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -151,7 +151,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/eau/bateau.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -169,7 +169,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ai/aime.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -187,7 +187,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ei/peine.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -205,7 +205,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/un/brun.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -223,7 +223,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/au/auto.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -241,7 +241,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ein/peinture.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -259,7 +259,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ain/main.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -277,7 +277,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/om/ombre.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -295,7 +295,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/im/important.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -313,7 +313,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/am/ambulance.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -331,7 +331,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/em/emballer.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -349,7 +349,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/tion/attention.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -367,7 +367,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ph/photo.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -378,14 +378,14 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "et",
+        expresion: "_et",
         partieMotUn: "jou",
         partieMotDeux: "et",
         partieMotTroix: "",
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/_et/jouet.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -396,14 +396,14 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "ette",
+        expresion: "_ette",
         partieMotUn: "mouf",
         partieMotDeux: "ette",
         partieMotTroix: "",
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/_ette/moufette.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -421,7 +421,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/oin/foin.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -432,14 +432,14 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "ez",
+        expresion: "_ez",
         partieMotUn: "n",
         partieMotDeux: "ez",
         partieMotTroix: "",
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/_ez/nez.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -450,14 +450,14 @@ const tabAllOption = [
         },
     },
     {
-        expresion: "er",
+        expresion: "_er",
         partieMotUn: "jou",
         partieMotDeux: "er",
         partieMotTroix: "",
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/_er/jouer.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -475,7 +475,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ien/chien.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -493,7 +493,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ian/souriant.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -511,7 +511,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/gn/ligne.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -529,7 +529,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/gue/vague.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -547,7 +547,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/gui/guimauve.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -565,7 +565,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ch/chut.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -583,7 +583,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ca/caca.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -601,7 +601,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/co/coco.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -619,7 +619,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/cu/culotte.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -637,7 +637,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ce/cerise.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -655,7 +655,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ci/citron.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -673,7 +673,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ga/garage.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -691,7 +691,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/go/go.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -709,7 +709,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/gu/legume.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -730,7 +730,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ge/genou.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -748,7 +748,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/gi/girafe.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -766,7 +766,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/elle/belle.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -784,7 +784,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ille/fille.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -802,7 +802,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/aille/paille.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -820,7 +820,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/ouille/grenouille.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -838,7 +838,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/eille/abeille.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -856,7 +856,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/euille/feuille.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -874,7 +874,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/test/annee-v2.jpg",
+        imgSource: "./medias/img/photojeu/qu/quatre.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
