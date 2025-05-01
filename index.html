@@ -12,7 +12,10 @@
 <body>
     <header></header>
     <main>
-        <button class="btnMusic">Commencer Musique</button>
+        <div class="btnContainer">
+            <button class="btn btnMusic">Commencer Musique</button>
+            <button class="btn btnFull">Aller en plein écran</button>
+        </div>
         <div class="content">
             <!--
             <div class="textContent textContent--1">
@@ -48,7 +51,7 @@
         <button class="next hidden">Prochain</button>
         <div class="sideMenu">
             <div class="btnMenu"></div>
-            <h1>Menu</h1>
+            <h1>Sons</h1>
             <div class="contentMenu"></div>
             
             <div class="containerSoundSlider">
@@ -67,7 +70,7 @@
                 </div>
             </div>
 
-            <button class="stopVoices" onclick="stopSpeech()">Arrêter la voie!</button>
+            <!--<button class="stopVoices" onclick="stopSpeech()">Arrêter la voie!</button>-->
             
         </div>
     </main>

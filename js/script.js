@@ -713,6 +713,9 @@ const tabAllOption = [
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
+            if (val == 'légume') {
+                val = 'legume';
+            }
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
             let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
             console.log('audio expresion : ', link);
@@ -904,6 +907,28 @@ const noSoundIcon = document.querySelectorAll('.noSoundIcon');
 const btnMusic = document.querySelector('.btnMusic');
 const music = new Audio('./medias/audio/bittersweet-comedy-loop-248824.mp3');
 isMusicStarted = false;
+const btnFullScreen = document.querySelector('.btnFull');
+isFullScreenOn = false;
+
+btnFullScreen.addEventListener('click', () => {
+    activateAndDeactivateFullScreen(btnFullScreen);
+    console.log('state bool : ' + isFullScreenOn);
+});
+
+function activateAndDeactivateFullScreen(element) {
+    if (isFullScreenOn == false) {
+        element.textContent = 'Sortire du plein écran';
+        isFullScreenOn = true;
+        document.documentElement.requestFullscreen();
+        console.log('Full Screen : ' + isFullScreenOn);
+        
+    } else if (isFullScreenOn == true) {
+        element.textContent = 'Aller en plein écran';
+        document.exitFullscreen();
+        isFullScreenOn = false;
+        console.log('Full Screen : ' + isFullScreenOn);
+    }
+}
 
 /* Check old volume */
 if (localStorage.getItem('volumeSound') != null) {
@@ -912,6 +937,10 @@ if (localStorage.getItem('volumeSound') != null) {
     volumeSound = (valueVolumeStorage / 100);
     console.log(volumeSlider.value);
     console.log(volumeSound);
+
+    if (volumeSound < 0.06) {
+        volumeSound = 0;
+    }
 }
 
 checkValueVolume(76, lastLine, volumeSlider.value);
@@ -1001,19 +1030,6 @@ function checkValueVolume(number, element, volumeElement) {
     }
 }
 
-/*rempresente a quelle étape l'utilisateur est rendu + localStorage*/
-if (localStorage.getItem('whereYouAre') != null) {
-    let valueWhereYouAre = localStorage.getItem('whereYouAre');
-    whereYouAre = valueWhereYouAre;
-    if (tabAllOption[whereYouAre] == null) {
-        whereYouAre = 0;
-    }
-    restartWithNew(whereYouAre, nextBtn);
-} else {
-    whereYouAre = 0;
-    restartWithNew(whereYouAre, nextBtn);
-}
-
 /* Functions : */
 function createSound(volumeOfSound, srcSound) {
     //'./medias/audio/click-button-app-147358.mp3'
@@ -1047,12 +1063,6 @@ function removeHidden(element) {
     if (element.classList.contains('hidden')) {
         element.classList.remove('hidden');
     }
-}
-
-function stopSpeech() {
-    speechSynthesis.cancel();
-    let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
-    sound.play();
 }
 
 /* Menu */
@@ -1098,7 +1108,29 @@ tabAllOption.forEach((el) => {
     });
 });
 
+/*rempresente a quelle étape l'utilisateur est rendu + localStorage*/
+if (localStorage.getItem('whereYouAre') != null) {
+    let valueWhereYouAre = localStorage.getItem('whereYouAre');
+    whereYouAre = valueWhereYouAre;
+    if (tabAllOption[whereYouAre] == null) {
+        whereYouAre = 0;
+    }
+    restartWithNew(whereYouAre, nextBtn);
+} else {
+    whereYouAre = 0;
+    restartWithNew(whereYouAre, nextBtn);
+}
 
+/* Va ala possiont de L'option selectionner quand l'utilisateur hover sur le menu pour la rpemière fois */
+let menuSide = document.querySelector('.sideMenu');
+let HasMouseHoverdMenu = false;
+menuSide.addEventListener('mouseover', () => {
+    if (HasMouseHoverdMenu == false) {
+        HasMouseHoverdMenu = true;
+        let val = tabAllOption[whereYouAre].expresion
+        document.getElementById(`${val}`).scrollIntoView(true);
+    }
+})
 
 
 /*Fuction pour aller a une nouvelle option + son déroulement*/
@@ -1119,12 +1151,12 @@ function restartWithNew(number, btnToContinue) {
                 <path d="M260 257C260 257 331.5 221 333 129.5C334.5 38 260 9 260 9" stroke="black" stroke-width="18" stroke-linecap="round"/>
                 </svg>                    
         </button>
-        <button class="readText">
+        <!--<button class="readText">
             Lire (robot)
-        </button>
+        </button>-->
     </div>
     <div class="textContent textContent--2">
-        <button class="answer hidden">Mot</button>
+        <button class="answer hidden">mot</button>
         <h3 class="textAnswer hidden">${tabAllOption[number].partieMotUn}<em>${tabAllOption[number].partieMotDeux}</em>${tabAllOption[number].partieMotTroix}</h3>
         <button class="audioBtn audioBtn--answer hidden">
             <svg viewBox="0 0 343 266" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1134,9 +1166,9 @@ function restartWithNew(number, btnToContinue) {
                 <path d="M260 257C260 257 331.5 221 333 129.5C334.5 38 260 9 260 9" stroke="black" stroke-width="18" stroke-linecap="round"/>
                 </svg> 
         </button>
-        <button class="readText hidden">
+        <!--<button class="readText hidden">
             Lire (robot)
-        </button>
+        </button>-->
     </div>
     
     <button class="reward hidden">Image</button>
@@ -1148,75 +1180,7 @@ function restartWithNew(number, btnToContinue) {
     let img = document.querySelector('.img');
     img.style.backgroundImage = `url(${tabAllOption[number].imgSource})`;
 
-    let readText = document.querySelectorAll('.readText');
-
-    let voices;
-
-
-    speechSynthesis.onvoiceschanged = function() {
-        voices = window.speechSynthesis.getVoices();
-        console.log(voices);
-    }
-
-    readText[0].addEventListener('click', () => {
-        let textToRead = tabAllOption[number].expresion;
-
-        let speech = new SpeechSynthesisUtterance(textToRead);
-        speech.lang = "fr-CA";
-        speech.volume = volumeSound;
-        /* Fr-CA Option : 
-        5 - Microsoft Caroline
-        6 - Microsoft Claude
-        7 - Microsoft Nathalie 
-        */
-        if (window.speechSynthesis.getVoices()[5] != null) {
-            speech.voice = window.speechSynthesis.getVoices()[5];
-        }
-        speechSynthesis.speak(speech);
-
-        if (numberOfClick >= 2 && isAnswerActive == false) {
-            answerBtn.classList.remove('hidden');
-            isAnswerActive = true;
-        }
-        numberOfClick++;
-        console.log('numberOfClick : ' + numberOfClick);
-
-        let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
-        if (volumeSound > 0.5) {
-            sound.volume = (volumeSound - 0.2);
-        }
-        sound.playbackRate = 1.8;
-        sound.play();
-    });
-
-    readText[1].addEventListener('click', () => {
-        let textToRead = tabAllOption[number].partieMotUn + tabAllOption[number].partieMotDeux + tabAllOption[number].partieMotTroix;
-
-        let speech = new SpeechSynthesisUtterance(textToRead);
-        speech.lang = "fr-CA";
-        speech.volume = volumeSound;
-        /* Fr-CA Option : 
-        5 - Microsoft Caroline
-        6 - Microsoft Claude
-        7 - Microsoft Nathalie 
-        */
-        if (window.speechSynthesis.getVoices()[5] != null) {
-            speech.voice = window.speechSynthesis.getVoices()[5];
-        }
-        speechSynthesis.speak(speech);
-
-        if (numberOfClickSecond >= 2 && isImageBtnActive == false) {
-            rewardBtn.classList.remove('hidden');
-            isImageBtnActive = true;
-        }
-        numberOfClickSecond++;
-        console.log('numberOfClickSecond : ' + numberOfClickSecond);
-
-        let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
-        sound.playbackRate = 1.8;
-        sound.play();
-    });
-
+    
     /* Bouttons d'audio */
     let newAudioBtn = document.querySelectorAll('.audioBtn');
 
@@ -1232,12 +1196,12 @@ function restartWithNew(number, btnToContinue) {
         }
         
         audioTestOne.volume = volumeSound;
-        if (numberOfClick >= 2 && isAnswerActive == false) {
+        numberOfClick++;
+        if (numberOfClick == 1 && isAnswerActive == false) {
             answerBtn.classList.remove('hidden');
             isAnswerActive = true;
         }
         audioTestOne.play();
-        numberOfClick++;
         console.log('numberOfClick : ' + numberOfClick);
     });
     
@@ -1252,12 +1216,12 @@ function restartWithNew(number, btnToContinue) {
         }
         
         audioTestTwo.volume = volumeSound;
-        if (numberOfClickSecond >= 2 && isImageBtnActive == false) {
+        numberOfClickSecond++;
+        if (numberOfClickSecond == 1 && isImageBtnActive == false) {
             rewardBtn.classList.remove('hidden');
             isImageBtnActive = true;
         }
         audioTestTwo.play();
-        numberOfClickSecond++;
         console.log('numberOfClickSecond : ' + numberOfClickSecond);
     });
 
@@ -1267,7 +1231,9 @@ function restartWithNew(number, btnToContinue) {
 
         textAnswer.classList.remove('hidden');
         newAudioBtn[1].classList.remove('hidden');
+        /* (Btn robot 2)
         readText[1].classList.remove('hidden');
+        */
         answerBtn.classList.add('hidden');
 
         let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');

@@ -38,12 +38,21 @@ body {
     min-height: 100%;
 }
 
-.btnMusic {
-    font-size: 24px;
-    font-family: 'Andika-normal';
-    @include button.btnNext(-10px,0,auto,auto,3px);
-    padding: 5px 25px;
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+    .btn {
+        font-size: 24px;
+        font-family: 'Andika-normal';
+        @include button.btnNext(0,0,auto,auto,3px);
+        padding: 5px 25px;
+    }
 }
+
 
 main {
     overflow-x: hidden;
@@ -60,26 +69,31 @@ main {
         overflow: hidden;
         color: values.$pale;
         background-color: values.$lessdarkGreen;
-        width: 90%;
+        width: 85%;
         min-height: 80%;
         border-radius: values.$radiusNormal;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 40px;
         .textContent {
-            margin-bottom: 10%;
+            //margin-bottom: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
+            /*
             &--1 {
                 h1 {
-                    line-height: 200px;
+                    
                 }
             }
             &--2 {
                 margin-bottom: 5%;
-            }
+                h3 {
+                    line-height: 275px;
+                }
+            }*/
         }
         .textContent.hidden {
             display: none;
@@ -99,6 +113,7 @@ main {
             font-size: 36px;
         }
         .reward {
+            margin-top: 40px;
             font-family: 'Andika-normal';
             @include button.btnNext(0, 0, auto, auto, 6px);
             font-size: 36px;
@@ -106,10 +121,12 @@ main {
         h1 {
             font-family: 'Andika-Bold';
             font-size: 30vmin;
+            line-height: 30vmin;
             letter-spacing: 10px;
         }
         h3 {
-            font-size: 20vmin;
+            font-size: 15vmin;
+            line-height: 15vmin;
             letter-spacing: 10px;
             em {
                 color: values.$cyan;
@@ -120,8 +137,8 @@ main {
         }
     }
     .next {
-        margin-top: 20px;
-        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
         font-family: 'Andika-normal';
         @include button.btnNext(0, 0, auto, auto, 6px);
         font-size: 36px;
@@ -145,6 +162,17 @@ main {
     }
     .sideMenu {
         position: absolute;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    main {
+        .content {
+            width: 95%;
+            button {
+                @include button.btnSound(15%, 0, 75px, 25px, 6px);
+            }
+        }
     }
 }
 
