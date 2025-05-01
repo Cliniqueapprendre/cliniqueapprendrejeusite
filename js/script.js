@@ -385,7 +385,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/_et/jouet.png",
+        imgSource: "./medias/img/photojeu/et/jouet.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -403,7 +403,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/_ette/moufette.png",
+        imgSource: "./medias/img/photojeu/ette/moufette.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -439,7 +439,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/_ez/nez.png",
+        imgSource: "./medias/img/photojeu/ez/nez.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -457,7 +457,7 @@ const tabAllOption = [
         audioSourceExpresion: "./medias/audio/lego_test-sound.mp3",
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
-        imgSource: "./medias/img/photojeu/_er/jouer.png",
+        imgSource: "./medias/img/photojeu/er/jouer.png",
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
