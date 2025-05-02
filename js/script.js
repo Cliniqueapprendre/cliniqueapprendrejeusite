@@ -710,6 +710,10 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/gu/legume.png",
+        imgSourceTab: [
+            `./medias/img/photojeu/gu/legume.png`,
+            `./medias/img/photojeu/gu/legume02.png`
+        ],
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -767,6 +771,10 @@ const tabAllOption = [
         audioSourceMots: "./medias/audio/lego_test-sound.mp3",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/elle/belle.png",
+        imgSourceTab: [
+            `./medias/img/photojeu/elle/belle.png`,
+            `./medias/img/photojeu/elle/belle02.png`
+        ],
         audioSrcAll: './medias/audio/son/',
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
@@ -1187,8 +1195,7 @@ function restartWithNew(number, btnToContinue) {
     `;
     let answerBtn = document.querySelector('.answer');
     let rewardBtn = document.querySelector('.reward');
-    let img = document.querySelector('.img');
-    img.style.backgroundImage = `url(${tabAllOption[number].imgSource})`;
+    
 
     
     /* Bouttons d'audio */
@@ -1267,7 +1274,16 @@ function restartWithNew(number, btnToContinue) {
         textContent.forEach((el) => {
             el.classList.add('hidden');
         });
-    
+
+        let imgSrc = document.querySelector('.img');
+        if (tabAllOption[number].imgSourceTab != null) {
+            let random = Math.round(Math.random() * (tabAllOption[number].imgSourceTab.length - 1));
+            imgSrc.style.backgroundImage = `url(${tabAllOption[number].imgSourceTab[random]})`;
+            console.log('random img index : ', random, '| source : ', tabAllOption[number].imgSourceTab[random]);
+        } else {
+            imgSrc.style.backgroundImage = `url(${tabAllOption[number].imgSource})`;
+        }
+        
         img.classList.remove('hidden');
 
         btnToContinue.classList.remove('hidden');
