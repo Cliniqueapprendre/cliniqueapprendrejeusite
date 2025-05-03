@@ -8,7 +8,7 @@ const tabAllOption = [
         audioSourceMots: `./medias/audio/son/on/Lion.m4a`,
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/on/lion.png",
-        imgSourceTab: [à
+        imgSourceTab: [
             `./medias/img/photojeu/on/lion.png`,
             `./medias/img/photojeu/on/lion02.png`,
             `./medias/img/photojeu/on/lion03.png`
