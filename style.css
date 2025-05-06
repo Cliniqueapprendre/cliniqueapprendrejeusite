@@ -43,14 +43,24 @@ borderSize: 6px
   border: 3px solid rgba(31, 61, 52, 0);
   transition-duration: 0.2s;
 }
+.sideMenu button.stopVoices a {
+  color: #1f3d34;
+  text-decoration: none;
+}
 .sideMenu button.stopVoices:hover {
   border: 3px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
+.sideMenu button.stopVoices:hover a {
+  color: #59b59e;
+}
 .sideMenu button.stopVoices:active {
   border: 3px solid #f8ecd6;
   background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
+}
+.sideMenu button.stopVoices:active a {
   color: #f8ecd6;
 }
 .sideMenu .containerSoundSlider {
@@ -208,14 +218,24 @@ body {
   transition-duration: 0.2s;
   padding: 5px 25px;
 }
+.btnContainer .btn a {
+  color: #1f3d34;
+  text-decoration: none;
+}
 .btnContainer .btn:hover {
   border: 3px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
+.btnContainer .btn:hover a {
+  color: #59b59e;
+}
 .btnContainer .btn:active {
   border: 3px solid #f8ecd6;
   background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
+}
+.btnContainer .btn:active a {
   color: #f8ecd6;
 }
 
@@ -313,14 +333,24 @@ main .content .readText {
   font-family: "Andika-bold";
   letter-spacing: 0.2px;
 }
+main .content .readText a {
+  color: #1f3d34;
+  text-decoration: none;
+}
 main .content .readText:hover {
   border: 6px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
+main .content .readText:hover a {
+  color: #59b59e;
+}
 main .content .readText:active {
   border: 6px solid #f8ecd6;
   background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
+}
+main .content .readText:active a {
   color: #f8ecd6;
 }
 main .content .answer {
@@ -337,14 +367,24 @@ main .content .answer {
   transition-duration: 0.2s;
   font-size: 36px;
 }
+main .content .answer a {
+  color: #1f3d34;
+  text-decoration: none;
+}
 main .content .answer:hover {
   border: 6px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
+main .content .answer:hover a {
+  color: #59b59e;
+}
 main .content .answer:active {
   border: 6px solid #f8ecd6;
   background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
+}
+main .content .answer:active a {
   color: #f8ecd6;
 }
 main .content .reward {
@@ -362,14 +402,24 @@ main .content .reward {
   transition-duration: 0.2s;
   font-size: 36px;
 }
+main .content .reward a {
+  color: #1f3d34;
+  text-decoration: none;
+}
 main .content .reward:hover {
   border: 6px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
+main .content .reward:hover a {
+  color: #59b59e;
+}
 main .content .reward:active {
   border: 6px solid #f8ecd6;
   background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
+}
+main .content .reward:active a {
   color: #f8ecd6;
 }
 main .content h1 {
@@ -406,14 +456,24 @@ main .next {
   font-size: 36px;
   padding: 5px 25px;
 }
+main .next a {
+  color: #1f3d34;
+  text-decoration: none;
+}
 main .next:hover {
   border: 6px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
+main .next:hover a {
+  color: #59b59e;
+}
 main .next:active {
   border: 6px solid #f8ecd6;
   background-color: rgba(89, 181, 158, 0.5);
+  color: #f8ecd6;
+}
+main .next:active a {
   color: #f8ecd6;
 }
 main .img {

@@ -57,15 +57,25 @@ borderSize: 6px
     background-color: values.$cyan;
     border: $borderSize solid rgba(values.$darkGreen, 0);
     transition-duration: 0.2s;
+    a {
+        color: rgba(values.$darkGreen ,1);
+        text-decoration: none;
+    }
     
     &:hover {
         border: $borderSize solid rgba(values.$cyan ,1);
         background-color: rgba(values.$cyan, 0);
         color: rgba(values.$cyan ,1);
+        a {
+            color: rgba(values.$cyan ,1);
+        }
     }
     &:active {
         border: $borderSize solid rgba(values.$pale ,1);
         background-color: rgba(values.$cyan , 0.5);
         color: rgba(values.$pale ,1);
+        a {
+            color: rgba(values.$pale ,1);
+        }
     }
 }

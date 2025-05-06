@@ -1128,11 +1128,17 @@ const music = new Audio('./medias/audio/background_noise_natures_birds_v03.wav')
 isMusicStarted = false;
 const btnFullScreen = document.querySelector('.btnFull');
 isFullScreenOn = false;
+const btnDownlad = document.querySelector('.btnDownlad');
 
 /* Aller en "fullScreen" */
 btnFullScreen.addEventListener('click', () => {
     activateAndDeactivateFullScreen(btnFullScreen);
     console.log('state bool : ' + isFullScreenOn);
+    let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
+    sound.play();
+});
+
+btnDownlad.addEventListener('click', () => {
     let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
     sound.play();
 });
