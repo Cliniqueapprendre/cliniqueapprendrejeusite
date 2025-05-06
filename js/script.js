@@ -1395,7 +1395,7 @@ function restartWithNew(number, btnToContinue) {
         </button>-->
     </div>
     <div class="textContent textContent--2">
-        <button class="answer hidden">mot</button>
+        <button class="answer hidden"></button>
         <h3 class="textAnswer hidden">${tabAllOption[number].partieMotUn}<em>${tabAllOption[number].partieMotDeux}</em>${tabAllOption[number].partieMotTroix}</h3>
         <button class="audioBtn audioBtn--answer hidden">
             <svg viewBox="0 0 343 266" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1410,7 +1410,7 @@ function restartWithNew(number, btnToContinue) {
         </button>-->
     </div>
     
-    <button class="reward hidden">Image</button>
+    <button class="reward hidden"></button>
     
     <div class="img hidden"></div>
     `;

@@ -134,15 +134,23 @@ main {
             letter-spacing: 0.2px;
         }
         .answer {
-            font-family: 'Andika-normal';
             @include button.btnNext(0, 0, auto, auto, 6px);
-            font-size: 36px;
+
+            background-image: url(./medias/img/medias_ui/prochain.png);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-color: values.$darkGreen;
+            width: 60px;
+            height: 60px;
         }
         .reward {
-            margin-top: 40px;
-            font-family: 'Andika-normal';
             @include button.btnNext(0, 0, auto, auto, 6px);
-            font-size: 36px;
+            background-image: url(./medias/img/medias_ui/prochain.png);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-color: values.$darkGreen;
+            width: 60px;
+            height: 60px;
         }
         h1 {
             font-family: 'Andika-Bold';
@@ -173,8 +181,8 @@ main {
     .img {
         position: absolute;
         border-radius: values.$radiusNormal;
-        width: 70%;
-        height: 70%;
+        width: 85%;
+        height: 80%;
         background-image: url(./medias/img/photojeu/test/annee-v2.jpg);
         background-size: cover;
         background-position: center;
