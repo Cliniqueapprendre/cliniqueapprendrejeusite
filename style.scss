@@ -56,13 +56,21 @@ body {
         background-image: url(./medias/img/medias_ui/musique.png);
         background-repeat: no-repeat;
         background-size: cover;  
+
+        &.btnMusicChange {
+            
+        }
     }
     .btnFull {
         background-image: url(./medias/img/medias_ui/pleinecran.png);
         background-repeat: no-repeat;
         background-size: cover;
+
+        &.btnFullChange {
+            
+        }
     }
-    .btnDownlad {
+    .btnDownload {
         background-image: url(./medias/img/medias_ui/telecharger.png);
         background-repeat: no-repeat;
         background-size: cover;
