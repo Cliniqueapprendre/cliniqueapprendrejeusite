@@ -49,7 +49,23 @@ body {
         font-size: 24px;
         font-family: 'Andika-normal';
         @include button.btnNext(0,0,auto,auto,3px);
-        padding: 5px 25px;
+        padding: 30px; 
+        background-color: #2A4C44;
+    }
+    .btnMusic {
+        background-image: url(./medias/img/medias_ui/musique.png);
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    .btnFull {
+        background-image: url(./medias/img/medias_ui/pleinecran.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btnDownlad {
+        background-image: url(./medias/img/medias_ui/telecharger.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 

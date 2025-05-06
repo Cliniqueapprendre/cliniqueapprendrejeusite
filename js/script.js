@@ -1146,7 +1146,7 @@ btnDownlad.addEventListener('click', () => {
 /* function pour aller en "fullScreen" */
 function activateAndDeactivateFullScreen(element) {
     if (isFullScreenOn == false) {
-        element.textContent = 'Sortire du plein écran';
+        // get out full screen
         isFullScreenOn = true;
         document.documentElement.requestFullscreen().catch((err) => {
             alert(`Écheque d'aller en plein écran: ${err.message} (${err.name})`);
@@ -1155,7 +1155,7 @@ function activateAndDeactivateFullScreen(element) {
         console.log('Full Screen : ' + isFullScreenOn);
         
     } else if (isFullScreenOn == true) {
-        element.textContent = 'Aller en plein écran';
+        // full screen
         document.exitFullscreen();
         isFullScreenOn = false;
         console.log('Full Screen : ' + isFullScreenOn);
@@ -1197,11 +1197,11 @@ btnMusic.addEventListener('click', () => {
         music.volume = 0.4;
     }
     if (isMusicStarted != true) {
-        btnMusic.textContent = 'Arrêter Musique';
+        // stop music
         music.play();
         isMusicStarted = true;
     } else {
-        btnMusic.textContent = 'Continuer Musique';
+        // add music
         music.pause();
         isMusicStarted = false;
     }
