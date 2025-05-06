@@ -56,12 +56,12 @@ borderSize: 6px
   color: #59b59e;
 }
 .sideMenu button.stopVoices:active {
-  border: 3px solid #f8ecd6;
+  border: 3px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 .sideMenu button.stopVoices:active a {
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 .sideMenu .containerSoundSlider {
   display: flex;
@@ -135,7 +135,7 @@ borderSize: 6px
 .sideMenu .btnMenu::after {
   content: "MENU";
   font-family: "Andika-Bold";
-  color: #f8ecd6;
+  color: #fffcf7;
   position: absolute;
   font-size: 24px;
   right: 0;
@@ -145,7 +145,7 @@ borderSize: 6px
   transform: rotate(-90deg);
 }
 .sideMenu h1 {
-  color: #f8ecd6;
+  color: #fffcf7;
   font-size: 32px;
 }
 .sideMenu div.option {
@@ -153,13 +153,13 @@ borderSize: 6px
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 24px;
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 .sideMenu div.option:hover {
   background-color: #1f3d34;
 }
 .sideMenu div.option:active {
-  background-color: #f8ecd6;
+  background-color: #fffcf7;
   color: #1f3d34;
 }
 
@@ -217,7 +217,7 @@ body {
   border: 3px solid rgba(31, 61, 52, 0);
   transition-duration: 0.2s;
   padding: 30px;
-  background-color: #2A4C44;
+  background-color: #1f3d34;
 }
 .btnContainer .btn a {
   color: #1f3d34;
@@ -232,12 +232,12 @@ body {
   color: #59b59e;
 }
 .btnContainer .btn:active {
-  border: 3px solid #f8ecd6;
+  border: 3px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 .btnContainer .btn:active a {
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 .btnContainer .btnMusic {
   background-image: url(./medias/img/medias_ui/musique.png);
@@ -270,7 +270,7 @@ main {
   font-family: "Andika-normal";
   width: 100%;
   height: 100vh;
-  background-color: #1f3d34;
+  background-color: #2a4c44;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -279,10 +279,10 @@ main {
 }
 main .content {
   overflow: hidden;
-  color: #f8ecd6;
-  background-color: #2a4c44;
-  width: 85%;
-  min-height: 80%;
+  color: #fffcf7;
+  background-color: #1f3d34;
+  width: 90%;
+  min-height: 85%;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -338,11 +338,11 @@ main .content button:hover svg path {
   stroke: #59b59e;
 }
 main .content button:active {
-  border: 6px solid #f8ecd6;
+  border: 6px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
 }
 main .content button:active svg path {
-  stroke: #f8ecd6;
+  stroke: #fffcf7;
 }
 main .content .readText {
   position: relative;
@@ -372,12 +372,12 @@ main .content .readText:hover a {
   color: #59b59e;
 }
 main .content .readText:active {
-  border: 6px solid #f8ecd6;
+  border: 6px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .content .readText:active a {
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .content .answer {
   font-family: "Andika-normal";
@@ -406,12 +406,12 @@ main .content .answer:hover a {
   color: #59b59e;
 }
 main .content .answer:active {
-  border: 6px solid #f8ecd6;
+  border: 6px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .content .answer:active a {
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .content .reward {
   margin-top: 40px;
@@ -441,12 +441,12 @@ main .content .reward:hover a {
   color: #59b59e;
 }
 main .content .reward:active {
-  border: 6px solid #f8ecd6;
+  border: 6px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .content .reward:active a {
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .content h1 {
   font-family: "Andika-Bold";
@@ -495,12 +495,12 @@ main .next:hover a {
   color: #59b59e;
 }
 main .next:active {
-  border: 6px solid #f8ecd6;
+  border: 6px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .next:active a {
-  color: #f8ecd6;
+  color: #fffcf7;
 }
 main .img {
   position: absolute;
@@ -553,11 +553,11 @@ main .sideMenu {
     stroke: #59b59e;
   }
   main .content button:active {
-    border: 6px solid #f8ecd6;
+    border: 6px solid #fffcf7;
     background-color: rgba(89, 181, 158, 0.5);
   }
   main .content button:active svg path {
-    stroke: #f8ecd6;
+    stroke: #fffcf7;
   }
 }
 .hidden {
