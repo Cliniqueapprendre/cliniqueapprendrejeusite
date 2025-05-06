@@ -1147,6 +1147,7 @@ btnDownlad.addEventListener('click', () => {
 function activateAndDeactivateFullScreen(element) {
     if (isFullScreenOn == false) {
         // get out full screen
+        btnFullScreen.style.backgroundImage = 'url(medias/img/medias_ui/modefenetre.png)';
         isFullScreenOn = true;
         document.documentElement.requestFullscreen().catch((err) => {
             alert(`Écheque d'aller en plein écran: ${err.message} (${err.name})`);
@@ -1156,6 +1157,7 @@ function activateAndDeactivateFullScreen(element) {
         
     } else if (isFullScreenOn == true) {
         // full screen
+        btnFullScreen.style.backgroundImage = 'url(medias/img/medias_ui/pleinecran.png)';
         document.exitFullscreen();
         isFullScreenOn = false;
         console.log('Full Screen : ' + isFullScreenOn);
@@ -1198,10 +1200,12 @@ btnMusic.addEventListener('click', () => {
     }
     if (isMusicStarted != true) {
         // stop music
+        btnMusic.style.backgroundImage = 'url(medias/img/medias_ui/nomusique.png)';
         music.play();
         isMusicStarted = true;
     } else {
         // add music
+        btnMusic.style.backgroundImage = 'url(medias/img/medias_ui/musique.png)';
         music.pause();
         isMusicStarted = false;
     }
