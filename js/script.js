@@ -1514,9 +1514,9 @@ nextBtn.addEventListener('click', () => {
     sound.play();
 });
 
-
+/*
 import { TestExternalScript } from './testScript.js';
 
 let testSomething = new TestExternalScript('test');
 
-testSomething.testFuction();
+testSomething.testFuction();*/
