@@ -4,8 +4,8 @@ const tabAllOption = [
         partieMotUn: "li",
         partieMotDeux: "on",
         partieMotTroix: "",
-        audioSourceExpresion: `./medias/audio/son/on/On.m4a`,
-        audioSourceMots: `./medias/audio/son/on/Lion.m4a`,
+        audioSourceExpresion: `./medias/audio/son/on/On.wav`,
+        audioSourceMots: `./medias/audio/son/on/Lion.wav`,
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/on/lion.png",
         imgSourceTab: [
@@ -17,7 +17,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -27,8 +27,8 @@ const tabAllOption = [
         partieMotUn: "s",
         partieMotDeux: "ou",
         partieMotTroix: "",
-        audioSourceExpresion: "./medias/audio/son/ou/Ou.m4a",
-        audioSourceMots: "./medias/audio/son/ou/Sou.m4a",
+        audioSourceExpresion: "./medias/audio/son/ou/Ou.wav",
+        audioSourceMots: "./medias/audio/son/ou/Sou.wav",
         audioVolume: 0.5,
         imgSource: "./medias/img/photojeu/ou/sou.png",
         imgSourceTab: [
@@ -39,7 +39,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -60,7 +60,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -83,7 +83,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -105,7 +105,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -128,7 +128,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -151,7 +151,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -173,7 +173,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -196,7 +196,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -219,7 +219,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -242,7 +242,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -264,7 +264,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -287,7 +287,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -309,7 +309,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -332,7 +332,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -355,7 +355,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -377,7 +377,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -399,7 +399,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -422,7 +422,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -444,7 +444,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -467,7 +467,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -489,7 +489,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -511,7 +511,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -534,7 +534,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -557,7 +557,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -580,7 +580,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -603,7 +603,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -625,7 +625,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -646,7 +646,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -669,7 +669,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -691,7 +691,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -714,7 +714,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -737,7 +737,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -760,7 +760,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -781,7 +781,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -804,7 +804,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -827,7 +827,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -850,7 +850,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -872,7 +872,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -897,7 +897,7 @@ const tabAllOption = [
                 val = 'legume';
             }
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -919,7 +919,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -941,7 +941,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -963,7 +963,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -985,7 +985,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -1007,7 +1007,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -1030,7 +1030,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -1053,7 +1053,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -1076,7 +1076,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
@@ -1098,7 +1098,7 @@ const tabAllOption = [
         useAutoSound: true,
         capitalizeFirstLetterSrc(val) {
             let transformVal = String(val).charAt(0).toUpperCase() + String(val).slice(1);
-            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.m4a';
+            let link = this.audioSrcAll + this.expresion + '/' + transformVal + '.wav';
             console.log('audio expresion : ', link);
             return link;
         },
