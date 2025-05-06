@@ -44,32 +44,38 @@ body {
     align-items: center;
     justify-content: center;
     column-gap: 10px;
-    margin-top: 20px;
+    margin-top: 1%;
+
     .btn {
-        @include button.btnNext(0,0,auto,auto,3px);
-        padding: 30px; 
+        @include button.btnNext(0, 0, auto, auto, 3px);
         background-color: values.$darkGreen;
+        padding: 2em;
     }
+
     .btnMusic {
         background-image: url(./medias/img/medias_ui/musique.png);
         background-repeat: no-repeat;
-        background-size: cover;  
+        background-size: cover;
     }
+
     .btnMusicChange {
         background-image: url(./medias/img/medias_ui/nomusique.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .btnFull {
         background-image: url(./medias/img/medias_ui/pleinecran.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .btnFullChange {
         background-image: url(./medias/img/medias_ui/modefenetre.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .btnDownload {
         background-image: url(./medias/img/medias_ui/telecharger.png);
         background-repeat: no-repeat;
@@ -89,6 +95,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .content {
         overflow: hidden;
         color: values.$pale;
@@ -99,13 +106,16 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         row-gap: 40px;
+
         .textContent {
             //margin-bottom: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-left: 9vw;
+            width: 100%; 
             /*
             &--1 {
                 h1 {
@@ -118,48 +128,86 @@ main {
                     line-height: 275px;
                 }
             }*/
+
+            &.textContent--1 {
+                background-image: url(./medias/img/medias_ui/bulleson.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 57vh;
+                height: 40vh;
+            }
+
+            &.textContent--2 {
+                background-image: url(./medias/img/medias_ui/bullemot.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 57vh;
+                height: 40vh;
+            }
+
         }
+
         .textContent.hidden {
             display: none;
         }
+
         button {
             @include button.btnSound(15%, 35%, 75px, 25px, 6px);
         }
+
+        .audioBtn {
+            background-image: url(./medias/img/medias_ui/sonBtn.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba($color: #000000, $alpha: 0.0);
+            width: 60px;
+            height: 60px;
+
+            &:hover {
+                filter: brightness(200%); 
+                border: 6px solid rgba($color: #000000, $alpha: 0.0); 
+            }
+        }
+
         .readText {
             @include button.btnNext(20px, 60px, auto, auto, 6px);
             font-size: 24px;
             font-family: 'Andika-bold';
             letter-spacing: 0.2px;
         }
+
         .answer {
             @include button.btnNext(0, 0, auto, auto, 6px);
 
             background-image: url(./medias/img/medias_ui/prochain.png);
             background-repeat: no-repeat;
-            background-size: cover; 
+            background-size: cover;
             background-color: values.$darkGreen;
             width: 60px;
             height: 60px;
         }
+
         .reward {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
             background-repeat: no-repeat;
-            background-size: cover; 
+            background-size: cover;
             background-color: values.$darkGreen;
             width: 60px;
             height: 60px;
         }
+
         h1 {
             font-family: 'Andika-Bold';
-            font-size: 30vmin;
-            line-height: 30vmin;
-            letter-spacing: 10px;
+            font-size: 15vmin;
+            letter-spacing: 5px;
         }
+
         h3 {
             font-size: 15vmin;
             line-height: 15vmin;
             letter-spacing: 10px;
+
             em {
                 letter-spacing: normal;
                 text-decoration: underline;
@@ -167,14 +215,16 @@ main {
             }
         }
     }
+
     .next {
         @include button.btnNext(0, 0, auto, auto, 6px);
         background-image: url(./medias/img/medias_ui/prochain.png);
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;
         padding: 30px;
         background-color: values.$darkGreen;
     }
+
     .img {
         position: absolute;
         border-radius: values.$radiusNormal;
@@ -186,11 +236,12 @@ main {
         display: flex;
         align-items: end;
         justify-content: center;
-        
     }
+
     .img.hidden {
         display: none;
     }
+
     .sideMenu {
         position: absolute;
     }
@@ -200,6 +251,7 @@ main {
     main {
         .content {
             width: 95%;
+
             button {
                 @include button.btnSound(15%, 10px, 75px, 25px, 6px);
             }
@@ -210,4 +262,3 @@ main {
 .hidden {
     display: none;
 }
-

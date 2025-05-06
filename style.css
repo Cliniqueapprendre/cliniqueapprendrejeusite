@@ -201,7 +201,7 @@ body {
   justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  margin-top: 20px;
+  margin-top: 1%;
 }
 .btnContainer .btn {
   position: relative;
@@ -214,8 +214,8 @@ body {
   background-color: #59b59e;
   border: 3px solid rgba(31, 61, 52, 0);
   transition-duration: 0.2s;
-  padding: 30px;
   background-color: #1f3d34;
+  padding: 2em;
 }
 .btnContainer .btn a {
   color: #1f3d34;
@@ -285,13 +285,15 @@ main .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   row-gap: 40px;
 }
 main .content .textContent {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 9vw;
+  width: 100%;
   /*
   &--1 {
       h1 {
@@ -304,6 +306,20 @@ main .content .textContent {
           line-height: 275px;
       }
   }*/
+}
+main .content .textContent.textContent--1 {
+  background-image: url(./medias/img/medias_ui/bulleson.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 57vh;
+  height: 40vh;
+}
+main .content .textContent.textContent--2 {
+  background-image: url(./medias/img/medias_ui/bullemot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 57vh;
+  height: 40vh;
 }
 main .content .textContent.hidden {
   display: none;
@@ -341,6 +357,18 @@ main .content button:active {
 }
 main .content button:active svg path {
   stroke: #fffcf7;
+}
+main .content .audioBtn {
+  background-image: url(./medias/img/medias_ui/sonBtn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
+  width: 60px;
+  height: 60px;
+}
+main .content .audioBtn:hover {
+  filter: brightness(200%);
+  border: 6px solid rgba(0, 0, 0, 0);
 }
 main .content .readText {
   position: relative;
@@ -455,9 +483,8 @@ main .content .reward:active a {
 }
 main .content h1 {
   font-family: "Andika-Bold";
-  font-size: 30vmin;
-  line-height: 30vmin;
-  letter-spacing: 10px;
+  font-size: 15vmin;
+  letter-spacing: 5px;
 }
 main .content h3 {
   font-size: 15vmin;
