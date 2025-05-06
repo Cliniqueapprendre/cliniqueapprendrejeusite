@@ -204,8 +204,6 @@ body {
   margin-top: 20px;
 }
 .btnContainer .btn {
-  font-size: 24px;
-  font-family: "Andika-normal";
   position: relative;
   transform: translateY(0) translateX(0);
   color: #1f3d34;
@@ -473,9 +471,6 @@ main .content h3 em {
   font-style: normal;
 }
 main .next {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-family: "Andika-normal";
   position: relative;
   transform: translateY(0) translateX(0);
   color: #1f3d34;
@@ -486,8 +481,11 @@ main .next {
   background-color: #59b59e;
   border: 6px solid rgba(31, 61, 52, 0);
   transition-duration: 0.2s;
-  font-size: 36px;
-  padding: 5px 25px;
+  background-image: url(./medias/img/medias_ui/prochain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  background-color: #1f3d34;
 }
 main .next a {
   color: #1f3d34;
