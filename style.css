@@ -291,9 +291,9 @@ main .content {
 main .content .textContent {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-left: 9vw;
   width: 100%;
+  position: absolute;
   /*
   &--1 {
       h1 {
@@ -325,7 +325,7 @@ main .content .textContent.hidden {
   display: none;
 }
 main .content button {
-  transform: translateY(15%) translateX(35%);
+  transform: translateY(0) translateX(0);
   padding: 25px;
   border-radius: 100%;
   width: 75px;
@@ -361,13 +361,17 @@ main .content button:active svg path {
 main .content .audioBtn {
   background-image: url(./medias/img/medias_ui/sonBtn.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: rgba(0, 0, 0, 0);
-  width: 60px;
-  height: 60px;
+  width: 3vw;
+  height: 3vh;
+  position: absolute;
+  align-self: normal;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 main .content .audioBtn:hover {
-  filter: brightness(200%);
+  filter: brightness(150%);
   border: 6px solid rgba(0, 0, 0, 0);
 }
 main .content .readText {
@@ -485,6 +489,8 @@ main .content h1 {
   font-family: "Andika-Bold";
   font-size: 15vmin;
   letter-spacing: 5px;
+  text-align: center;
+  width: 100%;
 }
 main .content h3 {
   font-size: 15vmin;

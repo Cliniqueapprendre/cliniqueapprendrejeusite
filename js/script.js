@@ -1381,21 +1381,20 @@ function restartWithNew(number, btnToContinue) {
     <div class="textContent textContent--1">
         <h1>${tabAllOption[number].expresion}</h1>
         <button class="audioBtn"></button> 
+        <button class="answer hidden"></button> 
         <!--<button class="readText">
             Lire (robot)
         </button>-->
     </div>
-    <button class="answer hidden"></button> 
     <div class="textContent textContent--2 hidden">
         <h3 class="textAnswer">${tabAllOption[number].partieMotUn}<em>${tabAllOption[number].partieMotDeux}</em>${tabAllOption[number].partieMotTroix}</h3>
         <button class="audioBtn audioBtn--answer hidden">
         </button>
+        <button class="reward hidden"></button>
         <!--<button class="readText hidden">
             Lire (robot)
         </button>-->
     </div>
-    
-    <button class="reward hidden"></button>
     
     <div class="img hidden"></div>
     `;
@@ -1514,3 +1513,10 @@ nextBtn.addEventListener('click', () => {
     let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
     sound.play();
 });
+
+
+import { TestExternalScript } from './testScript.js';
+
+let testSomething = new TestExternalScript('test');
+
+testSomething.testFuction();

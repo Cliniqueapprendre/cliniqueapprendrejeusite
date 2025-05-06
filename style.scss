@@ -113,9 +113,9 @@ main {
             //margin-bottom: 40px;
             display: flex;
             align-items: center;
-            justify-content: center;
             margin-left: 9vw;
             width: 100%; 
+            position: absolute;
             /*
             &--1 {
                 h1 {
@@ -152,19 +152,23 @@ main {
         }
 
         button {
-            @include button.btnSound(15%, 35%, 75px, 25px, 6px);
+            @include button.btnSound(0, 0, 75px, 25px, 6px);
         }
 
         .audioBtn {
             background-image: url(./medias/img/medias_ui/sonBtn.png);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             background-color: rgba($color: #000000, $alpha: 0.0);
-            width: 60px;
-            height: 60px;
+            width: 3vw;
+            height: 3vh;
+            position: absolute;
+            align-self: normal;
+            margin-left: 5%;
+            margin-top: 2%;
 
             &:hover {
-                filter: brightness(200%); 
+                filter: brightness(150%); 
                 border: 6px solid rgba($color: #000000, $alpha: 0.0); 
             }
         }
@@ -201,6 +205,8 @@ main {
             font-family: 'Andika-Bold';
             font-size: 15vmin;
             letter-spacing: 5px;
+            text-align: center;
+            width: 100%;
         }
 
         h3 {
