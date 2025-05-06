@@ -1128,7 +1128,7 @@ const music = new Audio('./medias/audio/background_noise_natures_birds_v03.wav')
 isMusicStarted = false;
 const btnFullScreen = document.querySelector('.btnFull');
 isFullScreenOn = false;
-const btnDownlad = document.querySelector('.btnDownlad');
+const btnDownlad = document.querySelector('.btnDownload');
 
 /* Aller en "fullScreen" */
 btnFullScreen.addEventListener('click', () => {

@@ -244,8 +244,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.btnContainer .btnMusicChange {
+  background-image: url(./medias/img/medias_ui/nomusique.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .btnContainer .btnFull {
   background-image: url(./medias/img/medias_ui/pleinecran.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btnContainer .btnFullChange {
+  background-image: url(./medias/img/medias_ui/modefenetre.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

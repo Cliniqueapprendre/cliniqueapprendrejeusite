@@ -56,19 +56,21 @@ body {
         background-image: url(./medias/img/medias_ui/musique.png);
         background-repeat: no-repeat;
         background-size: cover;  
-
-        &.btnMusicChange {
-            
-        }
+    }
+    .btnMusicChange {
+        background-image: url(./medias/img/medias_ui/nomusique.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .btnFull {
         background-image: url(./medias/img/medias_ui/pleinecran.png);
         background-repeat: no-repeat;
         background-size: cover;
-
-        &.btnFullChange {
-            
-        }
+    }
+    .btnFullChange {
+        background-image: url(./medias/img/medias_ui/modefenetre.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .btnDownload {
         background-image: url(./medias/img/medias_ui/telecharger.png);
