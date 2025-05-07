@@ -200,18 +200,12 @@ function restartWithNew(number, btnToContinue) {
         <h1>${tabAllOption[number].expresion}</h1>
         <button class="audioBtn"></button> 
         <button class="answer hidden"></button> 
-        <!--<button class="readText">
-            Lire (robot)
-        </button>-->
     </div>
     <div class="textContent textContent--2 hidden">
         <h3 class="textAnswer">${tabAllOption[number].partieMotUn}<em>${tabAllOption[number].partieMotDeux}</em>${tabAllOption[number].partieMotTroix}</h3>
         <button class="audioBtn audioBtn--answer hidden">
         </button>
         <button class="reward hidden"></button>
-        <!--<button class="readText hidden">
-            Lire (robot)
-        </button>-->
     </div>
     
     <div class="img hidden"></div>
