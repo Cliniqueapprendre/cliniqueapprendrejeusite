@@ -1,4 +1,4 @@
-import { tabAllExpresionValue } from './module/tabAllExpresion.js';
+import { tabAllExpresionValue, capitalizeFirstLetterSrcNew } from './module/tabAllExpresion.js';
 import { checkIfNoSound, getCurrentVolume, checkValueVolume, createSound, addHidden, removeHidden, setLocalStorageOFVolume } from './module/soundFunction.js';
 import { checkOption } from './module/menu.js';
 import { setLocalStorageOFLocation } from './module/location.js';
@@ -222,7 +222,8 @@ function restartWithNew(number, btnToContinue) {
         let audioTestOne;
         if (tabAllOption[number].audioSrcAll != null && tabAllOption[number].useAutoSound == true) {
             let text = tabAllOption[number].expresion;
-            audioTestOne = new Audio(`${tabAllOption[number].capitalizeFirstLetterSrc(text)}`);
+            let audioLink = capitalizeFirstLetterSrcNew(text, tabAllOption[number].audioSrcAll, tabAllOption[number].expresion, 'wav');
+            audioTestOne = new Audio(`${audioLink}`);
             console.log('it is working');
 
         } else {
@@ -242,8 +243,9 @@ function restartWithNew(number, btnToContinue) {
     newAudioBtn[1].addEventListener('click', () => {
         let audioTestTwo;
         if (tabAllOption[number].audioSrcAll != null && tabAllOption[number].useAutoSound == true) {
-            let text = tabAllOption[number].partieMotUn + tabAllOption[number].partieMotDeux + tabAllOption[number].partieMotTroix; 
-            audioTestTwo = new Audio(`${tabAllOption[number].capitalizeFirstLetterSrc(text)}`);
+            let text = tabAllOption[number].partieMotUn + tabAllOption[number].partieMotDeux + tabAllOption[number].partieMotTroix;
+            let audioLink = capitalizeFirstLetterSrcNew(text, tabAllOption[number].audioSrcAll, tabAllOption[number].expresion, 'wav');
+            audioTestTwo = new Audio(`${audioLink}`);
             console.log('it is working');
         } else {
             audioTestTwo = new Audio(`${tabAllOption[number].audioSourceMots}`);
