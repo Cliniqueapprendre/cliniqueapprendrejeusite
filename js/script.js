@@ -21,7 +21,8 @@ const btnMusic = document.querySelector('.btnMusic');
 const music = new Audio('./medias/audio/background_noise_natures_birds_v03.wav');
 let isMusicStarted = false;
 const btnFullScreen = document.querySelector('.btnFull');
-const btnDownlad = document.querySelector('.btnDownload');
+const btnDownlad = document.querySelector('.btnDownload')
+const barDetailSide = document.querySelector('.barDetailSide');
 
 const doc = document;
 
@@ -190,28 +191,36 @@ nextBtn.addEventListener('click', () => {
 
 /*Function pour aller a une nouvelle option + son déroulement*/
 function restartWithNew(number, btnToContinue) {
+    if (barDetailSide.classList.contains('hidden') != true) {
+        barDetailSide.classList.add('hidden');
+    }
+    let main = document.querySelector('main');
+    if (main.classList.contains('whenHasImg')) {
+        main.classList.remove('whenHasImg');
+    }
     let isAnswerActive = false;
     let isImageBtnActive = false;
     let content = document.querySelector('.content');
     numberOfClick = 0;
     numberOfClickSecond = 0;
     content.innerHTML = `
-    <div class="textContent textContent--1">
+    <div class="textContent textContent--1 textContent--big">
         <h1>${tabAllOption[number].expresion}</h1>
         <button class="audioBtn"></button> 
-        <button class="answer hidden"></button> 
+        <button class="answer btnToNext hidden"></button> 
     </div>
-    <div class="textContent textContent--2 hidden">
+    <div class="textContent textContent--2 textContent--big hidden">
         <h3 class="textAnswer">${tabAllOption[number].partieMotUn}<em>${tabAllOption[number].partieMotDeux}</em>${tabAllOption[number].partieMotTroix}</h3>
         <button class="audioBtn audioBtn--answer hidden">
         </button>
-        <button class="reward hidden"></button>
+        <button class="reward btnToNext hidden"></button>
     </div>
     
     <div class="img hidden"></div>
     `;
     let answerBtn = document.querySelector('.answer');
     let rewardBtn = document.querySelector('.reward');
+    let textContents = document.querySelectorAll('.textContent');
     
 
     
@@ -272,6 +281,9 @@ function restartWithNew(number, btnToContinue) {
         */
         answerBtn.classList.add('hidden');
 
+        textContents[0].classList.remove('textContent--big');
+        textContents[0].classList.add('textContent--small');
+
         let sound = createSound(volumeSound, './medias/audio/click-button-app-147358.mp3');
         sound.play();
     });
@@ -304,6 +316,9 @@ function restartWithNew(number, btnToContinue) {
         }
         
         img.classList.remove('hidden');
+
+        barDetailSide.classList.remove('hidden');
+        main.classList.add('whenHasImg');
 
         btnToContinue.classList.remove('hidden');
     });
