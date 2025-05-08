@@ -38,6 +38,22 @@ body {
     min-height: 100%;
 }
 
+.containerboth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.consigne {
+    justify-self: flex-start;
+    font-family: 'Andika-normal';
+    color: values.$pale;
+    margin-right: 10vw;
+    margin-left: 5vw;
+}
+
 .btnContainer {
     display: flex;
     flex-direction: row;
@@ -45,6 +61,7 @@ body {
     justify-content: center;
     column-gap: 10px;
     margin-top: 1%;
+    margin-right: 5vw;
 
     .btn {
         @include button.btnNext(0, 0, auto, auto, 3px);
@@ -121,13 +138,14 @@ main {
         color: values.$pale;
         background-color: values.$darkGreen;
         width: 90%;
-        min-height: 85%;
+        height: 85%;
         border-radius: values.$radiusNormal;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         row-gap: 40px;
+        margin-top: 2vh;
 
         .textContent {
             display: flex;
@@ -376,6 +394,73 @@ main {
             button {
                 @include button.btnSound(15%, 10px, 75px, 25px, 6px);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .containerboth {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .consigne {
+        justify-self: flex-start;
+        font-family: 'Andika-normal';
+        color: values.$pale;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 1vh;
+        text-align: center;
+    }
+    
+    .btnContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 1vh;
+        margin-right: 0;
+    
+        .btn {
+            @include button.btnNext(0, 0, auto, auto, 3px);
+            background-color: values.$darkGreen;
+            padding: 2em;
+        }
+    
+        .btnMusic {
+            background-image: url(./medias/img/medias_ui/musique.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnMusicChange {
+            background-image: url(./medias/img/medias_ui/nomusique.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnFull {
+            background-image: url(./medias/img/medias_ui/pleinecran.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnFullChange {
+            background-image: url(./medias/img/medias_ui/modefenetre.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnDownload {
+            background-image: url(./medias/img/medias_ui/telecharger.png);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }

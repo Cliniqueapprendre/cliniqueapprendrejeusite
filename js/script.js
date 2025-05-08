@@ -174,6 +174,8 @@ menuSide.addEventListener('mouseover', () => {
 
 /*Evenement enclancher a chaque click sur le bouton "next"*/
 nextBtn.addEventListener('click', () => {
+    let consigne = document.querySelector('.consigne'); 
+    consigne.classList.remove('hidden');
     nextBtn.classList.add('hidden');
     whereYouAre++;
     if (tabAllOption[whereYouAre] != null) {
@@ -300,6 +302,8 @@ function restartWithNew(number, btnToContinue) {
         audioReward.play();
 
         let img = document.querySelector('.img');
+        let consigne = document.querySelector('.consigne'); 
+        consigne.classList.add('hidden');
         rewardBtn.classList.add('hidden');
         let textContent = document.querySelectorAll('.textContent');
         textContent.forEach((el) => {

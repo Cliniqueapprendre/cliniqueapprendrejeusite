@@ -194,6 +194,22 @@ body {
   min-height: 100%;
 }
 
+.containerboth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.consigne {
+  justify-self: flex-start;
+  font-family: "Andika-normal";
+  color: #fffcf7;
+  margin-right: 10vw;
+  margin-left: 5vw;
+}
+
 .btnContainer {
   display: flex;
   flex-direction: row;
@@ -202,6 +218,7 @@ body {
   -moz-column-gap: 10px;
        column-gap: 10px;
   margin-top: 1%;
+  margin-right: 5vw;
 }
 .btnContainer .btn {
   position: relative;
@@ -298,13 +315,14 @@ main .content {
   color: #fffcf7;
   background-color: #1f3d34;
   width: 90%;
-  min-height: 85%;
+  height: 85%;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   row-gap: 40px;
+  margin-top: 2vh;
 }
 main .content .textContent {
   display: flex;
@@ -686,6 +704,93 @@ main .sideMenu {
   }
   main .content button:active svg path {
     stroke: #fffcf7;
+  }
+}
+@media screen and (max-width: 870px) {
+  .containerboth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .consigne {
+    justify-self: flex-start;
+    font-family: "Andika-normal";
+    color: #fffcf7;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 1vh;
+    text-align: center;
+  }
+  .btnContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    margin-top: 1vh;
+    margin-right: 0;
+  }
+  .btnContainer .btn {
+    position: relative;
+    transform: translateY(0) translateX(0);
+    color: #1f3d34;
+    padding: auto 8%;
+    border-radius: 100px;
+    width: auto;
+    height: auto;
+    background-color: #59b59e;
+    border: 3px solid rgba(31, 61, 52, 0);
+    transition-duration: 0.2s;
+    background-color: #1f3d34;
+    padding: 2em;
+  }
+  .btnContainer .btn a {
+    color: #1f3d34;
+    text-decoration: none;
+  }
+  .btnContainer .btn:hover {
+    border: 3px solid #59b59e;
+    background-color: rgba(89, 181, 158, 0);
+    color: #59b59e;
+  }
+  .btnContainer .btn:hover a {
+    color: #59b59e;
+  }
+  .btnContainer .btn:active {
+    border: 3px solid #fffcf7;
+    background-color: rgba(89, 181, 158, 0.5);
+    color: #fffcf7;
+  }
+  .btnContainer .btn:active a {
+    color: #fffcf7;
+  }
+  .btnContainer .btnMusic {
+    background-image: url(./medias/img/medias_ui/musique.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btnContainer .btnMusicChange {
+    background-image: url(./medias/img/medias_ui/nomusique.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btnContainer .btnFull {
+    background-image: url(./medias/img/medias_ui/pleinecran.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btnContainer .btnFullChange {
+    background-image: url(./medias/img/medias_ui/modefenetre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btnContainer .btnDownload {
+    background-image: url(./medias/img/medias_ui/telecharger.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 825px) {
