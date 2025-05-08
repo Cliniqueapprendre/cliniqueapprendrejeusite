@@ -1,4 +1,4 @@
-import { tabAllExpresionValue, capitalizeFirstLetterSrcNew } from './module/tabAllExpresion.js';
+import { tabAllExpresionValue, capitalizeFirstLetterSrcNew, checkIfUnderscore } from './module/tabAllExpresion.js';
 import { checkIfNoSound, getCurrentVolume, checkValueVolume, createSound, addHidden, removeHidden, setLocalStorageOFVolume } from './module/soundFunction.js';
 import { checkOption } from './module/menu.js';
 import { setLocalStorageOFLocation } from './module/location.js';
@@ -125,7 +125,7 @@ tabAllOption.forEach((el) => {
     console.log('test ' + el.expresion);
     contentMenu.innerHTML += `
     <div id="${el.expresion}" class="option">
-    ${el.expresion}
+    ${checkIfUnderscore(el.expresion)}
     </div>
     `;
 
@@ -205,7 +205,7 @@ function restartWithNew(number, btnToContinue) {
     numberOfClickSecond = 0;
     content.innerHTML = `
     <div class="textContent textContent--1 textContent--big">
-        <h1>${tabAllOption[number].expresion}</h1>
+        <h1>${checkIfUnderscore(tabAllOption[number].expresion)}</h1>
         <button class="audioBtn"></button> 
         <button class="answer btnToNext hidden"></button> 
     </div>

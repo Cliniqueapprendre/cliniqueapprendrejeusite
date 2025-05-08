@@ -852,3 +852,24 @@ export function capitalizeFirstLetterSrcNew(val, commonAudioSrc, expresion, from
     console.log('audio expresion : ', link);
     return link;
 }
+
+export function checkIfUnderscore(expresion) {
+    let finalExp;
+    let tabToCheckExpresion = [
+        'er',
+        'ez',
+        'et',
+        'ette',
+    ];
+    tabToCheckExpresion.forEach((el) => {
+        if (el == expresion) {
+            finalExp = '_' + expresion;
+            console.log('has _');
+        }
+    });
+    if (finalExp == undefined) {
+        return expresion;
+    } else {
+        return finalExp;
+    }
+}
