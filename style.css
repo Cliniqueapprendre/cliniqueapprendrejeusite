@@ -359,7 +359,7 @@ main .content .textContent.textContent--1 h1 {
   margin: auto;
   font-family: "Andika-Bold";
   line-height: 10vmin;
-  font-size: 15vmin;
+  font-size: 17vmin;
   letter-spacing: 5px;
   text-align: center;
 }
@@ -382,7 +382,7 @@ main .content .textContent.textContent--2 h3 {
   top: 25%;
   margin: auto;
   text-align: center;
-  font-size: 12vmin;
+  font-size: 17vmin;
   line-height: 15vmin;
   letter-spacing: 10px;
 }
@@ -885,7 +885,7 @@ main .sideMenu {
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 550px;
+    width: 580px;
     height: 420px;
   }
   main .content .textContent.textContent--big.textContent--1 button.btnToNext {
