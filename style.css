@@ -875,7 +875,7 @@ main .sideMenu {
     bottom: 25%;
   }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 600px) {
   main .barDetailSide {
     width: 25vw;
   }
@@ -885,8 +885,8 @@ main .sideMenu {
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 580px;
-    height: 420px;
+    width: 300px;
+    height: 200px;
   }
   main .content .textContent.textContent--big.textContent--1 button.btnToNext {
     right: 10px;
