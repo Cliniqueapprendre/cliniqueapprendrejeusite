@@ -322,7 +322,7 @@ main .barDetailSide {
   position: absolute;
   left: 0;
   top: 0;
-  width: 10%;
+  width: 15%;
   height: 100%;
   z-index: 100;
 }
@@ -887,7 +887,7 @@ main .sideMenu {
 }
 @media screen and (max-width: 600px) {
   main .barDetailSide {
-    width: 25vw;
+    width: 10%;
   }
   main .content .textContent.textContent--big.textContent--1 {
     left: 0;
@@ -926,6 +926,333 @@ main .sideMenu {
     right: 10px;
     left: auto;
     bottom: 25%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .consigne {
+    justify-self: flex-start;
+    font-family: "Andika-normal";
+    font-size: x-large;
+    color: #fffcf7;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  main .barDetailSide {
+    background-image: url(./medias/img/medias_ui/echellevertejeu.png);
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+  }
+  main .content {
+    position: relative;
+    overflow: hidden;
+    color: #fffcf7;
+    background-color: #1f3d34;
+    width: 97%;
+    height: 70%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 40px;
+  }
+  main .content .textContent {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(20px 20px 0px #2a4c44);
+  }
+  main .content .textContent .audioBtn {
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    align-self: normal;
+  }
+  main .content .textContent.textContent--1 {
+    background-image: url(./medias/img/medias_ui/bulleson.png);
+    top: 45px;
+    left: 45px;
+  }
+  main .content .textContent.textContent--1 h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    font-family: "Andika-Bold";
+    line-height: 10vmin;
+    font-size: 17vmin;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  main .content .textContent.textContent--1 button.btnToNext {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin: auto;
+  }
+  main .content .textContent.textContent--2 {
+    background-image: url(./medias/img/medias_ui/bullemot.png);
+    bottom: 45px;
+    right: 25px;
+  }
+  main .content .textContent.textContent--2 h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: auto;
+    text-align: center;
+    font-size: 13vmin;
+    line-height: 15vmin;
+    letter-spacing: 3px;
+  }
+  main .content .textContent.textContent--2 h3 em {
+    letter-spacing: normal;
+    text-decoration: underline;
+    font-style: normal;
+  }
+  main .content .textContent.textContent--2 button.btnToNext {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin: auto;
+  }
+  main .content .textContent.textContent--big.textContent--1 {
+    width: 80%;
+  }
+  main .content .textContent.textContent--big.textContent--1 .btnToNext {
+    width: 1px;
+    height: 1px;
+    padding: 20px;
+  }
+  main .content .textContent.textContent--small.textContent--1 {
+    width: 80%;
+    height: 0;
+  }
+  main .content .textContent.textContent--big.textContent--2 {
+    width: 95%;
+    height: 200px;
+    right: 10px;
+  }
+  main .content .textContent.textContent--big.textContent--2 .audioBtn {
+    left: 1%;
+    width: 1px;
+    height: 1px;
+  }
+  main .content .textContent.textContent--big.textContent--2 .reward {
+    width: 1px;
+    height: 1px;
+    padding: 20px;
+  }
+  main .content .textContent.hidden {
+    display: none;
+  }
+  main .content button {
+    transform: translateY(0) translateX(0);
+    padding: 25px;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    background-color: #59b59e;
+    border: 6px solid rgba(31, 61, 52, 0);
+    transition-duration: 0.2s;
+  }
+  main .content button svg {
+    width: 75px;
+    height: auto;
+  }
+  main .content button svg path {
+    stroke: #1f3d34;
+  }
+  main .content button svg path.hidden {
+    display: none;
+  }
+  main .content button:hover {
+    border: 6px solid #59b59e;
+    background-color: rgba(89, 181, 158, 0);
+  }
+  main .content button:hover svg path {
+    stroke: #59b59e;
+  }
+  main .content button:active {
+    border: 6px solid #fffcf7;
+    background-color: rgba(89, 181, 158, 0.5);
+  }
+  main .content button:active svg path {
+    stroke: #fffcf7;
+  }
+  main .content .audioBtn {
+    background-image: url(./medias/img/medias_ui/sonBtn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0);
+    width: 7px;
+    height: 7px;
+  }
+  main .content .audioBtn:hover {
+    filter: brightness(150%);
+    border: 6px solid rgba(0, 0, 0, 0);
+  }
+  main .content .readText {
+    position: relative;
+    transform: translateY(20px) translateX(60px);
+    color: #1f3d34;
+    padding: auto 8%;
+    border-radius: 100px;
+    width: auto;
+    height: auto;
+    background-color: #59b59e;
+    border: 6px solid rgba(31, 61, 52, 0);
+    transition-duration: 0.2s;
+    font-size: 24px;
+    font-family: "Andika-bold";
+    letter-spacing: 0.2px;
+  }
+  main .content .readText a {
+    color: #1f3d34;
+    text-decoration: none;
+  }
+  main .content .readText:hover {
+    border: 6px solid #59b59e;
+    background-color: rgba(89, 181, 158, 0);
+    color: #59b59e;
+  }
+  main .content .readText:hover a {
+    color: #59b59e;
+  }
+  main .content .readText:active {
+    border: 6px solid #fffcf7;
+    background-color: rgba(89, 181, 158, 0.5);
+    color: #fffcf7;
+  }
+  main .content .readText:active a {
+    color: #fffcf7;
+  }
+  main .content .answer {
+    position: relative;
+    transform: translateY(0) translateX(0);
+    color: #1f3d34;
+    padding: auto 8%;
+    border-radius: 100px;
+    width: auto;
+    height: auto;
+    background-color: #59b59e;
+    border: 6px solid rgba(31, 61, 52, 0);
+    transition-duration: 0.2s;
+    background-image: url(./medias/img/medias_ui/prochain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1f3d34;
+    width: 7px;
+    height: 7px;
+  }
+  main .content .answer a {
+    color: #1f3d34;
+    text-decoration: none;
+  }
+  main .content .answer:hover {
+    border: 6px solid #59b59e;
+    background-color: rgba(89, 181, 158, 0);
+    color: #59b59e;
+  }
+  main .content .answer:hover a {
+    color: #59b59e;
+  }
+  main .content .answer:active {
+    border: 6px solid #fffcf7;
+    background-color: rgba(89, 181, 158, 0.5);
+    color: #fffcf7;
+  }
+  main .content .answer:active a {
+    color: #fffcf7;
+  }
+  main .content .reward {
+    position: relative;
+    transform: translateY(0) translateX(0);
+    color: #1f3d34;
+    padding: auto 8%;
+    border-radius: 100px;
+    width: auto;
+    height: auto;
+    background-color: #59b59e;
+    border: 6px solid rgba(31, 61, 52, 0);
+    transition-duration: 0.2s;
+    background-image: url(./medias/img/medias_ui/prochain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1f3d34;
+    width: 7px;
+    height: 7px;
+  }
+  main .content .reward a {
+    color: #1f3d34;
+    text-decoration: none;
+  }
+  main .content .reward:hover {
+    border: 6px solid #59b59e;
+    background-color: rgba(89, 181, 158, 0);
+    color: #59b59e;
+  }
+  main .content .reward:hover a {
+    color: #59b59e;
+  }
+  main .content .reward:active {
+    border: 6px solid #fffcf7;
+    background-color: rgba(89, 181, 158, 0.5);
+    color: #fffcf7;
+  }
+  main .content .reward:active a {
+    color: #fffcf7;
+  }
+  main .next {
+    position: relative;
+    transform: translateY(0) translateX(0);
+    color: #1f3d34;
+    padding: auto 8%;
+    border-radius: 100px;
+    width: auto;
+    height: auto;
+    background-color: #59b59e;
+    border: 6px solid rgba(31, 61, 52, 0);
+    transition-duration: 0.2s;
+    background-image: url(./medias/img/medias_ui/prochain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    background-color: #1f3d34;
+  }
+  main .next a {
+    color: #1f3d34;
+    text-decoration: none;
+  }
+  main .next:hover {
+    border: 6px solid #59b59e;
+    background-color: rgba(89, 181, 158, 0);
+    color: #59b59e;
+  }
+  main .next:hover a {
+    color: #59b59e;
+  }
+  main .next:active {
+    border: 6px solid #fffcf7;
+    background-color: rgba(89, 181, 158, 0.5);
+    color: #fffcf7;
+  }
+  main .next:active a {
+    color: #fffcf7;
   }
 }
 .hidden {

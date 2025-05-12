@@ -135,7 +135,7 @@ main {
         position: absolute;
         left: 0;
         top: 0;
-        width: 10%;
+        width: 15%;
         height: 100%;
         z-index: 100;
     }
@@ -570,7 +570,7 @@ main {
 @media screen and (max-width: 600px) {
     main {
         .barDetailSide {
-            width: 25vw;
+            width: 10%;
         }
         .content {
             .textContent {
@@ -616,6 +616,216 @@ main {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    
+    .consigne {
+        justify-self: flex-start;
+        font-family: 'Andika-normal';
+        font-size: x-large;
+        color: values.$pale;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    main {
+        .barDetailSide {
+            background-image: url(./medias/img/medias_ui/echellevertejeu.png);
+            background-size: 100% 120%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15%;
+            height: 100%;
+            z-index: 100;
+            display: none;
+        }
+
+        .content {
+            position: relative;
+            overflow: hidden;
+            color: values.$pale;
+            background-color: values.$darkGreen;
+            width: 97%;
+            height: 70%;
+            border-radius: values.$radiusNormal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            row-gap: 40px;
+    
+            .textContent {
+                display: flex;
+                align-items: center;
+                //width: 100%;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
+                .audioBtn {
+                    top: 5%;
+                    left: 5%;
+                    position: absolute;
+                    align-self: normal;
+                }
+    
+                &.textContent--1 {
+                    background-image: url(./medias/img/medias_ui/bulleson.png);
+                    top: 45px;
+                    left: 45px;
+                    h1 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 30%;
+                        margin: auto;
+                        font-family: 'Andika-Bold';
+                        line-height: 10vmin;
+                        font-size: 17vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                        //width: 100%;
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 20%;
+                        margin: auto;
+                    }
+                }
+    
+                &.textContent--2 {
+                    background-image: url(./medias/img/medias_ui/bullemot.png);
+                    bottom: 45px;
+                    right: 25px;
+
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 25%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 13vmin;
+                        line-height: 15vmin;
+                        letter-spacing: 3px;
+            
+                        em {
+                            letter-spacing: normal;
+                            text-decoration: underline;
+                            font-style: normal;
+                        }
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 20%;
+                        margin: auto;
+                    }
+                }
+    
+                &.textContent--big.textContent--1 {
+                    width: 80%;
+
+                    .btnToNext {
+                        width: 1px;
+                        height: 1px;
+                        padding: 20px; 
+                    } 
+                }
+    
+                &.textContent--small.textContent--1 {
+                    width: 80%;
+                    height: 0;
+                }
+    
+                &.textContent--big.textContent--2 {
+                    width: 95%;
+                    height: 200px;
+                    right: 10px; 
+
+                    .audioBtn {
+                        left: 1%; 
+                        width: 1px;
+                        height: 1px;
+                    }
+
+                    .reward {
+                        width: 1px;
+                        height: 1px;
+                        padding: 20px; 
+                    } 
+                }
+    
+            }
+    
+            .textContent.hidden {
+                display: none;
+            }
+    
+            button {
+                @include button.btnSound(0, 0, 75px, 25px, 6px);
+            }
+    
+            .audioBtn {
+                background-image: url(./medias/img/medias_ui/sonBtn.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                width: 7px;
+                height: 7px;
+    
+                &:hover {
+                    filter: brightness(150%); 
+                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
+                }
+            }
+    
+            .readText {
+                @include button.btnNext(20px, 60px, auto, auto, 6px);
+                font-size: 24px;
+                font-family: 'Andika-bold';
+                letter-spacing: 0.2px;
+            }
+    
+            .answer {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+    
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 7px;
+                height: 7px;
+            }
+    
+            .reward {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 7px;
+                height: 7px;
+            } 
+        }
+
+        .next {
+            @include button.btnNext(0, 0, auto, auto, 6px);
+            background-image: url(./medias/img/medias_ui/prochain.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 25px;
+            background-color: values.$darkGreen;
+        }
+    
     }
 }
 
