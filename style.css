@@ -26,9 +26,6 @@ borderSize: 6px
   position: absolute;
   opacity: 1;
 }
-.sideMenu:hover {
-  right: 0px;
-}
 .sideMenu button.stopVoices {
   font-family: "Andika-bold";
   font-size: 16px;
@@ -161,6 +158,19 @@ borderSize: 6px
 .sideMenu div.option:active {
   background-color: #fffcf7;
   color: #1f3d34;
+}
+.sideMenu .btnShowMenu {
+  position: absolute;
+  display: block;
+  left: -65px;
+  z-index: 200;
+  height: 65px;
+  width: 85px;
+  transform: rotate(-90deg) translateX(-15px);
+  opacity: 0;
+}
+.sideMenu.show {
+  right: 0;
 }
 
 @font-face {

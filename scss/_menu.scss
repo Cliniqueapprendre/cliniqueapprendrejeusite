@@ -17,9 +17,6 @@
     padding: 20px 0 20px 20px;
     border-radius: 0 0 0 values.$radiusBig;
     transition: 0.2s;
-    &:hover {
-        right: 0px;
-    }
     button.stopVoices {
         font-family: 'Andika-bold';
         font-size: 16px;
@@ -126,5 +123,19 @@
             background-color: values.$pale;
             color: values.$darkGreen;
         }
+    }
+
+    .btnShowMenu {
+        position: absolute;
+        display: block;
+        left: -65px;
+        z-index: 200;
+        height: 65px;
+        width: 85px;
+        transform: rotate(-90deg) translateX(-15px);
+        opacity: 0;
+    }
+    &.show {
+        right: 0;
     }
 }

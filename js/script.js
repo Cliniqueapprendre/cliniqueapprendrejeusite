@@ -23,6 +23,21 @@ let isMusicStarted = false;
 const btnFullScreen = document.querySelector('.btnFull');
 const btnDownlad = document.querySelector('.btnDownload')
 const barDetailSide = document.querySelector('.barDetailSide');
+const btnShowMenu = document.querySelector('.btnShowMenu');
+
+
+let boolShowMenu = false;
+btnShowMenu.addEventListener('click', () => {
+    const menuSide = document.querySelector('.sideMenu');
+    if (boolShowMenu == false) {
+        menuSide.classList.add('show');
+        boolShowMenu = true;
+    } else {
+        menuSide.classList.remove('show');
+        boolShowMenu = false;
+    }
+    
+});
 
 const doc = document;
 
@@ -159,6 +174,7 @@ if (localStorage.getItem('whereYouAre') != null) {
 }
 
 /* Va a la possiont de L'option selectionner quand l'utilisateur hover sur le menu pour la rpemière fois */
+/*
 let menuSide = document.querySelector('.sideMenu');
 let HasMouseHoverdMenu = false;
 menuSide.addEventListener('mouseover', () => {
@@ -168,7 +184,7 @@ menuSide.addEventListener('mouseover', () => {
         document.getElementById(`${val}`).scrollIntoView(true);
     }
 });
-
+*/
 /* --- Fin Menu --- */
 
 
