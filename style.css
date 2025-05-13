@@ -826,8 +826,8 @@ main .sideMenu {
     top: 32%;
     margin: auto;
     font-family: "Andika-Bold";
-    line-height: 10vmin;
-    font-size: 13vmin;
+    line-height: 7vmin;
+    font-size: 11vmin;
     letter-spacing: 5px;
     text-align: center;
   }
@@ -863,15 +863,15 @@ main .sideMenu {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 35%;
+    bottom: 30%;
     margin: auto;
   }
   main .content .textContent.textContent--big.textContent--1 {
     left: 0;
-    right: 0;
+    right: 250px;
     margin: auto;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 350px;
   }
   main .content .textContent.textContent--big.textContent--1 button.btnToNext {
     right: 10px;
@@ -881,35 +881,35 @@ main .sideMenu {
   main .content .textContent.textContent--small.textContent--1 {
     top: 5px;
     left: 0;
-    right: 0;
+    right: 350px;
     margin: auto;
-    width: 400px;
-    height: 360px;
+    width: 360px;
+    height: 300px;
   }
   main .content .textContent.textContent--big.textContent--2 {
-    left: 0;
+    left: 200px;
     right: 0;
-    bottom: 6%;
+    bottom: -5%;
     margin: auto;
-    width: 600px;
+    width: 500px;
     max-width: 100%;
     height: 400px;
   }
   main .content .textContent.textContent--big.textContent--2 button.btnToNext {
     right: 10px;
     left: auto;
-    bottom: 30%;
+    bottom: 27%;
   }
   main .content .textContent.textContent--big.textContent--2 .audioBtn {
     top: 15%;
     left: 4%;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
   }
   main .content .textContent.textContent--big.textContent--2 .reward {
     width: 10px;
     height: 10px;
-    padding: 30px;
+    padding: 25px;
   }
   main .content button {
     transform: translateY(0) translateX(0);
@@ -1655,7 +1655,7 @@ main .sideMenu {
     top: 32%;
     margin: auto;
     font-family: "Andika-Bold";
-    line-height: 6vmin;
+    line-height: 8vmin;
     font-size: 13vmin;
     letter-spacing: 5px;
     text-align: center;
@@ -2470,7 +2470,7 @@ main .sideMenu {
   main .content .textContent.textContent--big.textContent--1 button.btnToNext {
     right: 10px;
     left: auto;
-    bottom: 35%;
+    bottom: 32%;
   }
   main .content .textContent.textContent--small.textContent--1 {
     top: 0;
@@ -2602,8 +2602,8 @@ main .sideMenu {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
   }
   main .content .answer a {
     color: #1f3d34;
