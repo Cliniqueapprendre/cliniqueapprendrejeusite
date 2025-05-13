@@ -639,18 +639,119 @@ main {
         .barDetailSide {
             display: none;
         }
+
+        &.whenHasImg {
+            background-color: values.$evendarkerGreen;
+            .content {
+                background-color: rgba(0,0,0,0);
+            }
+    
+            .containerboth {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                margin-top: 3vh;
+            }
+        }
+
         .content {
+            position: relative;
+            overflow: hidden;
+            color: values.$pale;
+            background-color: values.$darkGreen;
+            width: 95%;
+            height: 80%;
+            border-radius: values.$radiusNormal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            row-gap: 40px;
             .textContent {
+                display: flex;
+                align-items: center;
+                //width: 100%;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
+                .audioBtn {
+                    top: 8%;
+                    left: 5%;
+                    position: absolute;
+                    align-self: normal;
+                }
+
+                &.textContent--1 {
+                    background-image: url(./medias/img/medias_ui/bulleson.png);
+                    top: 45px;
+                    left: 45px;
+                    h1 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 32%;
+                        margin: auto;
+                        font-family: 'Andika-Bold';
+                        line-height: 10vmin;
+                        font-size: 13vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                        //width: 100%;
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 35%;
+                        margin: auto;
+                    }
+                }
+
+                &.textContent--2 {
+                    background-image: url(./medias/img/medias_ui/bullemot.png);
+                    bottom: 0;
+                    right: 0;
+
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 30%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 10vmin;
+                        line-height: 12vmin;
+                        letter-spacing: 5px;
+            
+                        em {
+                            letter-spacing: normal;
+                            text-decoration: underline;
+                            font-style: normal;
+                        }
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 35%;
+                        margin: auto;
+                    }
+                }
+
                 &.textContent--big.textContent--1 {
                     left: 0;
                     right: 0;
                     margin: auto;
-                    width: 550px;
-                    height: 420px;
+                    width: 500px;
+                    height: 400px;
                     button.btnToNext {
                         right: 10px;
                         left: auto;
-                        bottom: 20%;
+                        bottom: 25%;
                     }
                 }
     
@@ -661,22 +762,368 @@ main {
                     margin: auto;
                     width: 400px;
                     height: 360px;
+                    
                 }
     
                 &.textContent--big.textContent--2 {
                     left: 0;
                     right: 0;
+                    bottom: 6%; 
                     margin: auto;
-                    width: 550px;
+                    width: 500px;
                     max-width: 100%;
-                    height: 360px;
+                    height: 400px;
+                    button.btnToNext {
+                        right: 10px;
+                        left: auto;
+                        bottom: 30%;
+                    }
+
+                    .audioBtn {
+                        top: 15%;
+                        left: 4%; 
+                        width: 10px;
+                        height: 10px;
+                    }
+    
+                    .reward {
+                        width: 10px;
+                        height: 10px;
+                        padding: 30px; 
+                    }
+                }
+            }
+
+            button {
+                @include button.btnSound(0, 0, 75px, 25px, 6px);
+            }
+    
+            .audioBtn {
+                background-image: url(./medias/img/medias_ui/sonBtn.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                width: 20px;
+                height: 20px;
+    
+                &:hover {
+                    filter: brightness(150%); 
+                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
+                }
+            }
+    
+            .readText {
+                @include button.btnNext(20px, 60px, auto, auto, 6px);
+                font-size: 24px;
+                font-family: 'Andika-bold';
+                letter-spacing: 0.2px;
+            }
+    
+            .answer {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+    
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 20px;
+                height: 20px;
+            }
+    
+            .reward {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 7px;
+                height: 7px;
+            }
+
+        }
+
+        .next {
+            @include button.btnNext(0, 0, auto, auto, 6px);
+            background-image: url(./medias/img/medias_ui/prochain.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 25px;
+            background-color: values.$darkGreen;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .consigne {
+        justify-self: flex-start;
+        font-family: 'Andika-normal';
+        font-size: x-large;
+        color: values.$pale;
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+
+    .btnContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 1%;
+        margin-right: 5vw;
+    
+        .btn {
+            @include button.btnNext(0, 0, auto, auto, 3px);
+            background-color: values.$darkGreen;
+            padding: 2em;
+        }
+    
+        .btnMusic {
+            background-image: url(./medias/img/medias_ui/musique.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnMusicChange {
+            background-image: url(./medias/img/medias_ui/nomusique.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnFull {
+            background-image: url(./medias/img/medias_ui/pleinecran.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnFullChange {
+            background-image: url(./medias/img/medias_ui/modefenetre.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .btnDownload {
+            background-image: url(./medias/img/medias_ui/telecharger.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    main {
+        .barDetailSide {
+            display: none;
+        }
+
+        &.whenHasImg {
+            background-color: values.$evendarkerGreen;
+            .content {
+                background-color: rgba(0,0,0,0);
+            }
+    
+            .containerboth {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                margin-top: 3vh;
+            }
+        }
+
+        .content {
+            position: relative;
+            overflow: hidden;
+            color: values.$pale;
+            background-color: values.$darkGreen;
+            width: 95%;
+            height: 80%;
+            border-radius: values.$radiusNormal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            row-gap: 40px;
+            .textContent {
+                display: flex;
+                align-items: center;
+                //width: 100%;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
+                .audioBtn {
+                    top: 8%;
+                    left: 5%;
+                    position: absolute;
+                    align-self: normal;
+                }
+
+                &.textContent--1 {
+                    background-image: url(./medias/img/medias_ui/bulleson.png);
+                    top: 45px;
+                    left: 45px;
+                    h1 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 32%;
+                        margin: auto;
+                        font-family: 'Andika-Bold';
+                        line-height: 13vmin;
+                        font-size: 15vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                        //width: 100%;
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 35%;
+                        margin: auto;
+                    }
+                }
+
+                &.textContent--2 {
+                    background-image: url(./medias/img/medias_ui/bullemot.png);
+                    bottom: 0;
+                    right: 0;
+
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 30%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 12vmin;
+                        line-height: 17vmin;
+                        letter-spacing: 5px;
+            
+                        em {
+                            letter-spacing: normal;
+                            text-decoration: underline;
+                            font-style: normal;
+                        }
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 30%;
+                        margin: auto;
+                    }
+                }
+
+                &.textContent--big.textContent--1 {
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 500px;
+                    height: 400px;
                     button.btnToNext {
                         right: 10px;
                         left: auto;
                         bottom: 25%;
                     }
                 }
+    
+                &.textContent--small.textContent--1 {
+                    top: 5px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 400px;
+                    height: 360px;
+                    
+                }
+    
+                &.textContent--big.textContent--2 {
+                    left: 0;
+                    right: 0;
+                    bottom: 6%; 
+                    margin: auto;
+                    width: 500px;
+                    max-width: 100%;
+                    height: 400px;
+                    button.btnToNext {
+                        right: 10px;
+                        left: auto;
+                        bottom: 30%;
+                    }
+
+                    .audioBtn {
+                        top: 15%;
+                        left: 4%; 
+                        width: 10px;
+                        height: 10px;
+                    }
+    
+                    .reward {
+                        width: 7px;
+                        height: 7px;
+                        padding: 20px; 
+                    }
+                }
             }
+
+            button {
+                @include button.btnSound(0, 0, 75px, 25px, 6px);
+            }
+    
+            .audioBtn {
+                background-image: url(./medias/img/medias_ui/sonBtn.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                width: 20px;
+                height: 20px;
+    
+                &:hover {
+                    filter: brightness(150%); 
+                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
+                }
+            }
+    
+            .readText {
+                @include button.btnNext(20px, 60px, auto, auto, 6px);
+                font-size: 24px;
+                font-family: 'Andika-bold';
+                letter-spacing: 0.2px;
+            }
+    
+            .answer {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+    
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 20px;
+                height: 20px;
+            }
+    
+            .reward {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 5px;
+                height: 5px;
+            }
+
+        }
+
+        .next {
+            @include button.btnNext(0, 0, auto, auto, 6px);
+            background-image: url(./medias/img/medias_ui/prochain.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 25px;
+            background-color: values.$darkGreen;
         }
     }
 }
