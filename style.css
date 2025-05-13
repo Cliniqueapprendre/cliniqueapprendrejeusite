@@ -1266,7 +1266,7 @@ main .sideMenu {
     top: 30%;
     margin: auto;
     text-align: center;
-    font-size: 7vmin;
+    font-size: 9vmin;
     line-height: 12vmin;
     letter-spacing: 5px;
   }
@@ -1319,13 +1319,13 @@ main .sideMenu {
   main .content .textContent.textContent--big.textContent--2 .audioBtn {
     top: 15%;
     left: 4%;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
   }
   main .content .textContent.textContent--big.textContent--2 .reward {
     width: 10px;
     height: 10px;
-    padding: 30px;
+    padding: 25px;
   }
   main .content button {
     transform: translateY(0) translateX(0);
