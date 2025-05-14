@@ -1442,90 +1442,17 @@ main .sideMenu {
 }
 @media screen and (max-width: 870px) {
   .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
     justify-content: center;
   }
   .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
-    color: #fffcf7;
-    margin-right: 0;
     margin-left: 3vw;
     margin-right: 3vw;
     margin-top: 1vh;
     text-align: center;
   }
   .btnContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
     margin-top: 1vh;
     margin-right: 3vw;
-  }
-  .btnContainer .btn {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 3px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-color: #1f3d34;
-    padding: 2em;
-  }
-  .btnContainer .btn a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  .btnContainer .btn:hover {
-    border: 3px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  .btnContainer .btn:hover a {
-    color: #59b59e;
-  }
-  .btnContainer .btn:active {
-    border: 3px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  .btnContainer .btn:active a {
-    color: #fffcf7;
-  }
-  .btnContainer .btnMusic {
-    background-image: url(./medias/img/medias_ui/musique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnMusicChange {
-    background-image: url(./medias/img/medias_ui/nomusique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFull {
-    background-image: url(./medias/img/medias_ui/pleinecran.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFullChange {
-    background-image: url(./medias/img/medias_ui/modefenetre.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnDownload {
-    background-image: url(./medias/img/medias_ui/telecharger.png);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   main.whenHasImg {
     background-color: #18322a;
@@ -1864,81 +1791,11 @@ main .sideMenu {
 }
 @media screen and (max-width: 825px) {
   .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
     font-size: x-large;
-    color: #fffcf7;
-    margin-right: 3vw;
-    margin-left: 3vw;
   }
   .btnContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
     margin-top: 1%;
     margin-right: 5vw;
-  }
-  .btnContainer .btn {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 3px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-color: #1f3d34;
-    padding: 2em;
-  }
-  .btnContainer .btn a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  .btnContainer .btn:hover {
-    border: 3px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  .btnContainer .btn:hover a {
-    color: #59b59e;
-  }
-  .btnContainer .btn:active {
-    border: 3px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  .btnContainer .btn:active a {
-    color: #fffcf7;
-  }
-  .btnContainer .btnMusic {
-    background-image: url(./medias/img/medias_ui/musique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnMusicChange {
-    background-image: url(./medias/img/medias_ui/nomusique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFull {
-    background-image: url(./medias/img/medias_ui/pleinecran.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFullChange {
-    background-image: url(./medias/img/medias_ui/modefenetre.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnDownload {
-    background-image: url(./medias/img/medias_ui/telecharger.png);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   main .barDetailSide {
     width: 18%;
@@ -2279,83 +2136,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 800px) {
-  .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
-    font-size: x-large;
-    color: #fffcf7;
-    margin-right: 3vw;
-    margin-left: 3vw;
-  }
-  .btnContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    margin-top: 1%;
-    margin-right: 5vw;
-  }
-  .btnContainer .btn {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 3px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-color: #1f3d34;
-    padding: 2em;
-  }
-  .btnContainer .btn a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  .btnContainer .btn:hover {
-    border: 3px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  .btnContainer .btn:hover a {
-    color: #59b59e;
-  }
-  .btnContainer .btn:active {
-    border: 3px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  .btnContainer .btn:active a {
-    color: #fffcf7;
-  }
-  .btnContainer .btnMusic {
-    background-image: url(./medias/img/medias_ui/musique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnMusicChange {
-    background-image: url(./medias/img/medias_ui/nomusique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFull {
-    background-image: url(./medias/img/medias_ui/pleinecran.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFullChange {
-    background-image: url(./medias/img/medias_ui/modefenetre.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnDownload {
-    background-image: url(./medias/img/medias_ui/telecharger.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   main.whenHasImg {
     background-color: #18322a;
   }
@@ -2692,83 +2472,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 730px) {
-  .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
-    font-size: x-large;
-    color: #fffcf7;
-    margin-right: 3vw;
-    margin-left: 3vw;
-  }
-  .btnContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    margin-top: 1%;
-    margin-right: 5vw;
-  }
-  .btnContainer .btn {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 3px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-color: #1f3d34;
-    padding: 2em;
-  }
-  .btnContainer .btn a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  .btnContainer .btn:hover {
-    border: 3px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  .btnContainer .btn:hover a {
-    color: #59b59e;
-  }
-  .btnContainer .btn:active {
-    border: 3px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  .btnContainer .btn:active a {
-    color: #fffcf7;
-  }
-  .btnContainer .btnMusic {
-    background-image: url(./medias/img/medias_ui/musique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnMusicChange {
-    background-image: url(./medias/img/medias_ui/nomusique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFull {
-    background-image: url(./medias/img/medias_ui/pleinecran.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnFullChange {
-    background-image: url(./medias/img/medias_ui/modefenetre.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .btnContainer .btnDownload {
-    background-image: url(./medias/img/medias_ui/telecharger.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   main .barDetailSide {
     display: none;
   }
@@ -3132,10 +2835,6 @@ main .sideMenu {
 }
 @media screen and (max-width: 600px) {
   .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
-    font-size: x-large;
-    color: #fffcf7;
     margin-right: 5vw;
     margin-left: 5vw;
   }
@@ -3490,14 +3189,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 450px) {
-  .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
-    font-size: x-large;
-    color: #fffcf7;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
   main .barDetailSide {
     background-image: url(./medias/img/medias_ui/echellevertejeu.png);
     background-size: 100% 120%;
@@ -3628,10 +3319,24 @@ main .sideMenu {
     height: 200px;
     right: 10px;
   }
+  main .content .textContent.textContent--big.textContent--2 h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: auto;
+    text-align: center;
+    font-size: 13vmin;
+    line-height: 11vmin;
+    letter-spacing: 3px;
+  }
   main .content .textContent.textContent--big.textContent--2 button.btnToNext {
     right: 10px;
     left: auto;
-    bottom: 25%;
+    width: 1px;
+    height: 1px;
+    padding: 20px;
+    bottom: 20%;
   }
   main .content .textContent.textContent--big.textContent--2 .audioBtn {
     top: 8%;
@@ -3843,14 +3548,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 420px) {
-  .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
-    font-size: x-large;
-    color: #fffcf7;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
   main .barDetailSide {
     background-image: url(./medias/img/medias_ui/echellevertejeu.png);
     background-size: 100% 120%;
@@ -4194,14 +3891,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 400px) {
-  .consigne {
-    justify-self: flex-start;
-    font-family: "Andika-normal";
-    font-size: x-large;
-    color: #fffcf7;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
   main .barDetailSide {
     background-image: url(./medias/img/medias_ui/echellevertejeu.png);
     background-size: 100% 120%;
