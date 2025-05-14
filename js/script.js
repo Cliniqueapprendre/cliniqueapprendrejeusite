@@ -18,7 +18,7 @@ const secondLine = document.querySelector('.secondLine');
 const lastLine = document.querySelector('.lastLine');
 const noSoundIcon = document.querySelectorAll('.noSoundIcon');
 const btnMusic = document.querySelector('.btnMusic');
-const music = new Audio('./medias/audio/background_noise_natures_birds_v03.wav');
+const music = new Audio('./medias/audio/background_noise_natures_birds_v07.wav');
 let isMusicStarted = false;
 const btnFullScreen = document.querySelector('.btnFull');
 const btnDownlad = document.querySelector('.btnDownload')
@@ -221,6 +221,12 @@ function restartWithNew(number, btnToContinue) {
     let content = document.querySelector('.content');
     numberOfClick = 0;
     numberOfClickSecond = 0;
+    let word; 
+    if (`${tabAllOption[number].partieMotUn}${tabAllOption[number].partieMotDeux}${tabAllOption[number].partieMotTroix}` == 'emballer') {
+        word = '<em>em</em>ballé';
+    } else {
+        word = `${tabAllOption[number].partieMotUn}<em>${tabAllOption[number].partieMotDeux}</em>${tabAllOption[number].partieMotTroix}`
+    }
     content.innerHTML = `
     <div class="textContent textContent--1 textContent--big">
         <h1>${checkIfUnderscore(tabAllOption[number].expresion)}</h1>
@@ -228,7 +234,7 @@ function restartWithNew(number, btnToContinue) {
         <button class="answer btnToNext hidden"></button> 
     </div>
     <div class="textContent textContent--2 textContent--big hidden">
-        <h3 class="textAnswer">${tabAllOption[number].partieMotUn}<em>${tabAllOption[number].partieMotDeux}</em>${tabAllOption[number].partieMotTroix}</h3>
+        <h3 class="textAnswer">${word}</h3>
         <button class="audioBtn audioBtn--answer hidden">
         </button>
         <button class="reward btnToNext hidden"></button>
