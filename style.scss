@@ -112,21 +112,6 @@ main {
     align-items: center;
     justify-content: center;
 
-    &.whenHasImg {
-        background-color: values.$evendarkerGreen;
-        .content {
-            background-color: rgba(0,0,0,0);
-        }
-
-        .containerboth {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            width: 100%;
-            justify-content: center;
-        }
-    }
-
     .barDetailSide {
         background-image: url(./medias/img/medias_ui/echellevertejeu.png);
         background-size: 100% 120%;
@@ -137,6 +122,19 @@ main {
         width: 15%;
         height: 100%;
         z-index: 100;
+        }
+    &.whenHasImg {
+        background-color: values.$evendarkerGreen;
+        .content {
+            background-color: rgba(0,0,0,0);
+        }
+        .containerboth {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     .content {
@@ -319,10 +317,6 @@ main {
         background-image: url(./medias/img/photojeu/test/annee-v2.jpg);
         background-size: cover;
         background-position: center;
-        /*
-        display: flex;
-        align-items: end;
-        justify-content: center;*/
     }
 
     .img.hidden {
@@ -339,7 +333,6 @@ main {
     main {
         .barDetailSide {
             width: 300px;
-            height: 100%;
         }
         .content {
             max-width: 1920px;
@@ -376,7 +369,7 @@ main {
 
                     h3 {
                         line-height: 9vmin;
-                        font-size: 15vmin;
+                        font-size: 13vmin;
                         letter-spacing: 5px;
                         text-align: center;
                     }
@@ -389,9 +382,6 @@ main {
                 }
             }
         }
-        .img {
-            width: 80vw;
-        }
     }
 }
 
@@ -400,7 +390,6 @@ main {
     main {
         .barDetailSide {
             width: 18%;
-            height: 100%;
         }
         .content {
             .textContent {
@@ -486,21 +475,10 @@ main {
 
     main {
         &.whenHasImg {
-            background-color: values.$evendarkerGreen;
-            .content {
-                background-color: rgba(0,0,0,0);
-            }
-    
             .containerboth {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
                 margin-top: 3vh;
             }
         }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -619,6 +597,12 @@ main {
                     width: 500px;
                     max-width: 100%;
                     height: 400px;
+
+                    h3 {
+                        font-size: 10vmin;
+                        line-height: 10vmin;
+                    }
+
                     button.btnToNext {
                         right: 20px;
                         left: auto;
@@ -687,7 +671,6 @@ main {
             }
 
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -703,22 +686,6 @@ main {
 @media screen and (max-width: 950px) {
 
     main {
-        &.whenHasImg {
-            background-color: values.$evendarkerGreen;
-            .content {
-                background-color: rgba(0,0,0,0);
-            }
-    
-            .containerboth {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
-                margin-top: 3vh;
-            }
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -905,7 +872,6 @@ main {
             }
 
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -935,24 +901,7 @@ main {
         margin-top: 1vh;
         margin-right: 3vw;
     }
-
     main {
-        &.whenHasImg {
-            background-color: values.$evendarkerGreen;
-            .content {
-                background-color: rgba(0,0,0,0);
-            }
-    
-            .containerboth {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
-                margin-top: 3vh;
-            }
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -1139,7 +1088,6 @@ main {
             }
 
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -1157,33 +1105,11 @@ main {
     .consigne {
         font-size: x-large;
     }
-
     .btnContainer {
         margin-top: 1%;
         margin-right: 5vw;
     }
-
     main {
-        .barDetailSide {
-            width: 18%;
-        }
-
-        &.whenHasImg {
-            background-color: values.$evendarkerGreen;
-            .content {
-                background-color: rgba(0,0,0,0);
-            }
-    
-            .containerboth {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
-                margin-top: 3vh;
-            }
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -1369,7 +1295,6 @@ main {
             }
 
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -1384,23 +1309,6 @@ main {
 @media screen and (max-width: 800px) {
 
     main {
-
-        &.whenHasImg {
-            background-color: values.$evendarkerGreen;
-            .content {
-                background-color: rgba(0,0,0,0);
-            }
-    
-            .containerboth {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
-                margin-top: 3vh;
-            }
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -1587,7 +1495,6 @@ main {
             }
 
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -1605,23 +1512,6 @@ main {
         .barDetailSide {
             display: none;
         }
-
-        &.whenHasImg {
-            background-color: values.$evendarkerGreen;
-            .content {
-                background-color: rgba(0,0,0,0);
-            }
-    
-            .containerboth {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
-                margin-top: 3vh;
-            }
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -1834,7 +1724,6 @@ main {
             }
 
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -1852,28 +1741,7 @@ main {
         margin-right: 5vw;
         margin-left: 5vw;
     }
-
     main {
-        .barDetailSide {
-           display: none;
-        }
-
-        &.whenHasImg {
-            background-color: values.$evendarkerGreen;
-            .content {
-                background-color: rgba(0,0,0,0);
-            }
-    
-            .containerboth {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 100%;
-                justify-content: center;
-                margin-top: 3vh;
-            }
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -2072,7 +1940,6 @@ main {
                 height: 7px;
             }
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -2087,19 +1954,6 @@ main {
 @media screen and (max-width: 450px) {
 
     main {
-        .barDetailSide {
-            background-image: url(./medias/img/medias_ui/echellevertejeu.png);
-            background-size: 100% 120%;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 15%;
-            height: 100%;
-            z-index: 100;
-            display: none;
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -2314,7 +2168,6 @@ main {
                 height: 7px;
             } 
         }
-
         .next {
             @include button.btnNext(0, 0, auto, auto, 6px);
             background-image: url(./medias/img/medias_ui/prochain.png);
@@ -2330,19 +2183,6 @@ main {
 @media screen and (max-width: 420px) {
 
     main {
-        .barDetailSide {
-            background-image: url(./medias/img/medias_ui/echellevertejeu.png);
-            background-size: 100% 120%;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 15%;
-            height: 100%;
-            z-index: 100;
-            display: none;
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -2558,19 +2398,6 @@ main {
 @media screen and (max-width: 400px) {
 
     main {
-        .barDetailSide {
-            background-image: url(./medias/img/medias_ui/echellevertejeu.png);
-            background-size: 100% 120%;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 15%;
-            height: 100%;
-            z-index: 100;
-            display: none;
-        }
-
         .content {
             position: relative;
             overflow: hidden;
@@ -2753,7 +2580,7 @@ main {
             padding: 25px;
             background-color: values.$darkGreen;
         }
-    
+
     }
 }
 

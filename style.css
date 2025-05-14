@@ -311,6 +311,17 @@ main {
   align-items: center;
   justify-content: center;
 }
+main .barDetailSide {
+  background-image: url(./medias/img/medias_ui/echellevertejeu.png);
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 100;
+}
 main.whenHasImg {
   background-color: #18322a;
 }
@@ -323,17 +334,6 @@ main.whenHasImg .containerboth {
   align-items: center;
   width: 100%;
   justify-content: center;
-}
-main .barDetailSide {
-  background-image: url(./medias/img/medias_ui/echellevertejeu.png);
-  background-size: 100% 120%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 15%;
-  height: 100%;
-  z-index: 100;
 }
 main .content {
   position: relative;
@@ -638,10 +638,6 @@ main .img {
   background-image: url(./medias/img/photojeu/test/annee-v2.jpg);
   background-size: cover;
   background-position: center;
-  /*
-  display: flex;
-  align-items: end;
-  justify-content: center;*/
 }
 main .img.hidden {
   display: none;
@@ -653,7 +649,6 @@ main .sideMenu {
 @media screen and (min-width: 2000px) {
   main .barDetailSide {
     width: 300px;
-    height: 100%;
   }
   main .content {
     max-width: 1920px;
@@ -685,7 +680,7 @@ main .sideMenu {
   }
   main .content .textContent.textContent--big.textContent--2 h3 {
     line-height: 9vmin;
-    font-size: 15vmin;
+    font-size: 13vmin;
     letter-spacing: 5px;
     text-align: center;
   }
@@ -694,14 +689,10 @@ main .sideMenu {
     width: 7%;
     height: 7%;
   }
-  main .img {
-    width: 80vw;
-  }
 }
 @media screen and (max-width: 1605px) {
   main .barDetailSide {
     width: 18%;
-    height: 100%;
   }
   main .content .textContent.textContent--big.textContent--1 {
     width: 500px;
@@ -769,18 +760,7 @@ main .sideMenu {
     margin-left: 5vw;
     font-size: 1.5em;
   }
-  main.whenHasImg {
-    background-color: #18322a;
-  }
-  main.whenHasImg .content {
-    background-color: rgba(0, 0, 0, 0);
-  }
   main.whenHasImg .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
     margin-top: 3vh;
   }
   main .content {
@@ -892,6 +872,10 @@ main .sideMenu {
     width: 500px;
     max-width: 100%;
     height: 400px;
+  }
+  main .content .textContent.textContent--big.textContent--2 h3 {
+    font-size: 10vmin;
+    line-height: 10vmin;
   }
   main .content .textContent.textContent--big.textContent--2 button.btnToNext {
     right: 20px;
@@ -1105,20 +1089,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 950px) {
-  main.whenHasImg {
-    background-color: #18322a;
-  }
-  main.whenHasImg .content {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  main.whenHasImg .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3vh;
-  }
   main .content {
     position: relative;
     overflow: hidden;
@@ -1454,20 +1424,6 @@ main .sideMenu {
     margin-top: 1vh;
     margin-right: 3vw;
   }
-  main.whenHasImg {
-    background-color: #18322a;
-  }
-  main.whenHasImg .content {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  main.whenHasImg .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3vh;
-  }
   main .content {
     position: relative;
     overflow: hidden;
@@ -1797,23 +1753,6 @@ main .sideMenu {
     margin-top: 1%;
     margin-right: 5vw;
   }
-  main .barDetailSide {
-    width: 18%;
-  }
-  main.whenHasImg {
-    background-color: #18322a;
-  }
-  main.whenHasImg .content {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  main.whenHasImg .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3vh;
-  }
   main .content {
     position: relative;
     overflow: hidden;
@@ -2136,20 +2075,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 800px) {
-  main.whenHasImg {
-    background-color: #18322a;
-  }
-  main.whenHasImg .content {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  main.whenHasImg .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3vh;
-  }
   main .content {
     position: relative;
     overflow: hidden;
@@ -2474,20 +2399,6 @@ main .sideMenu {
 @media screen and (max-width: 730px) {
   main .barDetailSide {
     display: none;
-  }
-  main.whenHasImg {
-    background-color: #18322a;
-  }
-  main.whenHasImg .content {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  main.whenHasImg .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3vh;
   }
   main .content {
     position: relative;
@@ -2838,23 +2749,6 @@ main .sideMenu {
     margin-right: 5vw;
     margin-left: 5vw;
   }
-  main .barDetailSide {
-    display: none;
-  }
-  main.whenHasImg {
-    background-color: #18322a;
-  }
-  main.whenHasImg .content {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  main.whenHasImg .containerboth {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3vh;
-  }
   main .content {
     position: relative;
     overflow: hidden;
@@ -3189,18 +3083,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 450px) {
-  main .barDetailSide {
-    background-image: url(./medias/img/medias_ui/echellevertejeu.png);
-    background-size: 100% 120%;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 15%;
-    height: 100%;
-    z-index: 100;
-    display: none;
-  }
   main .content {
     position: relative;
     overflow: hidden;
@@ -3548,18 +3430,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 420px) {
-  main .barDetailSide {
-    background-image: url(./medias/img/medias_ui/echellevertejeu.png);
-    background-size: 100% 120%;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 15%;
-    height: 100%;
-    z-index: 100;
-    display: none;
-  }
   main .content {
     position: relative;
     overflow: hidden;
@@ -3891,18 +3761,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 400px) {
-  main .barDetailSide {
-    background-image: url(./medias/img/medias_ui/echellevertejeu.png);
-    background-size: 100% 120%;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 15%;
-    height: 100%;
-    z-index: 100;
-    display: none;
-  }
   main .content {
     position: relative;
     overflow: hidden;
