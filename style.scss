@@ -2644,6 +2644,20 @@ main {
                 &.textContent--big.textContent--1 {
                     width: 70%;
 
+                    h1 {
+                        line-height: 10vmin;
+                        font-size: 12vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                    }
+
+                    .audioBtn {
+                        left: 5%; 
+                        top: 2%; 
+                        width: 1px;
+                        height: 1px;
+                    }
+
                     .btnToNext {
                         width: 1px;
                         height: 1px;
@@ -2661,8 +2675,21 @@ main {
                     height: 200px;
                     right: 10px; 
 
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 25%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 12vmin;
+                        line-height: 13vmin;
+                        letter-spacing: 3px;
+                    }
+
                     .audioBtn {
                         left: 1%; 
+                        top: 2%;
                         width: 1px;
                         height: 1px;
                     }
@@ -2670,7 +2697,7 @@ main {
                     .reward {
                         width: 1px;
                         height: 1px;
-                        padding: 20px; 
+                        padding: 10px; 
                     } 
                 }
     
@@ -2881,7 +2908,7 @@ main {
                     .reward {
                         width: 1px;
                         height: 1px;
-                        padding: 20px; 
+                        padding: 10px;
                     } 
                 }
     

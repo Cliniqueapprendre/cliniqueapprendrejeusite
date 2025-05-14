@@ -3939,6 +3939,18 @@ main .sideMenu {
   main .content .textContent.textContent--big.textContent--1 {
     width: 70%;
   }
+  main .content .textContent.textContent--big.textContent--1 h1 {
+    line-height: 10vmin;
+    font-size: 12vmin;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  main .content .textContent.textContent--big.textContent--1 .audioBtn {
+    left: 5%;
+    top: 2%;
+    width: 1px;
+    height: 1px;
+  }
   main .content .textContent.textContent--big.textContent--1 .btnToNext {
     width: 1px;
     height: 1px;
@@ -3953,15 +3965,27 @@ main .sideMenu {
     height: 200px;
     right: 10px;
   }
+  main .content .textContent.textContent--big.textContent--2 h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: auto;
+    text-align: center;
+    font-size: 12vmin;
+    line-height: 13vmin;
+    letter-spacing: 3px;
+  }
   main .content .textContent.textContent--big.textContent--2 .audioBtn {
     left: 1%;
+    top: 2%;
     width: 1px;
     height: 1px;
   }
   main .content .textContent.textContent--big.textContent--2 .reward {
     width: 1px;
     height: 1px;
-    padding: 20px;
+    padding: 10px;
   }
   main .content .textContent.hidden {
     display: none;
@@ -4289,7 +4313,7 @@ main .sideMenu {
   main .content .textContent.textContent--big.textContent--2 .reward {
     width: 1px;
     height: 1px;
-    padding: 20px;
+    padding: 10px;
   }
   main .content .textContent.hidden {
     display: none;
