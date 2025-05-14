@@ -51,6 +51,7 @@ body {
     color: values.$pale;
     margin-right: 10vw;
     margin-left: 5vw;
+    font-size: 2em; 
 }
 
 .btnContainer {
@@ -98,7 +99,6 @@ body {
         background-size: cover;
     }
 }
-
 
 main {
     overflow-x: hidden;
@@ -474,6 +474,16 @@ main {
 }
 
 @media screen and (max-width: 1470px) {
+
+    .consigne {
+        justify-self: flex-start;
+        font-family: 'Andika-normal';
+        color: values.$pale;
+        margin-right: 10vw;
+        margin-left: 5vw;
+        font-size: 1.5em; 
+    }
+
     main {
         &.whenHasImg {
             background-color: values.$evendarkerGreen;
