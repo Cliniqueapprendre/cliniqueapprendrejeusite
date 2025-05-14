@@ -335,6 +335,7 @@ main {
 }
 
 @media screen and (min-width: 2000px) {
+    
     main {
         .barDetailSide {
             width: 300px;
@@ -346,16 +347,45 @@ main {
                 &.textContent--big.textContent--1 {
                     width: 900px;
                     height: 640px;
+
+                    .audioBtn {
+                        left: 8%;
+                    }
                 }
     
                 &.textContent--small.textContent--1 {
-                    width: 800px;
+                    width: 700px;
                     height: 580px;
+
+                    h1 {
+                        line-height: 9vmin;
+                        font-size: 15vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                    }
+
+                    .audioBtn {
+                        top: 10%;
+                        left: 6%; 
+                    }
                 }
     
                 &.textContent--big.textContent--2 {
                     width: 1100px;
                     height: 660px;
+
+                    h3 {
+                        line-height: 9vmin;
+                        font-size: 15vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                    }
+
+                    .audioBtn {
+                        top: 7%;
+                        width: 7%;
+                        height: 7%; 
+                    }
                 }
             }
         }
@@ -375,23 +405,289 @@ main {
         .content {
             .textContent {
                 &.textContent--big.textContent--1 {
-                    width: 700px;
-                    height: 520px;
+                    width: 500px;
+                    height: 400px;
+
+                    .audioBtn {
+                        left: 6%;
+                        top: 8%; 
+                    }
+
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 22%;
+                        margin: auto;
+                        width: 20px;
+                        height: 20px; 
+                    }
                 }
     
                 &.textContent--small.textContent--1 {
-                    width: 500px;
-                    height: 360px;
+                    width: 450px;
+                    height: 350px;
+                    margin-left: 3%;
+
+                    .audioBtn {
+                        left: 5%;
+                        top: 6%; 
+                    }
                 }
     
                 &.textContent--big.textContent--2 {
-                    bottom: -20px;
-                    width: 840px;
-                    height: 560px;
+                    bottom: 5%;
+                    width: 700px;
+                    height: 400px;
+                    margin-right: 3%;
+
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 30%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 14vmin;
+                        line-height: 8vmin;
+                        letter-spacing: 5px;
+                    }
+
+                    .audioBtn {
+                        left: 5%;
+                        top: 5%; 
+                    }
+
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 22%;
+                        margin: auto;
+                        width: 20px;
+                        height: 20px; 
+                    }
                 }
             }
         }
     }
+}
+
+@media screen and (max-width: 1470px) {
+    main {
+        &.whenHasImg {
+            background-color: values.$evendarkerGreen;
+            .content {
+                background-color: rgba(0,0,0,0);
+            }
+    
+            .containerboth {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                margin-top: 3vh;
+            }
+        }
+
+        .content {
+            position: relative;
+            overflow: hidden;
+            color: values.$pale;
+            background-color: values.$darkGreen;
+            width: 95%;
+            height: 80%;
+            border-radius: values.$radiusNormal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            row-gap: 40px;
+
+            .textContent {
+                display: flex;
+                align-items: center;
+                //width: 100%;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
+                .audioBtn {
+                    top: 8%;
+                    left: 5%;
+                    position: absolute;
+                    align-self: normal;
+                }
+
+                &.textContent--1 {
+                    background-image: url(./medias/img/medias_ui/bulleson.png);
+                    top: 45px;
+                    left: 45px;
+                    h1 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 32%;
+                        margin: auto;
+                        font-family: 'Andika-Bold';
+                        line-height: 7vmin;
+                        font-size: 11vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                        //width: 100%;
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 35%;
+                        margin: auto;
+                    }
+                }
+
+                &.textContent--2 {
+                    background-image: url(./medias/img/medias_ui/bullemot.png);
+                    bottom: 0;
+                    right: 0;
+
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 30%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 10vmin;
+                        line-height: 10vmin;
+                        letter-spacing: 5px;
+            
+                        em {
+                            letter-spacing: normal;
+                            text-decoration: underline;
+                            font-style: normal;
+                        }
+                    }
+                    button.btnToNext {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 30%;
+                        margin: auto;
+                    }
+                }
+
+                &.textContent--big.textContent--1 {
+                    left: 0;
+                    right: 350px;
+                    margin: auto;
+                    width: 400px;
+                    height: 350px;
+                    button.btnToNext {
+                        right: 10px;
+                        left: auto;
+                        bottom: 25%;
+                    }
+                }
+    
+                &.textContent--small.textContent--1 {
+                    top: 10px;
+                    left: 0;
+                    right: 350px;
+                    margin: auto;
+                    width: 360px;
+                    height: 300px;
+                    
+                }
+    
+                &.textContent--big.textContent--2 {
+                    left: 200px;
+                    right: 0;
+                    bottom: -5%; 
+                    margin: auto;
+                    width: 500px;
+                    max-width: 100%;
+                    height: 400px;
+                    button.btnToNext {
+                        right: 20px;
+                        left: auto;
+                        bottom: 29%;
+                    }
+
+                    .audioBtn {
+                        top: 15%;
+                        left: 4%; 
+                        width: 20px;
+                        height: 20px;
+                    }
+    
+                    .reward {
+                        width: 10px;
+                        height: 10px;
+                        padding: 25px; 
+                    }
+                }
+            }
+
+            button {
+                @include button.btnSound(0, 0, 75px, 25px, 6px);
+            }
+    
+            .audioBtn {
+                background-image: url(./medias/img/medias_ui/sonBtn.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                width: 20px;
+                height: 20px;
+    
+                &:hover {
+                    filter: brightness(150%); 
+                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
+                }
+            }
+    
+            .readText {
+                @include button.btnNext(20px, 60px, auto, auto, 6px);
+                font-size: 24px;
+                font-family: 'Andika-bold';
+                letter-spacing: 0.2px;
+            }
+    
+            .answer {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+    
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 15px;
+                height: 15px;
+            }
+    
+            .reward {
+                @include button.btnNext(0, 0, auto, auto, 6px);
+                background-image: url(./medias/img/medias_ui/prochain.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: values.$darkGreen;
+                width: 7px;
+                height: 7px;
+            }
+
+        }
+
+        .next {
+            @include button.btnNext(0, 0, auto, auto, 6px);
+            background-image: url(./medias/img/medias_ui/prochain.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 25px;
+            background-color: values.$darkGreen;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 950px) {
@@ -1358,7 +1654,7 @@ main {
                 &.textContent--big.textContent--2 {
                     left: 0;
                     right: 0;
-                    bottom: 20%; 
+                    bottom: -5%; 
                     margin: auto;
                     width: 500px;
                     max-width: 100%;
@@ -1613,6 +1909,20 @@ main {
                     margin: auto;
                     width: 500px;
                     height: 400px;
+
+                    h1 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 32%;
+                        margin: auto;
+                        font-family: 'Andika-Bold';
+                        line-height: 9vmin;
+                        font-size: 15vmin;
+                        letter-spacing: 5px;
+                        text-align: center;
+                    }
+
                     button.btnToNext {
                         right: 10px;
                         left: auto;
@@ -1633,11 +1943,24 @@ main {
                 &.textContent--big.textContent--2 {
                     left: 0;
                     right: 0;
-                    bottom: 20%; 
+                    bottom: -5%; 
                     margin: auto;
                     width: 500px;
                     max-width: 100%;
                     height: 400px;
+
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 30%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 13vmin;
+                        line-height: 11vmin;
+                        letter-spacing: 5px;
+                    }
+
                     button.btnToNext {
                         right: 10px;
                         left: auto;
@@ -1819,7 +2142,7 @@ main {
                         margin: auto;
                         text-align: center;
                         font-size: 13vmin;
-                        line-height: 13vmin;
+                        line-height: 15vmin;
                         letter-spacing: 5px;
             
                         em {
@@ -1844,12 +2167,12 @@ main {
                     bottom: 0;
                     margin: auto;
                     width: 350px;
-                    height: 420px;
+                    height: 300px;
 
                     button.btnToNext {
                         right: 10px;
                         left: auto;
-                        bottom: 32%;
+                        bottom: 25%;
                     }
                 }
     
@@ -1872,16 +2195,26 @@ main {
                     max-width: 90%;
                     height: 360px;
 
+                    h3 {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 30%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 13vmin;
+                        line-height: 15vmin;
+                        letter-spacing: 5px;
+                    }
+
                     button.btnToNext {
                         right: 10px;
                         left: auto;
-                        bottom: 30%;
+                        bottom: 25%;
                     }
                     .audioBtn {
-                        top: 20%;
-                        left: 4%; 
-                        width: 10px;
-                        height: 3px;
+                        top: 13%;
+                        left: 3%; 
                     }
 
                     .reward {
