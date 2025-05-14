@@ -767,21 +767,6 @@ main .sideMenu {
     width: 95%;
     height: 80%;
   }
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 8%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -882,40 +867,6 @@ main .sideMenu {
     width: 10px;
     height: 10px;
     padding: 25px;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1042,21 +993,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 950px) {
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 8%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -1153,40 +1089,6 @@ main .sideMenu {
     width: 10px;
     height: 10px;
     padding: 25px;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1326,21 +1228,6 @@ main .sideMenu {
     margin-top: 1vh;
     margin-right: 3vw;
   }
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 8%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -1437,40 +1324,6 @@ main .sideMenu {
     width: 10px;
     height: 10px;
     padding: 25px;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1604,21 +1457,6 @@ main .sideMenu {
     margin-top: 1%;
     margin-right: 5vw;
   }
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 8%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -1715,40 +1553,6 @@ main .sideMenu {
     width: 10px;
     height: 10px;
     padding: 25px;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1875,21 +1679,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 800px) {
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 8%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -1986,40 +1775,6 @@ main .sideMenu {
     width: 7px;
     height: 7px;
     padding: 25px;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -2149,21 +1904,6 @@ main .sideMenu {
   main .barDetailSide {
     display: none;
   }
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 8%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -2283,40 +2023,6 @@ main .sideMenu {
     width: 7px;
     height: 7px;
     padding: 20px;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -2451,21 +2157,6 @@ main .sideMenu {
     width: 97%;
     height: 70%;
   }
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 20%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -2574,40 +2265,6 @@ main .sideMenu {
     width: 5px;
     height: 5px;
     padding: 24px;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -2734,21 +2391,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 450px) {
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 5%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -2867,43 +2509,6 @@ main .sideMenu {
     width: 1px;
     height: 1px;
     padding: 20px;
-  }
-  main .content .textContent.hidden {
-    display: none;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -3030,21 +2635,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 420px) {
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 5%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -3147,43 +2737,6 @@ main .sideMenu {
     width: 1px;
     height: 1px;
     padding: 10px;
-  }
-  main .content .textContent.hidden {
-    display: none;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -3310,21 +2863,6 @@ main .sideMenu {
   }
 }
 @media screen and (max-width: 400px) {
-  main .content .textContent {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(20px 20px 0px #2a4c44);
-  }
-  main .content .textContent .audioBtn {
-    top: 5%;
-    left: 5%;
-    position: absolute;
-    align-self: normal;
-  }
   main .content .textContent.textContent--1 {
     background-image: url(./medias/img/medias_ui/bulleson.png);
     top: 45px;
@@ -3404,43 +2942,6 @@ main .sideMenu {
     width: 1px;
     height: 1px;
     padding: 10px;
-  }
-  main .content .textContent.hidden {
-    display: none;
-  }
-  main .content button {
-    transform: translateY(0) translateX(0);
-    padding: 25px;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-  }
-  main .content button svg {
-    width: 75px;
-    height: auto;
-  }
-  main .content button svg path {
-    stroke: #1f3d34;
-  }
-  main .content button svg path.hidden {
-    display: none;
-  }
-  main .content button:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-  }
-  main .content button:hover svg path {
-    stroke: #59b59e;
-  }
-  main .content button:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-  }
-  main .content button:active svg path {
-    stroke: #fffcf7;
   }
   main .content .audioBtn {
     background-image: url(./medias/img/medias_ui/sonBtn.png);

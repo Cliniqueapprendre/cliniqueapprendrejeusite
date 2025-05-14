@@ -238,7 +238,6 @@ main {
                 width: 950px;
                 height: 580px;
             }
-
         }
 
         .textContent.hidden {
@@ -483,21 +482,6 @@ main {
             width: 95%;
             height: 80%;
             .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 8%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -611,10 +595,6 @@ main {
                         padding: 25px; 
                     }
                 }
-            }
-
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
             }
     
             .audioBtn {
@@ -669,21 +649,6 @@ main {
     main {
         .content {
             .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 8%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -791,10 +756,6 @@ main {
                         padding: 25px; 
                     }
                 }
-            }
-
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
             }
     
             .audioBtn {
@@ -864,21 +825,6 @@ main {
     main {
         .content {
             .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 8%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -987,10 +933,6 @@ main {
                     }
                 }
             }
-
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
-            }
     
             .audioBtn {
                 background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1051,21 +993,6 @@ main {
     main {
         .content {
             .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 8%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -1174,10 +1101,6 @@ main {
                     }
                 }
             }
-
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
-            }
     
             .audioBtn {
                 background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1230,21 +1153,6 @@ main {
     main {
         .content {
             .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 8%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -1353,10 +1261,6 @@ main {
                     }
                 }
             }
-
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
-            }
     
             .audioBtn {
                 background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1412,21 +1316,6 @@ main {
         }
         .content {
             .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 8%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -1562,10 +1451,6 @@ main {
                     }
                 }
             }
-
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
-            }
     
             .audioBtn {
                 background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1624,21 +1509,6 @@ main {
             width: 97%;
             height: 70%;
             .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 20%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -1760,10 +1630,6 @@ main {
                     }
                 }
             }
-
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
-            }
     
             .audioBtn {
                 background-image: url(./medias/img/medias_ui/sonBtn.png);
@@ -1814,22 +1680,7 @@ main {
 
     main {
         .content {   
-            .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 5%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-    
+            .textContent {   
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -1964,14 +1815,6 @@ main {
     
             }
     
-            .textContent.hidden {
-                display: none;
-            }
-    
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
-            }
-    
             .audioBtn {
                 background-image: url(./medias/img/medias_ui/sonBtn.png);
                 background-repeat: no-repeat;
@@ -2021,22 +1864,7 @@ main {
 
     main {
         .content {   
-            .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 5%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-    
+            .textContent { 
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -2156,14 +1984,6 @@ main {
     
             }
     
-            .textContent.hidden {
-                display: none;
-            }
-    
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
-            }
-    
             .audioBtn {
                 background-image: url(./medias/img/medias_ui/sonBtn.png);
                 background-repeat: no-repeat;
@@ -2213,22 +2033,7 @@ main {
 
     main {
         .content {   
-            .textContent {
-                display: flex;
-                align-items: center;
-                //width: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                filter: drop-shadow(20px 20px 0px values.$lessdarkGreen);
-                .audioBtn {
-                    top: 5%;
-                    left: 5%;
-                    position: absolute;
-                    align-self: normal;
-                }
-    
+            .textContent { 
                 &.textContent--1 {
                     background-image: url(./medias/img/medias_ui/bulleson.png);
                     top: 45px;
@@ -2319,15 +2124,6 @@ main {
                         padding: 10px;
                     } 
                 }
-    
-            }
-    
-            .textContent.hidden {
-                display: none;
-            }
-    
-            button {
-                @include button.btnSound(0, 0, 75px, 25px, 6px);
             }
     
             .audioBtn {
