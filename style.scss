@@ -1358,7 +1358,7 @@ main {
                 &.textContent--big.textContent--2 {
                     left: 0;
                     right: 0;
-                    bottom: -7%; 
+                    bottom: 20%; 
                     margin: auto;
                     width: 500px;
                     max-width: 100%;
@@ -1633,7 +1633,7 @@ main {
                 &.textContent--big.textContent--2 {
                     left: 0;
                     right: 0;
-                    bottom: -5%; 
+                    bottom: 20%; 
                     margin: auto;
                     width: 500px;
                     max-width: 100%;
@@ -2511,7 +2511,8 @@ main {
                 &.textContent--big.textContent--1 {
                     width: 80%;
 
-                    .btnToNext {
+                    button.btnToNext {
+                        right: 20px; 
                         width: 1px;
                         height: 1px;
                         padding: 20px; 
