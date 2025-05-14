@@ -173,6 +173,14 @@ borderSize: 6px
   right: 0;
 }
 
+@media screen and (max-height: 450px) {
+  .sideMenu {
+    height: 85%;
+  }
+  .sideMenu .contentMenu {
+    height: 80%;
+  }
+}
 @font-face {
   font-family: "Andika-Bold";
   src: url(./medias/font/andika/AndikaNewBasic-Bold.ttf) format(truetype);

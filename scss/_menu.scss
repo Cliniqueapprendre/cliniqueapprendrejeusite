@@ -139,3 +139,12 @@
         right: 0;
     }
 }
+
+@media screen and (max-height: 450px) {
+    .sideMenu {
+        height: 85%;
+        .contentMenu {
+            height: 80%;
+        }
+    }
+}
