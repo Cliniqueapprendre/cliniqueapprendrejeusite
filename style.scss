@@ -123,6 +123,7 @@ main {
         height: 100%;
         z-index: 100;
         }
+
     &.whenHasImg {
         background-color: values.$evendarkerGreen;
         .content {
@@ -155,7 +156,6 @@ main {
         .textContent {
             display: flex;
             align-items: center;
-            //width: 100%;
             position: absolute;
             background-size: contain;
             background-repeat: no-repeat;
@@ -301,7 +301,7 @@ main {
         background-image: url(./medias/img/medias_ui/prochain.png);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 30px;
+        padding: 25px;
         background-color: values.$darkGreen;
     }
 
@@ -480,19 +480,8 @@ main {
             }
         }
         .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
             width: 95%;
             height: 80%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-
             .textContent {
                 display: flex;
                 align-items: center;
@@ -670,14 +659,6 @@ main {
                 height: 7px;
             }
 
-        }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
         }
     }
     
@@ -687,19 +668,6 @@ main {
 
     main {
         .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 95%;
-            height: 80%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-
             .textContent {
                 display: flex;
                 align-items: center;
@@ -871,14 +839,6 @@ main {
                 height: 7px;
             }
 
-        }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
         }
     }
 
@@ -903,19 +863,6 @@ main {
     }
     main {
         .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 95%;
-            height: 80%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-
             .textContent {
                 display: flex;
                 align-items: center;
@@ -1088,14 +1035,6 @@ main {
             }
 
         }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
     }
 
 }
@@ -1111,18 +1050,6 @@ main {
     }
     main {
         .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 95%;
-            height: 80%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
             .textContent {
                 display: flex;
                 align-items: center;
@@ -1295,14 +1222,6 @@ main {
             }
 
         }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
     }
 }
 
@@ -1310,19 +1229,6 @@ main {
 
     main {
         .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 95%;
-            height: 80%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-
             .textContent {
                 display: flex;
                 align-items: center;
@@ -1495,14 +1401,6 @@ main {
             }
 
         }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
     }
 }
 
@@ -1513,18 +1411,6 @@ main {
             display: none;
         }
         .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 95%;
-            height: 80%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
             .textContent {
                 display: flex;
                 align-items: center;
@@ -1724,14 +1610,6 @@ main {
             }
 
         }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
     }
 }
 
@@ -1743,19 +1621,8 @@ main {
     }
     main {
         .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
             width: 97%;
             height: 70%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-
             .textContent {
                 display: flex;
                 align-items: center;
@@ -1940,34 +1807,13 @@ main {
                 height: 7px;
             }
         }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
     }
 }
 
 @media screen and (max-width: 450px) {
 
     main {
-        .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 97%;
-            height: 70%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-    
+        .content {   
             .textContent {
                 display: flex;
                 align-items: center;
@@ -2168,35 +2014,13 @@ main {
                 height: 7px;
             } 
         }
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
-    
     }
 }
 
 @media screen and (max-width: 420px) {
 
     main {
-        .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 97%;
-            height: 70%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-    
+        .content {   
             .textContent {
                 display: flex;
                 align-items: center;
@@ -2382,36 +2206,13 @@ main {
                 height: 7px;
             } 
         }
-
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
-    
     }
 }
 
 @media screen and (max-width: 400px) {
 
     main {
-        .content {
-            position: relative;
-            overflow: hidden;
-            color: values.$pale;
-            background-color: values.$darkGreen;
-            width: 97%;
-            height: 70%;
-            border-radius: values.$radiusNormal;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            row-gap: 40px;
-    
+        .content {   
             .textContent {
                 display: flex;
                 align-items: center;
@@ -2571,16 +2372,6 @@ main {
                 height: 7px;
             } 
         }
-
-        .next {
-            @include button.btnNext(0, 0, auto, auto, 6px);
-            background-image: url(./medias/img/medias_ui/prochain.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 25px;
-            background-color: values.$darkGreen;
-        }
-
     }
 }
 

@@ -603,7 +603,7 @@ main .next {
   background-image: url(./medias/img/medias_ui/prochain.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 25px;
   background-color: #1f3d34;
 }
 main .next a {
@@ -764,18 +764,8 @@ main .sideMenu {
     margin-top: 3vh;
   }
   main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
     width: 95%;
     height: 80%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
   }
   main .content .textContent {
     display: flex;
@@ -1050,59 +1040,8 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 950px) {
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 95%;
-    height: 80%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
-  }
   main .content .textContent {
     display: flex;
     align-items: center;
@@ -1372,43 +1311,6 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 870px) {
   .containerboth {
@@ -1423,20 +1325,6 @@ main .sideMenu {
   .btnContainer {
     margin-top: 1vh;
     margin-right: 3vw;
-  }
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 95%;
-    height: 80%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
   }
   main .content .textContent {
     display: flex;
@@ -1707,43 +1595,6 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 825px) {
   .consigne {
@@ -1752,20 +1603,6 @@ main .sideMenu {
   .btnContainer {
     margin-top: 1%;
     margin-right: 5vw;
-  }
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 95%;
-    height: 80%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
   }
   main .content .textContent {
     display: flex;
@@ -2036,59 +1873,8 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 800px) {
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 95%;
-    height: 80%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
-  }
   main .content .textContent {
     display: flex;
     align-items: center;
@@ -2358,61 +2144,10 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 730px) {
   main .barDetailSide {
     display: none;
-  }
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 95%;
-    height: 80%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
   }
   main .content .textContent {
     display: flex;
@@ -2706,43 +2441,6 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 600px) {
   .consigne {
@@ -2750,18 +2448,8 @@ main .sideMenu {
     margin-left: 5vw;
   }
   main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
     width: 97%;
     height: 70%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
   }
   main .content .textContent {
     display: flex;
@@ -3044,59 +2732,8 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 450px) {
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 97%;
-    height: 70%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
-  }
   main .content .textContent {
     display: flex;
     align-items: center;
@@ -3391,59 +3028,8 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 420px) {
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 97%;
-    height: 70%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
-  }
   main .content .textContent {
     display: flex;
     align-items: center;
@@ -3722,59 +3308,8 @@ main .sideMenu {
   main .content .reward:active a {
     color: #fffcf7;
   }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 400px) {
-  main .content {
-    position: relative;
-    overflow: hidden;
-    color: #fffcf7;
-    background-color: #1f3d34;
-    width: 97%;
-    height: 70%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
-  }
   main .content .textContent {
     display: flex;
     align-items: center;
@@ -4028,43 +3563,6 @@ main .sideMenu {
     color: #fffcf7;
   }
   main .content .reward:active a {
-    color: #fffcf7;
-  }
-  main .next {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-    background-color: #1f3d34;
-  }
-  main .next a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .next:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .next:hover a {
-    color: #59b59e;
-  }
-  main .next:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .next:active a {
     color: #fffcf7;
   }
 }
