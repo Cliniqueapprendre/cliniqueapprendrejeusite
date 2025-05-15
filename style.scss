@@ -289,7 +289,6 @@ main {
             width: 60px;
             height: 60px;
         }
-   
     }
 
     .next {
@@ -341,7 +340,6 @@ main {
                         left: 8%;
                     }
                 }
-    
                 &.textContent--small.textContent--1 {
                     width: 700px;
                     height: 580px;
@@ -358,7 +356,6 @@ main {
                         left: 6%; 
                     }
                 }
-    
                 &.textContent--big.textContent--2 {
                     width: 1100px;
                     height: 660px;
@@ -370,8 +367,9 @@ main {
                         text-align: center;
                     }
 
-                    .audioBtn {
+                    button.audioBtn {
                         top: 7%;
+                        left: 6%; 
                         width: 7%;
                         height: 7%; 
                     }
@@ -395,31 +393,25 @@ main {
 
                     .audioBtn {
                         left: 6%;
-                        top: 8%; 
+                        top: 10%; 
                     }
 
                     button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
                         bottom: 22%;
-                        margin: auto;
                         width: 20px;
                         height: 20px; 
                     }
                 }
-    
                 &.textContent--small.textContent--1 {
                     width: 450px;
                     height: 350px;
                     margin-left: 3%;
 
                     .audioBtn {
-                        left: 5%;
-                        top: 6%; 
+                        left: 6%;
+                        top: 8%; 
                     }
                 }
-    
                 &.textContent--big.textContent--2 {
                     bottom: 5%;
                     width: 700px;
@@ -427,15 +419,10 @@ main {
                     margin-right: 3%;
 
                     h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
                         top: 30%;
-                        margin: auto;
-                        text-align: center;
                         font-size: 14vmin;
                         line-height: 8vmin;
-                        letter-spacing: 5px;
+                        letter-spacing: 7px;
                     }
 
                     .audioBtn {
@@ -444,13 +431,10 @@ main {
                     }
 
                     button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
                         bottom: 22%;
                         margin: auto;
-                        width: 20px;
-                        height: 20px; 
+                        width: 17px;
+                        height: 17px; 
                     }
                 }
             }
@@ -488,38 +472,19 @@ main {
                         bottom: 35%; 
                     }
                 }
-
                 &.textContent--2 {
-                    background-image: url(./medias/img/medias_ui/bullemot.png);
                     bottom: 0;
                     right: 0;
-
                     h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
                         top: 30%;
-                        margin: auto;
-                        text-align: center;
                         font-size: 10vmin;
                         line-height: 10vmin;
-                        letter-spacing: 5px;
-            
-                        em {
-                            letter-spacing: normal;
-                            text-decoration: underline;
-                            font-style: normal;
-                        }
+                        letter-spacing: 7px;
                     }
                     button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
                         bottom: 30%;
-                        margin: auto;
                     }
                 }
-
                 &.textContent--big.textContent--1 {
                     left: 0;
                     right: 350px;
@@ -537,7 +502,6 @@ main {
                         height: 15px;
                     }
                 }
-    
                 &.textContent--small.textContent--1 {
                     top: 10px;
                     left: 0;
@@ -550,7 +514,6 @@ main {
                     }
                     
                 }
-    
                 &.textContent--big.textContent--2 {
                     left: 200px;
                     right: 0;
@@ -563,12 +526,13 @@ main {
                     h3 {
                         font-size: 10vmin;
                         line-height: 10vmin;
+                        letter-spacing: 7px;
                     }
 
                     button.btnToNext {
                         right: 20px;
                         left: auto;
-                        bottom: 29%;
+                        bottom: 27%;
                         width: 15px;
                         height: 15px;
                     }
@@ -605,124 +569,6 @@ main {
     
 }
 
-@media screen and (max-width: 950px) {
-
-    main {
-        .content {
-            .textContent {
-                &.textContent--1 {
-                    background-image: url(./medias/img/medias_ui/bulleson.png);
-                    top: 45px;
-                    left: 45px;
-                    h1 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 32%;
-                        margin: auto;
-                        font-family: 'Andika-Bold';
-                        line-height: 7vmin;
-                        font-size: 11vmin;
-                        letter-spacing: 5px;
-                        text-align: center;
-                        //width: 100%;
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 35%;
-                        margin: auto;
-                    }
-                }
-
-                &.textContent--2 {
-                    background-image: url(./medias/img/medias_ui/bullemot.png);
-                    bottom: 0;
-                    right: 0;
-
-                    h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 30%;
-                        margin: auto;
-                        text-align: center;
-                        font-size: 10vmin;
-                        line-height: 10vmin;
-                        letter-spacing: 5px;
-            
-                        em {
-                            letter-spacing: normal;
-                            text-decoration: underline;
-                            font-style: normal;
-                        }
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 30%;
-                        margin: auto;
-                    }
-                }
-
-                &.textContent--big.textContent--1 {
-                    left: 0;
-                    right: 350px;
-                    margin: auto;
-                    width: 400px;
-                    height: 350px;
-                    button.btnToNext {
-                        right: 10px;
-                        left: auto;
-                        bottom: 25%;
-                    }
-                }
-    
-                &.textContent--small.textContent--1 {
-                    top: 10px;
-                    left: 0;
-                    right: 350px;
-                    margin: auto;
-                    width: 360px;
-                    height: 300px;
-                    
-                }
-    
-                &.textContent--big.textContent--2 {
-                    left: 200px;
-                    right: 0;
-                    bottom: -5%; 
-                    margin: auto;
-                    width: 500px;
-                    max-width: 100%;
-                    height: 400px;
-                    button.btnToNext {
-                        right: 20px;
-                        left: auto;
-                        bottom: 29%;
-                    }
-
-                    .audioBtn {
-                        top: 15%;
-                        left: 4%; 
-                        width: 20px;
-                        height: 20px;
-                    }
-    
-                    .reward {
-                        width: 10px;
-                        height: 10px;
-                        padding: 25px; 
-                    }
-                }
-            }
-        }
-    }
-
-}
-
 @media screen and (max-width: 870px) {
 
     .containerboth {
@@ -740,123 +586,6 @@ main {
         margin-top: 1vh;
         margin-right: 3vw;
     }
-    main {
-        .content {
-            .textContent {
-                &.textContent--1 {
-                    background-image: url(./medias/img/medias_ui/bulleson.png);
-                    top: 45px;
-                    left: 45px;
-                    h1 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 32%;
-                        margin: auto;
-                        font-family: 'Andika-Bold';
-                        line-height: 7vmin;
-                        font-size: 11vmin;
-                        letter-spacing: 5px;
-                        text-align: center;
-                        //width: 100%;
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 35%;
-                        margin: auto;
-                    }
-                }
-
-                &.textContent--2 {
-                    background-image: url(./medias/img/medias_ui/bullemot.png);
-                    bottom: 0;
-                    right: 0;
-
-                    h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 30%;
-                        margin: auto;
-                        text-align: center;
-                        font-size: 10vmin;
-                        line-height: 12vmin;
-                        letter-spacing: 5px;
-            
-                        em {
-                            letter-spacing: normal;
-                            text-decoration: underline;
-                            font-style: normal;
-                        }
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 30%;
-                        margin: auto;
-                    }
-                }
-
-                &.textContent--big.textContent--1 {
-                    left: 0;
-                    right: 250px;
-                    margin: auto;
-                    width: 400px;
-                    height: 350px;
-                    button.btnToNext {
-                        right: 10px;
-                        left: auto;
-                        bottom: 25%;
-                    }
-                }
-    
-                &.textContent--small.textContent--1 {
-                    top: 5px;
-                    left: 0;
-                    right: 350px;
-                    margin: auto;
-                    width: 360px;
-                    height: 300px;
-                    
-                }
-    
-                &.textContent--big.textContent--2 {
-                    left: 200px;
-                    right: 0;
-                    bottom: -5%; 
-                    margin: auto;
-                    width: 500px;
-                    max-width: 100%;
-                    height: 400px;
-                    button.btnToNext {
-                        right: 10px;
-                        left: auto;
-                        bottom: 27%;
-                    }
-
-                    .audioBtn {
-                        top: 15%;
-                        left: 4%; 
-                        width: 20px;
-                        height: 20px;
-                    }
-    
-                    .reward {
-                        width: 10px;
-                        height: 10px;
-                        padding: 25px; 
-                    }
-                }
-            }
-            .answer {
-                width: 20px;
-                height: 20px;
-            }
-        }
-    }
 
 }
 
@@ -873,75 +602,33 @@ main {
         .content {
             .textContent {
                 &.textContent--1 {
-                    background-image: url(./medias/img/medias_ui/bulleson.png);
-                    top: 45px;
-                    left: 45px;
                     h1 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 32%;
-                        margin: auto;
-                        font-family: 'Andika-Bold';
                         line-height: 8vmin;
                         font-size: 10vmin;
-                        letter-spacing: 5px;
-                        text-align: center;
-                        //width: 100%;
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 35%;
-                        margin: auto;
                     }
                 }
-
                 &.textContent--2 {
-                    background-image: url(./medias/img/medias_ui/bullemot.png);
-                    bottom: 0;
-                    right: 0;
-
                     h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 30%;
-                        margin: auto;
-                        text-align: center;
                         font-size: 9vmin;
                         line-height: 12vmin;
-                        letter-spacing: 5px;
-            
-                        em {
-                            letter-spacing: normal;
-                            text-decoration: underline;
-                            font-style: normal;
-                        }
+                        letter-spacing: 7px;
                     }
                     button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
                         bottom: 35%;
-                        margin: auto;
                     }
                 }
-
                 &.textContent--big.textContent--1 {
-                    left: 0;
                     right: 0;
-                    margin: auto;
                     width: 400px;
                     height: 300px;
                     button.btnToNext {
-                        right: 10px;
-                        left: auto;
-                        bottom: 25%;
+                        padding: 22px;
+                        bottom: 20%;
                     }
-                }
-    
+                    button.audioBtn {
+                        top: 6%; 
+                    }
+                } 
                 &.textContent--small.textContent--1 {
                     top: 5px;
                     left: 0;
@@ -950,8 +637,7 @@ main {
                     width: 350px;
                     height: 300px;
                     
-                }
-    
+                }   
                 &.textContent--big.textContent--2 {
                     left: 0;
                     right: 0;
@@ -961,29 +647,17 @@ main {
                     max-width: 100%;
                     height: 400px;
                     button.btnToNext {
+                        padding: 22px;
                         right: 10px;
                         left: auto;
-                        bottom: 30%;
+                        bottom: 28%;
                     }
-
                     .audioBtn {
                         top: 15%;
                         left: 4%; 
-                        width: 20px;
-                        height: 20px;
-                    }
-    
-                    .reward {
-                        width: 10px;
-                        height: 10px;
-                        padding: 25px; 
                     }
                 }
             }   
-            .answer {
-                width: 7px;
-                height: 7px;
-            }
         }
     }
 }
@@ -994,62 +668,16 @@ main {
         .content {
             .textContent {
                 &.textContent--1 {
-                    background-image: url(./medias/img/medias_ui/bulleson.png);
-                    top: 45px;
-                    left: 45px;
                     h1 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 32%;
-                        margin: auto;
-                        font-family: 'Andika-Bold';
-                        line-height: 8vmin;
                         font-size: 13vmin;
                         letter-spacing: 5px;
-                        text-align: center;
-                        //width: 100%;
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 35%;
-                        margin: auto;
                     }
                 }
-
                 &.textContent--2 {
-                    background-image: url(./medias/img/medias_ui/bullemot.png);
-                    bottom: 0;
-                    right: 0;
-
                     h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 30%;
-                        margin: auto;
-                        text-align: center;
-                        font-size: 10vmin;
-                        line-height: 11vmin;
                         letter-spacing: 5px;
-            
-                        em {
-                            letter-spacing: normal;
-                            text-decoration: underline;
-                            font-style: normal;
-                        }
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 35%;
-                        margin: auto;
                     }
                 }
-
                 &.textContent--big.textContent--1 {
                     left: 0;
                     right: 0;
@@ -1062,7 +690,6 @@ main {
                         bottom: 25%;
                     }
                 }
-    
                 &.textContent--small.textContent--1 {
                     top: 5px;
                     left: 0;
@@ -1070,9 +697,15 @@ main {
                     margin: auto;
                     width: 350px;
                     height: 300px;
-                    
+                    h1 {
+                        font-size: 11vmin;
+                        letter-spacing: 5px;
+                    }
+                    .audioBtn {
+                        width: 20px;
+                        height: 20px;
+                    }                  
                 }
-    
                 &.textContent--big.textContent--2 {
                     left: 0;
                     right: 0;
@@ -1086,26 +719,19 @@ main {
                         left: auto;
                         bottom: 30%;
                     }
-
                     .audioBtn {
                         top: 15%;
-                        left: 4%; 
+                        left: 3%; 
                         width: 20px;
                         height: 20px;
                     }
-    
                     .reward {
                         width: 7px;
                         height: 7px;
                         padding: 25px; 
                     }
                 }
-            }  
-            .answer {
-                width: 20px;
-                height: 20px;
-            }
-
+            } 
         }
     }
 }
@@ -1119,145 +745,78 @@ main {
         .content {
             .textContent {
                 &.textContent--1 {
-                    background-image: url(./medias/img/medias_ui/bulleson.png);
-                    top: 45px;
-                    left: 45px;
                     h1 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 32%;
-                        margin: auto;
-                        font-family: 'Andika-Bold';
                         line-height: 9vmin;
-                        font-size: 13vmin;
-                        letter-spacing: 5px;
-                        text-align: center;
-                        //width: 100%;
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 35%;
-                        margin: auto;
                     }
                 }
-
                 &.textContent--2 {
-                    background-image: url(./medias/img/medias_ui/bullemot.png);
-                    bottom: 0;
-                    right: 0;
-
                     h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 30%;
-                        margin: auto;
-                        text-align: center;
                         font-size: 12vmin;
                         line-height: 11vmin;
-                        letter-spacing: 5px;
-            
-                        em {
-                            letter-spacing: normal;
-                            text-decoration: underline;
-                            font-style: normal;
-                        }
-                    }
-                    button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 30%;
-                        margin: auto;
                     }
                 }
-
                 &.textContent--big.textContent--1 {
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    width: 500px;
-                    height: 400px;
-
                     h1 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 32%;
-                        margin: auto;
-                        font-family: 'Andika-Bold';
-                        line-height: 9vmin;
                         font-size: 15vmin;
-                        letter-spacing: 5px;
-                        text-align: center;
                     }
-
                     button.btnToNext {
-                        right: 10px;
+                        padding: 24px;
+                        right: 2%;
                         left: auto;
-                        bottom: 25%;
+                        bottom: 23%;
                     }
                 }
-    
                 &.textContent--small.textContent--1 {
-                    top: 5px;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    width: 350px;
-                    height: 300px;
+                    h1 {
+                        font-size: 12vmin;
+                        line-height: 8vmin;
+                    }
+                    .audioBtn {
+                        top: 9%; 
+                        width: 18px;
+                        height: 18px;
+                    }
                     
                 }
-    
                 &.textContent--big.textContent--2 {
-                    left: 0;
-                    right: 0;
-                    bottom: -5%; 
-                    margin: auto;
-                    width: 500px;
-                    max-width: 100%;
-                    height: 400px;
-
                     h3 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 30%;
-                        margin: auto;
-                        text-align: center;
-                        font-size: 13vmin;
-                        line-height: 11vmin;
+                        font-size: 11vmin;
+                        line-height: 12vmin;
                         letter-spacing: 5px;
                     }
-
                     button.btnToNext {
                         right: 10px;
                         left: auto;
                         bottom: 30%;
-                    }
+                    } 
+                }
+            }
+        }
+    }
+}
 
-                    .audioBtn {
-                        top: 15%;
-                        left: 4%; 
-                        width: 20px;
-                        height: 20px;
+@media screen and (max-width: 660px) {
+    main {
+        .content {
+            .textContent {
+                &.textContent--big.textContent--1 {
+                    h1 {
+                        font-size: 15vmin;
                     }
-    
-                    .reward {
-                        width: 7px;
-                        height: 7px;
-                        padding: 20px; 
+                }
+                &.textContent--small.textContent--1 {
+                    h1 {
+                        font-size: 13vmin;
+                        line-height: 10vmin;
+                    }             
+                }
+                &.textContent--big.textContent--2 {
+                    h3 {
+                        font-size: 12vmin;
+                        line-height: 12vmin;
                     }
                 }
             }
-            .reward {
-                width: 5px;
-                height: 5px;
-            }
-
         }
     }
 }
