@@ -1033,329 +1033,101 @@ main .sideMenu {
     width: 97%;
     height: 70%;
   }
-  main .content .textContent.textContent--1 {
-    background-image: url(./medias/img/medias_ui/bulleson.png);
-    top: 45px;
-    left: 45px;
-  }
   main .content .textContent.textContent--1 h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 32%;
-    margin: auto;
-    font-family: "Andika-Bold";
     line-height: 15vmin;
     font-size: 15vmin;
-    letter-spacing: 5px;
-    text-align: center;
-  }
-  main .content .textContent.textContent--1 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 35%;
-    margin: auto;
-  }
-  main .content .textContent.textContent--2 {
-    background-image: url(./medias/img/medias_ui/bullemot.png);
-    bottom: 45px;
-    right: 25px;
   }
   main .content .textContent.textContent--2 h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;
-    margin: auto;
-    text-align: center;
     font-size: 13vmin;
     line-height: 15vmin;
-    letter-spacing: 5px;
-  }
-  main .content .textContent.textContent--2 h3 em {
-    letter-spacing: normal;
-    text-decoration: underline;
-    font-style: normal;
-  }
-  main .content .textContent.textContent--2 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 35%;
-    margin: auto;
   }
   main .content .textContent.textContent--big.textContent--1 {
-    left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
     width: 350px;
     height: 300px;
   }
+  main .content .textContent.textContent--big.textContent--1 h1 {
+    font-size: 14vmin;
+    line-height: 10vmin;
+  }
+  main .content .textContent.textContent--big.textContent--1 button.audioBtn {
+    top: 10%;
+    left: 5%;
+  }
   main .content .textContent.textContent--big.textContent--1 button.btnToNext {
-    right: 10px;
+    right: 2%;
     left: auto;
-    bottom: 25%;
+    bottom: 23%;
+    padding: 22px;
   }
   main .content .textContent.textContent--small.textContent--1 {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 400px;
-    height: 0px;
+    height: 0;
+  }
+  main .content .textContent.textContent--small.textContent--1 h1 {
+    display: none;
+  }
+  main .content .textContent.textContent--small.textContent--1 .audioBtn {
+    display: none;
   }
   main .content .textContent.textContent--big.textContent--2 {
-    left: 0;
     right: 15px;
     top: 0;
     bottom: 0;
-    margin: auto;
     max-width: 90%;
     height: 360px;
   }
   main .content .textContent.textContent--big.textContent--2 h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;
-    margin: auto;
-    text-align: center;
     font-size: 13vmin;
     line-height: 15vmin;
-    letter-spacing: 5px;
   }
   main .content .textContent.textContent--big.textContent--2 button.btnToNext {
-    right: 10px;
-    left: auto;
-    bottom: 25%;
+    bottom: 27%;
   }
-  main .content .textContent.textContent--big.textContent--2 .audioBtn {
+  main .content .textContent.textContent--big.textContent--2 button.audioBtn {
     top: 13%;
     left: 3%;
   }
-  main .content .textContent.textContent--big.textContent--2 .reward {
-    width: 5px;
-    height: 5px;
-    padding: 24px;
+}
+@media screen and (max-width: 500px) {
+  main .content .textContent.textContent--big.textContent--1 h1 {
+    font-size: 15vmin;
+    line-height: 10vmin;
   }
-  main .content .audioBtn {
-    width: 7px;
-    height: 7px;
+  main .content .textContent.textContent--big.textContent--1 button.audioBtn {
+    top: 8%;
   }
-  main .content .answer {
-    width: 5px;
-    height: 5px;
+  main .content .textContent.textContent--big.textContent--1 button.btnToNext {
+    bottom: 24%;
   }
-  main .content .reward {
-    width: 7px;
-    height: 7px;
+  main .content .textContent.textContent--big.textContent--2 h3 {
+    font-size: 13vmin;
+    line-height: 17vmin;
+  }
+  main .content .textContent.textContent--big.textContent--2 button.btnToNext {
+    right: 2%;
+    bottom: 29%;
+  }
+  main .content .textContent.textContent--big.textContent--2 button.audioBtn {
+    top: 16%;
   }
 }
 @media screen and (max-width: 450px) {
-  main .content .textContent.textContent--1 {
-    background-image: url(./medias/img/medias_ui/bulleson.png);
-    top: 45px;
-    left: 45px;
-  }
-  main .content .textContent.textContent--1 h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;
-    margin: auto;
-    font-family: "Andika-Bold";
-    line-height: 10vmin;
-    font-size: 15vmin;
-    letter-spacing: 5px;
-    text-align: center;
-  }
-  main .content .textContent.textContent--1 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    margin: auto;
-  }
-  main .content .textContent.textContent--2 {
-    background-image: url(./medias/img/medias_ui/bullemot.png);
-    bottom: 45px;
-    right: 25px;
-  }
-  main .content .textContent.textContent--2 h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 25%;
-    margin: auto;
-    text-align: center;
-    font-size: 13vmin;
-    line-height: 15vmin;
-    letter-spacing: 3px;
-  }
-  main .content .textContent.textContent--2 h3 em {
-    letter-spacing: normal;
-    text-decoration: underline;
-    font-style: normal;
-  }
-  main .content .textContent.textContent--2 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    margin: auto;
-  }
   main .content .textContent.textContent--big.textContent--1 {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 70%;
-    height: 200px;
-  }
-  main .content .textContent.textContent--big.textContent--1 button.btnToNext {
-    right: 10px;
-    left: auto;
-    width: 1px;
-    height: 1px;
-    padding: 20px;
-    bottom: 20%;
-  }
-  main .content .textContent.textContent--small.textContent--1 {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
     width: 80%;
-    height: 0;
-  }
-  main .content .textContent.textContent--big.textContent--2 {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 80%;
-    max-width: 100%;
-    height: 200px;
-    right: 10px;
-  }
-  main .content .textContent.textContent--big.textContent--2 h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 25%;
-    margin: auto;
-    text-align: center;
-    font-size: 13vmin;
-    line-height: 11vmin;
-    letter-spacing: 3px;
-  }
-  main .content .textContent.textContent--big.textContent--2 button.btnToNext {
-    right: 10px;
-    left: auto;
-    width: 1px;
-    height: 1px;
-    padding: 20px;
-    bottom: 20%;
-  }
-  main .content .textContent.textContent--big.textContent--2 .audioBtn {
-    top: 8%;
-    left: 3%;
-    width: 1px;
-    height: 1px;
-  }
-  main .content .textContent.textContent--big.textContent--2 .reward {
-    width: 1px;
-    height: 1px;
-    padding: 20px;
-  }
-  main .content .answer {
-    width: 7px;
-    height: 7px;
-  }
-}
-@media screen and (max-width: 420px) {
-  main .content .textContent.textContent--1 {
-    background-image: url(./medias/img/medias_ui/bulleson.png);
-    top: 45px;
-    left: 45px;
-  }
-  main .content .textContent.textContent--1 h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;
-    margin: auto;
-    font-family: "Andika-Bold";
-    line-height: 10vmin;
-    font-size: 15vmin;
-    letter-spacing: 5px;
-    text-align: center;
-  }
-  main .content .textContent.textContent--1 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    margin: auto;
-  }
-  main .content .textContent.textContent--2 {
-    background-image: url(./medias/img/medias_ui/bullemot.png);
-    bottom: 45px;
-    right: 25px;
-  }
-  main .content .textContent.textContent--2 h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 25%;
-    margin: auto;
-    text-align: center;
-    font-size: 12vmin;
-    line-height: 15vmin;
-    letter-spacing: 3px;
-  }
-  main .content .textContent.textContent--2 h3 em {
-    letter-spacing: normal;
-    text-decoration: underline;
-    font-style: normal;
-  }
-  main .content .textContent.textContent--2 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    margin: auto;
-  }
-  main .content .textContent.textContent--big.textContent--1 {
-    width: 70%;
   }
   main .content .textContent.textContent--big.textContent--1 h1 {
-    line-height: 10vmin;
-    font-size: 12vmin;
-    letter-spacing: 5px;
-    text-align: center;
+    line-height: 15vmin;
+    font-size: 16vmin;
   }
-  main .content .textContent.textContent--big.textContent--1 .audioBtn {
-    left: 5%;
-    top: 2%;
-    width: 1px;
-    height: 1px;
+  main .content .textContent.textContent--big.textContent--1 button.audioBtn {
+    top: 10%;
+    width: 15px;
+    height: 15px;
   }
-  main .content .textContent.textContent--big.textContent--1 .btnToNext {
-    width: 1px;
-    height: 1px;
-    padding: 20px;
-  }
-  main .content .textContent.textContent--small.textContent--1 {
-    width: 80%;
-    height: 0;
+  main .content .textContent.textContent--big.textContent--1 button.btnToNext {
+    padding: 18px;
+    bottom: 26%;
   }
   main .content .textContent.textContent--big.textContent--2 {
     width: 80%;
@@ -1363,108 +1135,76 @@ main .sideMenu {
     right: 10px;
   }
   main .content .textContent.textContent--big.textContent--2 h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
     top: 25%;
-    margin: auto;
-    text-align: center;
-    font-size: 12vmin;
-    line-height: 13vmin;
-    letter-spacing: 3px;
+    line-height: 11vmin;
   }
-  main .content .textContent.textContent--big.textContent--2 .audioBtn {
-    left: 1%;
+  main .content .textContent.textContent--big.textContent--2 button.btnToNext {
+    padding: 13px;
+    bottom: 20%;
+  }
+  main .content .textContent.textContent--big.textContent--2 button.audioBtn {
     top: 2%;
-    width: 1px;
+    width: 5px;
     height: 1px;
-  }
-  main .content .textContent.textContent--big.textContent--2 .reward {
-    width: 1px;
-    height: 1px;
-    padding: 10px;
   }
 }
 @media screen and (max-width: 400px) {
-  main .content .textContent.textContent--1 {
-    background-image: url(./medias/img/medias_ui/bulleson.png);
-    top: 45px;
-    left: 45px;
+  main .content .textContent.textContent--big.textContent--1 {
+    width: 85%;
+    right: 5%;
   }
-  main .content .textContent.textContent--1 h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
+  main .content .textContent.textContent--big.textContent--1 h1 {
     top: 30%;
-    margin: auto;
-    font-family: "Andika-Bold";
-    line-height: 10vmin;
+    line-height: 18vmin;
     font-size: 17vmin;
-    letter-spacing: 5px;
-    text-align: center;
   }
-  main .content .textContent.textContent--1 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    margin: auto;
+  main .content .textContent.textContent--big.textContent--1 button.audioBtn {
+    top: 13%;
+    width: 10px;
+    height: 10px;
   }
-  main .content .textContent.textContent--2 {
-    background-image: url(./medias/img/medias_ui/bullemot.png);
-    bottom: 45px;
-    right: 25px;
+  main .content .textContent.textContent--big.textContent--1 button.btnToNext {
+    padding: 15px;
+    bottom: 27%;
   }
-  main .content .textContent.textContent--2 h3 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 25%;
-    margin: auto;
-    text-align: center;
-    font-size: 13vmin;
+  main .content .textContent.textContent--big.textContent--2 {
+    width: 87%;
+  }
+  main .content .textContent.textContent--big.textContent--2 h3 {
     line-height: 15vmin;
     letter-spacing: 3px;
   }
-  main .content .textContent.textContent--2 h3 em {
-    letter-spacing: normal;
-    text-decoration: underline;
-    font-style: normal;
+  main .content .textContent.textContent--big.textContent--2 button.btnToNext {
+    padding: 12px;
+    bottom: 22%;
   }
-  main .content .textContent.textContent--2 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    margin: auto;
-  }
+}
+@media screen and (max-width: 360px) {
   main .content .textContent.textContent--big.textContent--1 {
     width: 80%;
   }
-  main .content .textContent.textContent--big.textContent--1 button.btnToNext {
-    right: 20px;
-    width: 1px;
-    height: 1px;
-    padding: 20px;
+  main .content .textContent.textContent--big.textContent--1 h1 {
+    line-height: 22vmin;
+    font-size: 17vmin;
   }
-  main .content .textContent.textContent--small.textContent--1 {
-    width: 80%;
-    height: 0;
+  main .content .textContent.textContent--big.textContent--1 button.audioBtn {
+    top: 16%;
+    width: 8px;
+    height: 8px;
+  }
+  main .content .textContent.textContent--big.textContent--1 button.btnToNext {
+    right: 3%;
+    bottom: 29%;
+    padding: 14px;
   }
   main .content .textContent.textContent--big.textContent--2 {
-    width: 80%;
-    height: 200px;
-    right: 10px;
+    width: 90%;
   }
-  main .content .textContent.textContent--big.textContent--2 .audioBtn {
+  main .content .textContent.textContent--big.textContent--2 button.audioBtn {
     left: 1%;
-    width: 1px;
+    top: 4%;
+    width: 5px;
     height: 1px;
-  }
-  main .content .textContent.textContent--big.textContent--2 .reward {
-    width: 1px;
-    height: 1px;
-    padding: 10px;
   }
 }
 @media screen and (max-height: 600px) and (orientation: landscape) {
