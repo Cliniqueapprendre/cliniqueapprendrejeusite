@@ -41,64 +41,60 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    justify-content: flex-start;
-}
-
-.consigne {
-    justify-self: flex-start;
-    font-family: 'Andika-normal';
-    color: values.$pale;
-    margin-right: 10vw;
-    margin-left: 5vw;
-    font-size: 2em; 
-}
-
-.btnContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 95%;
     justify-content: center;
-    column-gap: 10px;
-    margin-top: 1%;
-    margin-right: 5vw;
+    column-gap: 10%;
 
-    .btn {
-        @include button.btnNext(0, 0, auto, auto, 3px);
-        background-color: values.$darkGreen;
-        padding: 2em;
+
+    .consigne {
+        justify-self: flex-start;
+        font-family: 'Andika-normal';
+        color: values.$pale;
+        //margin-right: 10vw;
+        //margin-left: 5vw;
+        font-size: 2em;
     }
 
-    .btnMusic {
-        background-image: url(./medias/img/medias_ui/musique.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    .btnContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 1%;
+        margin-right: 5vw;
 
-    .btnMusicChange {
-        background-image: url(./medias/img/medias_ui/nomusique.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .btn {
+            @include button.btnNext(0, 0, auto, auto, 3px);
+            background-color: values.$darkGreen;
+            padding: 2em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-    .btnFull {
-        background-image: url(./medias/img/medias_ui/pleinecran.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .btnMusic {
+            background-image: url(./medias/img/medias_ui/musique.png);
+        }
 
-    .btnFullChange {
-        background-image: url(./medias/img/medias_ui/modefenetre.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .btnMusicChange {
+            background-image: url(./medias/img/medias_ui/nomusique.png);
+        }
 
-    .btnDownload {
-        background-image: url(./medias/img/medias_ui/telecharger.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        .btnFull {
+            background-image: url(./medias/img/medias_ui/pleinecran.png);
+        }
+
+        .btnFullChange {
+            background-image: url(./medias/img/medias_ui/modefenetre.png);  
+        }
+
+        .btnDownload {
+            background-image: url(./medias/img/medias_ui/telecharger.png);
+        }
     }
 }
+
+
 
 main {
     overflow-x: hidden;
@@ -448,8 +444,8 @@ main {
         justify-self: flex-start;
         font-family: 'Andika-normal';
         color: values.$pale;
-        margin-right: 10vw;
-        margin-left: 5vw;
+        //margin-right: 10vw;
+        //margin-left: 5vw;
         font-size: 1.5em; 
     }
 
@@ -576,8 +572,8 @@ main {
     }
     
     .consigne {
-        margin-left: 3vw;
-        margin-right: 3vw;
+        //margin-left: 3vw;
+        //margin-right: 3vw;
         margin-top: 1vh;
         text-align: center;
     }
@@ -824,8 +820,9 @@ main {
 @media screen and (max-width: 600px) {
 
     .consigne {
-        margin-right: 5vw;
-        margin-left: 5vw;
+        margin-top: 1vh;
+        //margin-right: 5vw;
+        //margin-left: 5vw;
     }
     main {
         .content {
@@ -1334,6 +1331,81 @@ main {
                         height: 1px;
                         padding: 10px;
                     } 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    main {
+        .content {
+            .textContent {
+
+                &.textContent--big.textContent--1 {
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    
+                }
+                &.textContent--small.textContent--1 {
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                &.textContent--big.textContent--2 {
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+    main {
+        .content {
+            .textContent {
+                &.textContent--1 {
+                    h1 {
+                        font-size: 36px;
+                    }
+                }
+
+                &.textContent--big.textContent--1 {
+                    height: 90%;
+                    width: 350px;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    
+                }
+                &.textContent--small.textContent--1 {
+                    height: 80%;
+                    width: 250;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                &.textContent--big.textContent--2 {
+                    height: 95%;
+                    width: 400px;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
                 }
             }
         }

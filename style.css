@@ -216,20 +216,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
-  justify-content: flex-start;
+  width: 95%;
+  justify-content: center;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
 }
-
-.consigne {
+.containerboth .consigne {
   justify-self: flex-start;
   font-family: "Andika-normal";
   color: #fffcf7;
-  margin-right: 10vw;
-  margin-left: 5vw;
   font-size: 2em;
 }
-
-.btnContainer {
+.containerboth .btnContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -239,7 +237,7 @@ body {
   margin-top: 1%;
   margin-right: 5vw;
 }
-.btnContainer .btn {
+.containerboth .btnContainer .btn {
   position: relative;
   transform: translateY(0) translateX(0);
   color: #1f3d34;
@@ -252,51 +250,43 @@ body {
   transition-duration: 0.2s;
   background-color: #1f3d34;
   padding: 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.btnContainer .btn a {
+.containerboth .btnContainer .btn a {
   color: #1f3d34;
   text-decoration: none;
 }
-.btnContainer .btn:hover {
+.containerboth .btnContainer .btn:hover {
   border: 3px solid #59b59e;
   background-color: rgba(89, 181, 158, 0);
   color: #59b59e;
 }
-.btnContainer .btn:hover a {
+.containerboth .btnContainer .btn:hover a {
   color: #59b59e;
 }
-.btnContainer .btn:active {
+.containerboth .btnContainer .btn:active {
   border: 3px solid #fffcf7;
   background-color: rgba(89, 181, 158, 0.5);
   color: #fffcf7;
 }
-.btnContainer .btn:active a {
+.containerboth .btnContainer .btn:active a {
   color: #fffcf7;
 }
-.btnContainer .btnMusic {
+.containerboth .btnContainer .btnMusic {
   background-image: url(./medias/img/medias_ui/musique.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.btnContainer .btnMusicChange {
+.containerboth .btnContainer .btnMusicChange {
   background-image: url(./medias/img/medias_ui/nomusique.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.btnContainer .btnFull {
+.containerboth .btnContainer .btnFull {
   background-image: url(./medias/img/medias_ui/pleinecran.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.btnContainer .btnFullChange {
+.containerboth .btnContainer .btnFullChange {
   background-image: url(./medias/img/medias_ui/modefenetre.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.btnContainer .btnDownload {
+.containerboth .btnContainer .btnDownload {
   background-image: url(./medias/img/medias_ui/telecharger.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 main {
@@ -745,8 +735,6 @@ main .sideMenu {
     justify-self: flex-start;
     font-family: "Andika-normal";
     color: #fffcf7;
-    margin-right: 10vw;
-    margin-left: 5vw;
     font-size: 1.5em;
   }
   main.whenHasImg .containerboth {
@@ -854,8 +842,6 @@ main .sideMenu {
     justify-content: center;
   }
   .consigne {
-    margin-left: 3vw;
-    margin-right: 3vw;
     margin-top: 1vh;
     text-align: center;
   }
@@ -1041,8 +1027,7 @@ main .sideMenu {
 }
 @media screen and (max-width: 600px) {
   .consigne {
-    margin-right: 5vw;
-    margin-left: 5vw;
+    margin-top: 1vh;
   }
   main .content {
     width: 97%;
@@ -1480,6 +1465,61 @@ main .sideMenu {
     width: 1px;
     height: 1px;
     padding: 10px;
+  }
+}
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  main .content .textContent.textContent--big.textContent--1 {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  main .content .textContent.textContent--small.textContent--1 {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  main .content .textContent.textContent--big.textContent--2 {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  main .content .textContent.textContent--1 h1 {
+    font-size: 36px;
+  }
+  main .content .textContent.textContent--big.textContent--1 {
+    height: 90%;
+    width: 350px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  main .content .textContent.textContent--small.textContent--1 {
+    height: 80%;
+    width: 250;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  main .content .textContent.textContent--big.textContent--2 {
+    height: 95%;
+    width: 400px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
 }
 .hidden {
