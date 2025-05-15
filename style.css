@@ -767,29 +767,12 @@ main .sideMenu {
     width: 95%;
     height: 80%;
   }
-  main .content .textContent.textContent--1 {
-    background-image: url(./medias/img/medias_ui/bulleson.png);
-    top: 45px;
-    left: 45px;
-  }
   main .content .textContent.textContent--1 h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
     top: 32%;
-    margin: auto;
-    font-family: "Andika-Bold";
-    line-height: 7vmin;
     font-size: 11vmin;
-    letter-spacing: 5px;
-    text-align: center;
   }
   main .content .textContent.textContent--1 button.btnToNext {
-    position: absolute;
-    left: 0;
-    right: 0;
     bottom: 35%;
-    margin: auto;
   }
   main .content .textContent.textContent--2 {
     background-image: url(./medias/img/medias_ui/bullemot.png);
@@ -826,10 +809,15 @@ main .sideMenu {
     width: 400px;
     height: 350px;
   }
+  main .content .textContent.textContent--big.textContent--1 h1 {
+    line-height: 9vmin;
+  }
   main .content .textContent.textContent--big.textContent--1 button.btnToNext {
     right: 10px;
     left: auto;
     bottom: 25%;
+    width: 15px;
+    height: 15px;
   }
   main .content .textContent.textContent--small.textContent--1 {
     top: 10px;
@@ -838,6 +826,9 @@ main .sideMenu {
     margin: auto;
     width: 360px;
     height: 300px;
+  }
+  main .content .textContent.textContent--small.textContent--1 h1 {
+    line-height: 7vmin;
   }
   main .content .textContent.textContent--big.textContent--2 {
     left: 200px;
@@ -856,6 +847,8 @@ main .sideMenu {
     right: 20px;
     left: auto;
     bottom: 29%;
+    width: 15px;
+    height: 15px;
   }
   main .content .textContent.textContent--big.textContent--2 .audioBtn {
     top: 15%;
@@ -869,127 +862,16 @@ main .sideMenu {
     padding: 25px;
   }
   main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
     width: 20px;
     height: 20px;
   }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
   main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 15px;
     height: 15px;
   }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
   main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 7px;
     height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 950px) {
@@ -1089,129 +971,6 @@ main .sideMenu {
     width: 10px;
     height: 10px;
     padding: 25px;
-  }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 20px;
-    height: 20px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
-  main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 15px;
-    height: 15px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
-  main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 870px) {
@@ -1325,128 +1084,9 @@ main .sideMenu {
     height: 10px;
     padding: 25px;
   }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 20px;
-    height: 20px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
   main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 20px;
     height: 20px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
-  main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 825px) {
@@ -1554,128 +1194,9 @@ main .sideMenu {
     height: 10px;
     padding: 25px;
   }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 20px;
-    height: 20px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
   main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 7px;
     height: 7px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
-  main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1776,128 +1297,9 @@ main .sideMenu {
     height: 7px;
     padding: 25px;
   }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 20px;
-    height: 20px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
   main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 20px;
     height: 20px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
-  main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 730px) {
@@ -2024,128 +1426,9 @@ main .sideMenu {
     height: 7px;
     padding: 20px;
   }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 20px;
-    height: 20px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
-  main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 20px;
-    height: 20px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
   main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 5px;
     height: 5px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2267,127 +1550,16 @@ main .sideMenu {
     padding: 24px;
   }
   main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
     width: 7px;
     height: 7px;
   }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
   main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 5px;
     height: 5px;
   }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
   main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 7px;
     height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 450px) {
@@ -2510,128 +1682,9 @@ main .sideMenu {
     height: 1px;
     padding: 20px;
   }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 7px;
-    height: 7px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
   main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
     width: 7px;
     height: 7px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
-  main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 @media screen and (max-width: 420px) {
@@ -2738,129 +1791,6 @@ main .sideMenu {
     height: 1px;
     padding: 10px;
   }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 7px;
-    height: 7px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
-  main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
-  main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
-  }
 }
 @media screen and (max-width: 400px) {
   main .content .textContent.textContent--1 {
@@ -2942,129 +1872,6 @@ main .sideMenu {
     width: 1px;
     height: 1px;
     padding: 10px;
-  }
-  main .content .audioBtn {
-    background-image: url(./medias/img/medias_ui/sonBtn.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    width: 7px;
-    height: 7px;
-  }
-  main .content .audioBtn:hover {
-    filter: brightness(150%);
-    border: 6px solid rgba(0, 0, 0, 0);
-  }
-  main .content .readText {
-    position: relative;
-    transform: translateY(20px) translateX(60px);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    font-size: 24px;
-    font-family: "Andika-bold";
-    letter-spacing: 0.2px;
-  }
-  main .content .readText a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .readText:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .readText:hover a {
-    color: #59b59e;
-  }
-  main .content .readText:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .readText:active a {
-    color: #fffcf7;
-  }
-  main .content .answer {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .answer a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .answer:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .answer:hover a {
-    color: #59b59e;
-  }
-  main .content .answer:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .answer:active a {
-    color: #fffcf7;
-  }
-  main .content .reward {
-    position: relative;
-    transform: translateY(0) translateX(0);
-    color: #1f3d34;
-    padding: auto 8%;
-    border-radius: 100px;
-    width: auto;
-    height: auto;
-    background-color: #59b59e;
-    border: 6px solid rgba(31, 61, 52, 0);
-    transition-duration: 0.2s;
-    background-image: url(./medias/img/medias_ui/prochain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1f3d34;
-    width: 7px;
-    height: 7px;
-  }
-  main .content .reward a {
-    color: #1f3d34;
-    text-decoration: none;
-  }
-  main .content .reward:hover {
-    border: 6px solid #59b59e;
-    background-color: rgba(89, 181, 158, 0);
-    color: #59b59e;
-  }
-  main .content .reward:hover a {
-    color: #59b59e;
-  }
-  main .content .reward:active {
-    border: 6px solid #fffcf7;
-    background-color: rgba(89, 181, 158, 0.5);
-    color: #fffcf7;
-  }
-  main .content .reward:active a {
-    color: #fffcf7;
   }
 }
 .hidden {

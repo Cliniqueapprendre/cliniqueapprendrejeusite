@@ -289,10 +289,7 @@ main {
             width: 60px;
             height: 60px;
         }
-
-        
-
-        
+   
     }
 
     .next {
@@ -483,28 +480,12 @@ main {
             height: 80%;
             .textContent {
                 &.textContent--1 {
-                    background-image: url(./medias/img/medias_ui/bulleson.png);
-                    top: 45px;
-                    left: 45px;
                     h1 {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
                         top: 32%;
-                        margin: auto;
-                        font-family: 'Andika-Bold';
-                        line-height: 7vmin;
                         font-size: 11vmin;
-                        letter-spacing: 5px;
-                        text-align: center;
-                        //width: 100%;
                     }
                     button.btnToNext {
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        bottom: 35%;
-                        margin: auto;
+                        bottom: 35%; 
                     }
                 }
 
@@ -545,10 +526,15 @@ main {
                     margin: auto;
                     width: 400px;
                     height: 350px;
+                    h1 {
+                        line-height: 9vmin;
+                    }
                     button.btnToNext {
                         right: 10px;
                         left: auto;
                         bottom: 25%;
+                        width: 15px;
+                        height: 15px;
                     }
                 }
     
@@ -559,6 +545,9 @@ main {
                     margin: auto;
                     width: 360px;
                     height: 300px;
+                    h1 {
+                        line-height: 7vmin;
+                    }
                     
                 }
     
@@ -580,6 +569,8 @@ main {
                         right: 20px;
                         left: auto;
                         bottom: 29%;
+                        width: 15px;
+                        height: 15px;
                     }
 
                     .audioBtn {
@@ -596,45 +587,15 @@ main {
                     }
                 }
             }
-    
             .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
                 width: 20px;
                 height: 20px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
             }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
             .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 15px;
                 height: 15px;
             }
-    
             .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 7px;
                 height: 7px;
             }
@@ -757,49 +718,6 @@ main {
                     }
                 }
             }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 20px;
-                height: 20px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
-            .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 15px;
-                height: 15px;
-            }
-    
-            .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            }
-
         }
     }
 
@@ -933,49 +851,10 @@ main {
                     }
                 }
             }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 20px;
-                height: 20px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
             .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 20px;
                 height: 20px;
             }
-    
-            .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            }
-
         }
     }
 
@@ -1100,50 +979,11 @@ main {
                         padding: 25px; 
                     }
                 }
-            }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 20px;
-                height: 20px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
+            }   
             .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 7px;
                 height: 7px;
             }
-    
-            .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            }
-
         }
     }
 }
@@ -1260,48 +1100,10 @@ main {
                         padding: 25px; 
                     }
                 }
-            }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 20px;
-                height: 20px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
+            }  
             .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 20px;
                 height: 20px;
-            }
-    
-            .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
             }
 
         }
@@ -1451,45 +1253,7 @@ main {
                     }
                 }
             }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 20px;
-                height: 20px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
-            .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 20px;
-                height: 20px;
-            }
-    
             .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 5px;
                 height: 5px;
             }
@@ -1630,45 +1394,15 @@ main {
                     }
                 }
             }
-    
             .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
                 width: 7px;
                 height: 7px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
             }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
             .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 5px;
                 height: 5px;
             }
-    
             .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 7px;
                 height: 7px;
             }
@@ -1812,50 +1546,11 @@ main {
                         padding: 20px; 
                     } 
                 }
-    
             }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 7px;
-                height: 7px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
             .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
                 width: 7px;
                 height: 7px;
             }
-    
-            .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            } 
         }
     }
 }
@@ -1981,50 +1676,7 @@ main {
                         padding: 10px; 
                     } 
                 }
-    
-            }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 7px;
-                height: 7px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
-            .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            }
-    
-            .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            } 
+            }   
         }
     }
 }
@@ -2125,48 +1777,6 @@ main {
                     } 
                 }
             }
-    
-            .audioBtn {
-                background-image: url(./medias/img/medias_ui/sonBtn.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: rgba($color: #000000, $alpha: 0.0);
-                width: 7px;
-                height: 7px;
-    
-                &:hover {
-                    filter: brightness(150%); 
-                    border: 6px solid rgba($color: #000000, $alpha: 0.0); 
-                }
-            }
-    
-            .readText {
-                @include button.btnNext(20px, 60px, auto, auto, 6px);
-                font-size: 24px;
-                font-family: 'Andika-bold';
-                letter-spacing: 0.2px;
-            }
-    
-            .answer {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-    
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            }
-    
-            .reward {
-                @include button.btnNext(0, 0, auto, auto, 6px);
-                background-image: url(./medias/img/medias_ui/prochain.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: values.$darkGreen;
-                width: 7px;
-                height: 7px;
-            } 
         }
     }
 }
