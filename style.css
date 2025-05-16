@@ -465,7 +465,6 @@ main .content .audioBtn {
   height: 3vh;
 }
 main .content .audioBtn:hover {
-  filter: brightness(150%);
   border: 6px solid rgba(0, 0, 0, 0);
 }
 main .content .readText {
